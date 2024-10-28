@@ -2,6 +2,7 @@
 
 = 3.0.4         - 28-10-2024
 * Fix           - Escaping issue.
+* Fix           - Line break in the confirmation message.
 
 = 3.0.3.1       - 17-09-2024
 * Fix           - Issue with add new form template designs.

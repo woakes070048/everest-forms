@@ -2,7 +2,7 @@
 Contributors: WPEverest
 Tags: contact form, custom form, form builder, forms, survey
 Requires at least: 5.2
-Tested up to: 6.6.1
+Tested up to: 6.6.2
 Requires PHP: 7.2
 Stable tag: 3.0.4
 License: GPLv3
@@ -310,6 +310,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 
 = 3.0.4         - 28-10-2024
 * Fix           - Escaping issue.
+* Fix           - Line break in the confirmation message.
 
 = 3.0.3.1       - 17-09-2024
 * Fix           - Issue with add new form template designs.
