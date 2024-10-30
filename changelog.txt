@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 3.0.4.1        - 30-10-2024
+* Fix            - Remove unnecessary source map from build.
+
 = 3.0.4         - 28-10-2024
 * Fix           - Escaping issue.
 * Fix           - Line break in the confirmation message.
