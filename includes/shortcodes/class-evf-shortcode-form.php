@@ -27,34 +27,34 @@ class EVF_Shortcode_Form {
 	 *
 	 * @var array
 	 */
-	public static $parts = array();
+public static $parts = array();
 
 	/**
 	 * Hooks in tab.
 	 */
-	public static function hooks() {
-		add_filter( 'amp_skip_post', array( 'EVF_Shortcode_Form', 'amp_skip_post' ) );
-		add_action( 'everest_forms_frontend_output_success', 'evf_print_notices', 10, 2 );
-		add_action( 'everest_forms_frontend_output', array( 'EVF_Shortcode_Form', 'header' ), 5, 4 );
-		add_action( 'everest_forms_frontend_output', array( 'EVF_Shortcode_Form', 'fields' ), 10, 3 );
-		add_action( 'everest_forms_display_field_before', array( 'EVF_Shortcode_Form', 'wrapper_start' ), 5, 2 );
-		add_action( 'everest_forms_display_field_before', array( 'EVF_Shortcode_Form', 'label' ), 15, 2 );
-		add_action( 'everest_forms_display_field_before', array( 'EVF_Shortcode_Form', 'description' ), 20, 2 );
-		add_action( 'everest_forms_display_field_after', array( 'EVF_Shortcode_Form', 'messages' ), 3, 2 );
-		add_action( 'everest_forms_display_field_after', array( 'EVF_Shortcode_Form', 'description' ), 5, 2 );
-		add_action( 'everest_forms_display_field_after', array( 'EVF_Shortcode_Form', 'wrapper_end' ), 15, 2 );
-		add_action( 'everest_forms_frontend_output', array( 'EVF_Shortcode_Form', 'honeypot' ), 15, 3 );
-		if ( ! apply_filters( 'everest_forms_recaptcha_disabled', false ) ) {
-			add_action( 'everest_forms_frontend_output', array( 'EVF_Shortcode_Form', 'recaptcha' ), 20, 3 );
-		}
-		add_action( 'everest_forms_frontend_output', array( 'EVF_Shortcode_Form', 'footer' ), 25, 3 );
-
-		// reCaptcha Language.
-		add_filter( 'everest_forms_frontend_recaptcha_url', array( __CLASS__, 'evf_recaptcha_language' ), 10, 1 );
-
-		// Enable for submission waiting time.
-		add_filter( 'everest_forms_display_fields_before', array( 'EVF_Shortcode_Form', 'evf_form_submission_waiting_time' ) );
+public static function hooks() {
+	add_filter( 'amp_skip_post', array( 'EVF_Shortcode_Form', 'amp_skip_post' ) );
+	add_action( 'everest_forms_frontend_output_success', 'evf_print_notices', 10, 2 );
+	add_action( 'everest_forms_frontend_output', array( 'EVF_Shortcode_Form', 'header' ), 5, 4 );
+	add_action( 'everest_forms_frontend_output', array( 'EVF_Shortcode_Form', 'fields' ), 10, 3 );
+	add_action( 'everest_forms_display_field_before', array( 'EVF_Shortcode_Form', 'wrapper_start' ), 5, 2 );
+	add_action( 'everest_forms_display_field_before', array( 'EVF_Shortcode_Form', 'label' ), 15, 2 );
+	add_action( 'everest_forms_display_field_before', array( 'EVF_Shortcode_Form', 'description' ), 20, 2 );
+	add_action( 'everest_forms_display_field_after', array( 'EVF_Shortcode_Form', 'messages' ), 3, 2 );
+	add_action( 'everest_forms_display_field_after', array( 'EVF_Shortcode_Form', 'description' ), 5, 2 );
+	add_action( 'everest_forms_display_field_after', array( 'EVF_Shortcode_Form', 'wrapper_end' ), 15, 2 );
+	add_action( 'everest_forms_frontend_output', array( 'EVF_Shortcode_Form', 'honeypot' ), 15, 3 );
+	if ( ! apply_filters( 'everest_forms_recaptcha_disabled', false ) ) {
+		add_action( 'everest_forms_frontend_output', array( 'EVF_Shortcode_Form', 'recaptcha' ), 20, 3 );
 	}
+	add_action( 'everest_forms_frontend_output', array( 'EVF_Shortcode_Form', 'footer' ), 25, 3 );
+
+	// reCaptcha Language.
+	add_filter( 'everest_forms_frontend_recaptcha_url', array( __CLASS__, 'evf_recaptcha_language' ), 10, 1 );
+
+	// Enable for submission waiting time.
+	add_filter( 'everest_forms_display_fields_before', array( 'EVF_Shortcode_Form', 'evf_form_submission_waiting_time' ) );
+}
 
 	/**
 	 * Get the amp-state ID for a given form.
@@ -62,9 +62,9 @@ class EVF_Shortcode_Form {
 	 * @param int $form_id Form ID.
 	 * @return string State ID.
 	 */
-	protected static function get_form_amp_state_id( $form_id ) {
-		return sprintf( 'evf_form_state_%d', $form_id );
-	}
+protected static function get_form_amp_state_id( $form_id ) {
+	return sprintf( 'evf_form_state_%d', $form_id );
+}
 
 	/**
 	 * Disable AMP if query param is detected.
@@ -78,10 +78,10 @@ class EVF_Shortcode_Form {
 	 *
 	 * @return bool
 	 */
-	public static function amp_skip_post( $skip ) {
+public static function amp_skip_post( $skip ) {
 
-		return isset( $_GET['nonamp'] ) ? true : $skip; // phpcs:ignore WordPress.Security.NonceVerification
-	}
+	return isset( $_GET['nonamp'] ) ? true : $skip; // phpcs:ignore WordPress.Security.NonceVerification
+}
 
 
 	/**
@@ -91,89 +91,89 @@ class EVF_Shortcode_Form {
 	 * @param bool  $title       Whether to display form title.
 	 * @param bool  $description Whether to display form description.
 	 */
-	public static function footer( $form_data, $title, $description ) {
-		$form_id         = absint( $form_data['id'] );
-		$settings        = isset( $form_data['settings'] ) ? $form_data['settings'] : array();
-		$submit          = apply_filters( 'everest_forms_field_submit', isset( $settings['submit_button_text'] ) ? $settings['submit_button_text'] : __( 'Submit', 'everest-forms' ), $form_data );
-		$submit_btn      = evf_string_translation( $form_data['id'], 'submit_button', $submit );
-		$process         = '';
-		$classes         = isset( $form_data['settings']['submit_button_class'] ) ? evf_sanitize_classes( $form_data['settings']['submit_button_class'] ) : '';
-		$parts           = ! empty( self::$parts[ $form_id ] ) ? self::$parts[ $form_id ] : array();
-		$visible         = ! empty( $parts ) ? 'style="display:none"' : '';
-		$attrs           = array( 'aria-live' => 'assertive' );
-		$data_attrs      = array();
-		$evf_amp_classes = array();
+public static function footer( $form_data, $title, $description ) {
+	$form_id         = absint( $form_data['id'] );
+	$settings        = isset( $form_data['settings'] ) ? $form_data['settings'] : array();
+	$submit          = apply_filters( 'everest_forms_field_submit', isset( $settings['submit_button_text'] ) ? $settings['submit_button_text'] : __( 'Submit', 'everest-forms' ), $form_data );
+	$submit_btn      = evf_string_translation( $form_data['id'], 'submit_button', $submit );
+	$process         = '';
+	$classes         = isset( $form_data['settings']['submit_button_class'] ) ? evf_sanitize_classes( $form_data['settings']['submit_button_class'] ) : '';
+	$parts           = ! empty( self::$parts[ $form_id ] ) ? self::$parts[ $form_id ] : array();
+	$visible         = ! empty( $parts ) ? 'style="display:none"' : '';
+	$attrs           = array( 'aria-live' => 'assertive' );
+	$data_attrs      = array();
+	$evf_amp_classes = array();
 
-		// Visibility class.
-		$visibility_class = apply_filters( 'everest_forms_field_submit_visibility_class', array(), $parts, $form_data );
+	// Visibility class.
+	$visibility_class = apply_filters( 'everest_forms_field_submit_visibility_class', array(), $parts, $form_data );
 
-		// Check for submit button processing-text.
-		if ( ! isset( $settings['submit_button_processing_text'] ) ) {
-			$process = 'data-process-text="' . esc_attr__( 'Processing&hellip;', 'everest-forms' ) . '"';
-		} elseif ( ! empty( $settings['submit_button_processing_text'] ) ) {
-			if ( evf_is_amp() ) {
-				$attrs['[text]'] = sprintf(
-					'%s.submitting ? %s : %s',
-					self::get_form_amp_state_id( $form_id ),
-					wp_json_encode( $settings['submit_button_processing_text'], JSON_UNESCAPED_UNICODE ),
-					wp_json_encode( $submit, JSON_UNESCAPED_UNICODE )
-				);
-			} else {
-				$process = 'data-process-text="' . esc_attr( evf_string_translation( $form_data['id'], 'processing_text', $settings['submit_button_processing_text'] ) ) . '"';
-			}
-		}
-
-		// Submit button area.
-		$conditional_id = 'evf-submit-' . $form_id;
-		if ( isset( $form_data['settings']['submit']['connection_1']['conditional_logic_status'] ) && '1' === $form_data['settings']['submit']['connection_1']['conditional_logic_status'] ) {
-			$con_rules = array(
-				'conditional_option' => isset( $form_data['settings']['submit']['connection_1']['conditional_option'] ) ? $form_data['settings']['submit']['connection_1']['conditional_option'] : '',
-				'conditionals'       => isset( $form_data['settings']['submit']['connection_1']['conditionals'] ) ? $form_data['settings']['submit']['connection_1']['conditionals'] : '',
+	// Check for submit button processing-text.
+	if ( ! isset( $settings['submit_button_processing_text'] ) ) {
+		$process = 'data-process-text="' . esc_attr__( 'Processing&hellip;', 'everest-forms' ) . '"';
+	} elseif ( ! empty( $settings['submit_button_processing_text'] ) ) {
+		if ( evf_is_amp() ) {
+			$attrs['[text]'] = sprintf(
+				'%s.submitting ? %s : %s',
+				self::get_form_amp_state_id( $form_id ),
+				wp_json_encode( $settings['submit_button_processing_text'], JSON_UNESCAPED_UNICODE ),
+				wp_json_encode( $submit, JSON_UNESCAPED_UNICODE )
 			);
 		} else {
-			$con_rules = '';
-		}
-
-		$conditional_rules = wp_json_encode( $con_rules );
-
-		echo '<div class="evf-submit-container ' . esc_attr( implode( ' ', $visibility_class ) ) . '" >';
-
-		echo '<input type="hidden" name="everest_forms[id]" value="' . absint( $form_id ) . '">';
-
-		echo '<input type="hidden" name="everest_forms[author]" value="' . absint( get_the_author_meta( 'ID' ) ) . '">';
-
-		if ( is_singular() ) {
-			echo '<input type="hidden" name="everest_forms[post_id]" value="' . absint( get_the_ID() ) . '">';
-		}
-
-		do_action( 'everest_forms_display_submit_before', $form_data );
-
-		printf(
-			"<button type='submit' name='everest_forms[submit]' class='everest-forms-submit-button button evf-submit %s' id='evf-submit-%d' value='evf-submit' %s conditional_rules='%s' conditional_id='%s' %s %s>%s</button>",
-			esc_attr( $classes ),
-			esc_attr( $form_id ),
-			! isset( $settings['submit_button_processing_text'] ) ? 'data-process-text="' . esc_attr__( 'Processing&hellip;', 'everest-forms' ) . '"' : ( ! empty( $settings['submit_button_processing_text'] ) ? 'data-process-text="' . esc_attr( evf_string_translation( $form_data['id'], 'processing_text', $settings['submit_button_processing_text'] ) ) . '"' : '' ),
-			esc_attr( $conditional_rules ),
-			esc_attr( $conditional_id ),
-			( ! empty( self::$parts[ $form_id ] ) ? 'style="display:none"' : '' ),
-			evf_html_attributes(
-				sprintf( 'evf-submit-%d', absint( $form_id ) ),
-				$evf_amp_classes,
-				$data_attrs,
-				$attrs
-			),
-			esc_html( $submit_btn )
-		);
-
-		do_action( 'everest_forms_display_submit_after', $form_data );
-
-		echo '</div>';
-
-		if ( evf_is_amp() ) {
-			printf( '<div submit-success><template type="amp-mustache"><div class=" everest-forms-notice everest-forms-notice--success {{#redirecting}}evf-redirection-message{{/redirecting}}">{{{message}}}</div></template></div>' );
-			return;
+			$process = 'data-process-text="' . esc_attr( evf_string_translation( $form_data['id'], 'processing_text', $settings['submit_button_processing_text'] ) ) . '"';
 		}
 	}
+
+	// Submit button area.
+	$conditional_id = 'evf-submit-' . $form_id;
+	if ( isset( $form_data['settings']['submit']['connection_1']['conditional_logic_status'] ) && '1' === $form_data['settings']['submit']['connection_1']['conditional_logic_status'] ) {
+		$con_rules = array(
+			'conditional_option' => isset( $form_data['settings']['submit']['connection_1']['conditional_option'] ) ? $form_data['settings']['submit']['connection_1']['conditional_option'] : '',
+			'conditionals'       => isset( $form_data['settings']['submit']['connection_1']['conditionals'] ) ? $form_data['settings']['submit']['connection_1']['conditionals'] : '',
+		);
+	} else {
+		$con_rules = '';
+	}
+
+	$conditional_rules = wp_json_encode( $con_rules );
+
+	echo '<div class="evf-submit-container ' . esc_attr( implode( ' ', $visibility_class ) ) . '" >';
+
+	echo '<input type="hidden" name="everest_forms[id]" value="' . absint( $form_id ) . '">';
+
+	echo '<input type="hidden" name="everest_forms[author]" value="' . absint( get_the_author_meta( 'ID' ) ) . '">';
+
+	if ( is_singular() ) {
+		echo '<input type="hidden" name="everest_forms[post_id]" value="' . absint( get_the_ID() ) . '">';
+	}
+
+	do_action( 'everest_forms_display_submit_before', $form_data );
+
+	printf(
+		"<button type='submit' name='everest_forms[submit]' class='everest-forms-submit-button button evf-submit %s' id='evf-submit-%d' value='evf-submit' %s conditional_rules='%s' conditional_id='%s' %s %s>%s</button>",
+		esc_attr( $classes ),
+		esc_attr( $form_id ),
+		! isset( $settings['submit_button_processing_text'] ) ? 'data-process-text="' . esc_attr__( 'Processing&hellip;', 'everest-forms' ) . '"' : ( ! empty( $settings['submit_button_processing_text'] ) ? 'data-process-text="' . esc_attr( evf_string_translation( $form_data['id'], 'processing_text', $settings['submit_button_processing_text'] ) ) . '"' : '' ),
+		esc_attr( $conditional_rules ),
+		esc_attr( $conditional_id ),
+		( ! empty( self::$parts[ $form_id ] ) ? 'style="display:none"' : '' ),
+		evf_html_attributes(
+			sprintf( 'evf-submit-%d', absint( $form_id ) ),
+			$evf_amp_classes,
+			$data_attrs,
+			$attrs
+		),
+		esc_html( $submit_btn )
+	);
+
+	do_action( 'everest_forms_display_submit_after', $form_data );
+
+	echo '</div>';
+
+	if ( evf_is_amp() ) {
+		printf( '<div submit-success><template type="amp-mustache"><div class=" everest-forms-notice everest-forms-notice--success {{#redirecting}}evf-redirection-message{{/redirecting}}">{{{message}}}</div></template></div>' );
+		return;
+	}
+}
 
 	/**
 	 * Message.
@@ -181,19 +181,19 @@ class EVF_Shortcode_Form {
 	 * @param array $field Field.
 	 * @param array $form_data Form data.
 	 */
-	public static function messages( $field, $form_data ) {
-		$error = $field['properties']['error'];
+public static function messages( $field, $form_data ) {
+	$error = $field['properties']['error'];
 
-		if ( empty( $error['value'] ) || is_array( $error['value'] ) ) {
-			return;
-		}
-
-		printf(
-			'<label %s>%s</label>',
-			evf_html_attributes( $error['id'], $error['class'], $error['data'], $error['attr'] ),
-			esc_html( $error['value'] )
-		);
+	if ( empty( $error['value'] ) || is_array( $error['value'] ) ) {
+		return;
 	}
+
+	printf(
+		'<label %s>%s</label>',
+		evf_html_attributes( $error['id'], $error['class'], $error['data'], $error['attr'] ),
+		esc_html( $error['value'] )
+	);
+}
 
 	/**
 	 * Description.
@@ -201,34 +201,34 @@ class EVF_Shortcode_Form {
 	 * @param array $field Field.
 	 * @param array $form_data Form data.
 	 */
-	public static function description( $field, $form_data ) {
-		$action = current_action();
+public static function description( $field, $form_data ) {
+	$action = current_action();
 
-		$description = $field['properties']['description'];
+	$description = $field['properties']['description'];
 
-		// If the description is empty don't proceed.
-		if ( empty( $description['value'] ) ) {
-			return;
-		}
-
-		// Determine positioning.
-		if ( 'everest_forms_display_field_before' === $action && 'before' !== $description['position'] ) {
-			return;
-		}
-		if ( 'everest_forms_display_field_after' === $action && 'after' !== $description['position'] ) {
-			return;
-		}
-
-		if ( 'before' === $description['position'] ) {
-			$description['class'][] = 'evf-field-description-before';
-		}
-
-		printf(
-			'<div %s>%s</div>',
-			evf_html_attributes( $description['id'], $description['class'], $description['data'], $description['attr'] ),
-			wp_kses_post( evf_string_translation( $form_data['id'], $field['id'], $description['value'], '-description' ) )
-		);
+	// If the description is empty don't proceed.
+	if ( empty( $description['value'] ) ) {
+		return;
 	}
+
+	// Determine positioning.
+	if ( 'everest_forms_display_field_before' === $action && 'before' !== $description['position'] ) {
+		return;
+	}
+	if ( 'everest_forms_display_field_after' === $action && 'after' !== $description['position'] ) {
+		return;
+	}
+
+	if ( 'before' === $description['position'] ) {
+		$description['class'][] = 'evf-field-description-before';
+	}
+
+	printf(
+		'<div %s>%s</div>',
+		evf_html_attributes( $description['id'], $description['class'], $description['data'], $description['attr'] ),
+		wp_kses_post( evf_string_translation( $form_data['id'], $field['id'], $description['value'], '-description' ) )
+	);
+}
 
 	/**
 	 * Label.
@@ -236,57 +236,57 @@ class EVF_Shortcode_Form {
 	 * @param array $field Field.
 	 * @param array $form_data Form data.
 	 */
-	public static function label( $field, $form_data ) {
+public static function label( $field, $form_data ) {
 
-		$label = $field['properties']['label'];
-		// If the label is empty or disabled don't proceed.
-		if ( empty( $label['value'] ) || $label['disabled'] ) {
-			return;
-		}
+	$label = $field['properties']['label'];
+	// If the label is empty or disabled don't proceed.
+	if ( empty( $label['value'] ) || $label['disabled'] ) {
+		return;
+	}
 
-		$required    = $label['required'] ? apply_filters( 'everest_forms_field_required_label', '<abbr class="required" title="' . esc_attr__( 'Required', 'everest-forms' ) . '">' . apply_filters( 'everest_form_get_required_type', '*', $field, $form_data ) . '</abbr>' ) : '';
-		$custom_tags = apply_filters( 'everest_forms_field_custom_tags', false, $field, $form_data );
+	$required    = $label['required'] ? apply_filters( 'everest_forms_field_required_label', '<abbr class="required" title="' . esc_attr__( 'Required', 'everest-forms' ) . '">' . apply_filters( 'everest_form_get_required_type', '*', $field, $form_data ) . '</abbr>' ) : '';
+	$custom_tags = apply_filters( 'everest_forms_field_custom_tags', false, $field, $form_data );
 
-		printf(
-			'<label %s><span class="evf-label">%s</span> %s</label>',
-			evf_html_attributes( $label['id'], $label['class'], $label['data'], $label['attr'] ),
-			wp_kses(
-				evf_string_translation(
-					$form_data['id'],
-					$field['id'],
-					wp_kses(
-						$label['value'],
-						array(
-							'a'      => array(
-								'href'  => array(),
-								'class' => array(),
-							),
-							'span'   => array(
-								'class' => array(),
-							),
-							'em'     => array(),
-							'small'  => array(),
-							'strong' => array(),
-						)
+	printf(
+		'<label %s><span class="evf-label">%s</span> %s</label>',
+		evf_html_attributes( $label['id'], $label['class'], $label['data'], $label['attr'] ),
+		wp_kses(
+			evf_string_translation(
+				$form_data['id'],
+				$field['id'],
+				wp_kses(
+					$label['value'],
+					array(
+						'a'      => array(
+							'href'  => array(),
+							'class' => array(),
+						),
+						'span'   => array(
+							'class' => array(),
+						),
+						'em'     => array(),
+						'small'  => array(),
+						'strong' => array(),
 					)
-				),
-				array(
-					'a'      => array(
-						'href'  => array(),
-						'class' => array(),
-					),
-					'span'   => array(
-						'class' => array(),
-					),
-					'em'     => array(),
-					'small'  => array(),
-					'strong' => array(),
 				)
 			),
-			wp_kses_post( $required ),
-			wp_kses_post( $custom_tags )
-		);
-	}
+			array(
+				'a'      => array(
+					'href'  => array(),
+					'class' => array(),
+				),
+				'span'   => array(
+					'class' => array(),
+				),
+				'em'     => array(),
+				'small'  => array(),
+				'strong' => array(),
+			)
+		),
+		wp_kses_post( $required ),
+		wp_kses_post( $custom_tags )
+	);
+}
 
 	/**
 	 * Wrapper end.
@@ -294,9 +294,9 @@ class EVF_Shortcode_Form {
 	 * @param array $field Field.
 	 * @param array $form_data Form data.
 	 */
-	public static function wrapper_end( $field, $form_data ) {
-		echo '</div>';
-	}
+public static function wrapper_end( $field, $form_data ) {
+	echo '</div>';
+}
 
 	/**
 	 * Wrapper start.
@@ -304,14 +304,14 @@ class EVF_Shortcode_Form {
 	 * @param array $field Field.
 	 * @param array $form_data Form data.
 	 */
-	public static function wrapper_start( $field, $form_data ) {
-		$container                     = $field['properties']['container'];
-		$container['data']['field-id'] = esc_attr( $field['id'] );
-		printf(
-			'<div %s>',
-			evf_html_attributes( $container['id'], $container['class'], $container['data'], $container['attr'] )
-		);
-	}
+public static function wrapper_start( $field, $form_data ) {
+	$container                     = $field['properties']['container'];
+	$container['data']['field-id'] = esc_attr( $field['id'] );
+	printf(
+		'<div %s>',
+		evf_html_attributes( $container['id'], $container['class'], $container['data'], $container['attr'] )
+	);
+}
 
 	/**
 	 * Form header for displaying form title and description if enabled.
@@ -321,29 +321,29 @@ class EVF_Shortcode_Form {
 	 * @param bool  $description Whether to display form description.
 	 * @param array $errors      List of all errors during form submission.
 	 */
-	public static function header( $form_data, $title, $description, $errors ) {
-		$settings = isset( $form_data['settings'] ) ? $form_data['settings'] : array();
+public static function header( $form_data, $title, $description, $errors ) {
+	$settings = isset( $form_data['settings'] ) ? $form_data['settings'] : array();
 
-		// Check if title and/or description is enabled.
-		if ( true === $title || true === $description ) {
-			echo '<div class="evf-title-container">';
+	// Check if title and/or description is enabled.
+	if ( true === $title || true === $description ) {
+		echo '<div class="evf-title-container">';
 
-			if ( true === $title && ! empty( $settings['form_title'] ) ) {
-				echo '<div class="everest-forms--title">' . esc_html( evf_string_translation( $form_data['id'], 'form_title', $settings['form_title'] ) ) . '</div>';
-			}
-
-			if ( true === $description && ! empty( $settings['form_description'] ) ) {
-				echo '<div class="everest-forms--description">' . esc_textarea( evf_string_translation( $form_data['id'], 'form_description', $settings['form_description'] ) ) . '</div>';
-			}
-
-			echo '</div>';
+		if ( true === $title && ! empty( $settings['form_title'] ) ) {
+			echo '<div class="everest-forms--title">' . esc_html( evf_string_translation( $form_data['id'], 'form_title', $settings['form_title'] ) ) . '</div>';
 		}
 
-		// Output header errors if they exist.
-		if ( ! empty( $errors['header'] ) ) {
-			evf_add_notice( $errors['header'], 'error' );
+		if ( true === $description && ! empty( $settings['form_description'] ) ) {
+			echo '<div class="everest-forms--description">' . esc_textarea( evf_string_translation( $form_data['id'], 'form_description', $settings['form_description'] ) ) . '</div>';
 		}
+
+		echo '</div>';
 	}
+
+	// Output header errors if they exist.
+	if ( ! empty( $errors['header'] ) ) {
+		evf_add_notice( $errors['header'], 'error' );
+	}
+}
 
 	/**
 	 * Form field area.
@@ -352,119 +352,119 @@ class EVF_Shortcode_Form {
 	 * @param bool  $title       Whether to display form title.
 	 * @param bool  $description Whether to display form description.
 	 */
-	public static function fields( $form_data, $title, $description ) {
-		$structure = isset( $form_data['structure'] ) ? $form_data['structure'] : array();
+public static function fields( $form_data, $title, $description ) {
+	$structure = isset( $form_data['structure'] ) ? $form_data['structure'] : array();
 
-		// Bail if empty form fields.
-		if ( empty( $form_data['form_fields'] ) ) {
-			return;
-		}
+	// Bail if empty form fields.
+	if ( empty( $form_data['form_fields'] ) ) {
+		return;
+	}
 
-		// Form fields area.
-		echo '<div class="evf-field-container">';
+	// Form fields area.
+	echo '<div class="evf-field-container">';
 
-		wp_nonce_field( 'everest-forms_process_submit', '_wpnonce' . $form_data['id'] );
+	wp_nonce_field( 'everest-forms_process_submit', '_wpnonce' . $form_data['id'] );
+
+	/**
+	 * Hook: everest_forms_display_fields_before.
+	 *
+	 * @hooked EverestForms_MultiPart::display_fields_before() Multi-Part markup open.
+	 */
+	do_action( 'everest_forms_display_fields_before', $form_data );
+
+	foreach ( $structure as $row_key => $row ) {
+		/**
+		 * Hook: everest_forms_display_repeater_fields.
+		 *
+		 * @hooked EVF_Repeater_Fields->display_repeater_fields() Display Repeater Fields.
+		 */
+		$is_repeater = apply_filters( 'everest_forms_display_repeater_fields', false, $row, $form_data, true );
 
 		/**
-		 * Hook: everest_forms_display_fields_before.
-		 *
-		 * @hooked EverestForms_MultiPart::display_fields_before() Multi-Part markup open.
+		 * Hook: everest_forms_display_row_before.
 		 */
-		do_action( 'everest_forms_display_fields_before', $form_data );
+		do_action( 'everest_forms_display_row_before', $row_key, $form_data );
 
-		foreach ( $structure as $row_key => $row ) {
-			/**
-			 * Hook: everest_forms_display_repeater_fields.
-			 *
-			 * @hooked EVF_Repeater_Fields->display_repeater_fields() Display Repeater Fields.
-			 */
-			$is_repeater = apply_filters( 'everest_forms_display_repeater_fields', false, $row, $form_data, true );
+		$conditions = array();
 
-			/**
-			 * Hook: everest_forms_display_row_before.
-			 */
-			do_action( 'everest_forms_display_row_before', $row_key, $form_data );
+		if ( ! empty( $form_data['settings']['form_rows'][ 'connection_' . $row_key ] ) && ! empty( $form_data['settings']['form_rows'][ 'connection_' . $row_key ]['conditional_logic_status'] ) ) {
+			$conditions = ! empty( $form_data['settings']['form_rows'][ 'connection_' . $row_key ] ) ? $form_data['settings']['form_rows'][ 'connection_' . $row_key ] : array();
+		}
 
-			$conditions = array();
+		echo '<div class="evf-frontend-row" data-row="' . esc_attr( $row_key ) . '"' . esc_attr( $is_repeater ) . ' conditional_rules="' . ( isset( $conditions ) ? esc_attr( wp_json_encode( $conditions ) ) : '' ) . '">'; // @codingStandardsIgnoreLine
 
-			if ( ! empty( $form_data['settings']['form_rows'][ 'connection_' . $row_key ] ) && ! empty( $form_data['settings']['form_rows'][ 'connection_' . $row_key ]['conditional_logic_status'] ) ) {
-				$conditions = ! empty( $form_data['settings']['form_rows'][ 'connection_' . $row_key ] ) ? $form_data['settings']['form_rows'][ 'connection_' . $row_key ] : array();
+		foreach ( $row as $grid_key => $grid ) {
+			$number_of_grid = count( $row );
+
+			echo '<div class="evf-frontend-grid evf-grid-' . absint( $number_of_grid ) . '" data-grid="' . esc_attr( $grid_key ) . '">';
+
+			if ( ! is_array( $grid ) ) {
+				$grid = array();
 			}
 
-			echo '<div class="evf-frontend-row" data-row="' . esc_attr( $row_key ) . '"' . esc_attr( $is_repeater ) . ' conditional_rules="' . ( isset( $conditions ) ? esc_attr( wp_json_encode( $conditions ) ) : '' ) . '">'; // @codingStandardsIgnoreLine
+			foreach ( $grid as $field_key ) {
+				$field = isset( $form_data['form_fields'][ $field_key ] ) ? $form_data['form_fields'][ $field_key ] : array();
+				$field = apply_filters( 'everest_forms_field_data', $field, $form_data );
 
-			foreach ( $row as $grid_key => $grid ) {
-				$number_of_grid = count( $row );
-
-				echo '<div class="evf-frontend-grid evf-grid-' . absint( $number_of_grid ) . '" data-grid="' . esc_attr( $grid_key ) . '">';
-
-				if ( ! is_array( $grid ) ) {
-					$grid = array();
+				if ( empty( $field ) || in_array( $field['type'], evf()->form_fields->get_pro_form_field_types(), true ) ) {
+					continue;
 				}
 
-				foreach ( $grid as $field_key ) {
-					$field = isset( $form_data['form_fields'][ $field_key ] ) ? $form_data['form_fields'][ $field_key ] : array();
-					$field = apply_filters( 'everest_forms_field_data', $field, $form_data );
+				$should_display_field = apply_filters( "everest_forms_should_display_field_{$field['type']}", true, $field, $form_data );
 
-					if ( empty( $field ) || in_array( $field['type'], evf()->form_fields->get_pro_form_field_types(), true ) ) {
-						continue;
-					}
-
-					$should_display_field = apply_filters( "everest_forms_should_display_field_{$field['type']}", true, $field, $form_data );
-
-					if ( true !== $should_display_field ) {
-						continue;
-					}
-
-					// Get field attributes.
-					$attributes = self::get_field_attributes( $field, $form_data );
-
-					do_action( 'everest_forms_display_before_field_wrapper', $field, $form_data );
-
-					// Get field properties.
-					$properties = self::get_field_properties( $field, $form_data, $attributes );
-
-					// Add properties to the field so it's available everywhere.
-					$field['properties'] = $properties;
-
-					do_action( 'everest_forms_display_field_before', $field, $form_data );
-
-					do_action( "everest_forms_display_field_{$field['type']}", $field, $attributes, $form_data );
-
-					do_action( 'everest_forms_display_field_after', $field, $form_data );
-
-					do_action( 'everest_forms_display_after_field_wrapper', $field, $form_data );
+				if ( true !== $should_display_field ) {
+					continue;
 				}
 
-				echo '</div>';
+				// Get field attributes.
+				$attributes = self::get_field_attributes( $field, $form_data );
+
+				do_action( 'everest_forms_display_before_field_wrapper', $field, $form_data );
+
+				// Get field properties.
+				$properties = self::get_field_properties( $field, $form_data, $attributes );
+
+				// Add properties to the field so it's available everywhere.
+				$field['properties'] = $properties;
+
+				do_action( 'everest_forms_display_field_before', $field, $form_data );
+
+				do_action( "everest_forms_display_field_{$field['type']}", $field, $attributes, $form_data );
+
+				do_action( 'everest_forms_display_field_after', $field, $form_data );
+
+				do_action( 'everest_forms_display_after_field_wrapper', $field, $form_data );
 			}
-
-			/**
-			 * Hook: everest_forms_add_remove_buttons.
-			 *
-			 * @hooked EVF_Repeater_Fields->add_remove_buttons() Show Add and Remove buttons.
-			 */
-			do_action( 'everest_forms_add_remove_buttons', $row, $form_data, $is_repeater );
 
 			echo '</div>';
-
-			/**
-			 * Hook: everest_forms_display_row_after.
-			 *
-			 * @hooked EverestForms_MultiPart::display_row_after() Multi-Part markup (close previous part, open next).
-			 */
-			do_action( 'everest_forms_display_row_after', $row_key, $form_data );
 		}
 
 		/**
-		 * Hook: everest_forms_display_fields_after.
+		 * Hook: everest_forms_add_remove_buttons.
 		 *
-		 * @hooked EverestForms_MultiPart::display_fields_after() Multi-Part markup open.
+		 * @hooked EVF_Repeater_Fields->add_remove_buttons() Show Add and Remove buttons.
 		 */
-		do_action( 'everest_forms_display_fields_after', $form_data );
+		do_action( 'everest_forms_add_remove_buttons', $row, $form_data, $is_repeater );
 
 		echo '</div>';
+
+		/**
+		 * Hook: everest_forms_display_row_after.
+		 *
+		 * @hooked EverestForms_MultiPart::display_row_after() Multi-Part markup (close previous part, open next).
+		 */
+		do_action( 'everest_forms_display_row_after', $row_key, $form_data );
 	}
+
+	/**
+	 * Hook: everest_forms_display_fields_after.
+	 *
+	 * @hooked EverestForms_MultiPart::display_fields_after() Multi-Part markup open.
+	 */
+	do_action( 'everest_forms_display_fields_after', $form_data );
+
+	echo '</div>';
+}
 
 	/**
 	 * Anti-spam honeypot output if configured.
@@ -472,89 +472,89 @@ class EVF_Shortcode_Form {
 	 * @since 1.4.9
 	 * @param array $form_data   Form data and settings.
 	 */
-	public static function honeypot( $form_data ) {
-		$names = array( 'Name', 'Phone', 'Comment', 'Message', 'Email', 'Website' );
+public static function honeypot( $form_data ) {
+	$names = array( 'Name', 'Phone', 'Comment', 'Message', 'Email', 'Website' );
 
-		// Output the honeypot container.
-		if ( isset( $form_data['settings']['honeypot'] ) && '1' === $form_data['settings']['honeypot'] ) {
-			echo '<div class="evf-honeypot-container evf-field-hp">';
+	// Output the honeypot container.
+	if ( isset( $form_data['settings']['honeypot'] ) && '1' === $form_data['settings']['honeypot'] ) {
+		echo '<div class="evf-honeypot-container evf-field-hp">';
 
-			echo '<label for="evf-' . esc_attr( $form_data['id'] ) . '-field-hp" class="evf-field-label">' . esc_attr( $names[ array_rand( $names ) ] ) . '</label>';
+		echo '<label for="evf-' . esc_attr( $form_data['id'] ) . '-field-hp" class="evf-field-label">' . esc_attr( $names[ array_rand( $names ) ] ) . '</label>';
 
-			echo '<input type="text" name="everest_forms[hp]" id="evf-' . esc_attr( $form_data['id'] ) . '-field-hp" class="input-text">';
+		echo '<input type="text" name="everest_forms[hp]" id="evf-' . esc_attr( $form_data['id'] ) . '-field-hp" class="input-text">';
 
-			echo '</div>';
-		}
+		echo '</div>';
 	}
+}
 
 	/**
 	 * Google reCAPTCHA output if configured.
 	 *
 	 * @param array $form_data Form data and settings.
 	 */
-	public static function recaptcha( $form_data ) {
-		$recaptcha_type      = get_option( 'everest_forms_recaptcha_type', 'v2' );
-		$invisible_recaptcha = get_option( 'everest_forms_recaptcha_v2_invisible', 'no' );
+public static function recaptcha( $form_data ) {
+	$recaptcha_type      = get_option( 'everest_forms_recaptcha_type', 'v2' );
+	$invisible_recaptcha = get_option( 'everest_forms_recaptcha_v2_invisible', 'no' );
 
-		if ( 'v2' === $recaptcha_type && 'no' === $invisible_recaptcha ) {
-			$site_key   = get_option( 'everest_forms_recaptcha_v2_site_key' );
-			$secret_key = get_option( 'everest_forms_recaptcha_v2_secret_key' );
-		} elseif ( 'v2' === $recaptcha_type && 'yes' === $invisible_recaptcha ) {
-			$site_key   = get_option( 'everest_forms_recaptcha_v2_invisible_site_key' );
-			$secret_key = get_option( 'everest_forms_recaptcha_v2_invisible_secret_key' );
-		} elseif ( 'v3' === $recaptcha_type ) {
-			$site_key   = get_option( 'everest_forms_recaptcha_v3_site_key' );
-			$secret_key = get_option( 'everest_forms_recaptcha_v3_secret_key' );
-		} elseif ( 'hcaptcha' === $recaptcha_type ) {
-			$site_key   = get_option( 'everest_forms_recaptcha_hcaptcha_site_key' );
-			$secret_key = get_option( 'everest_forms_recaptcha_hcaptcha_secret_key' );
-		} elseif ( 'turnstile' === $recaptcha_type ) {
-			$site_key   = get_option( 'everest_forms_recaptcha_turnstile_site_key' );
-			$secret_key = get_option( 'everest_forms_recaptcha_turnstile_secret_key' );
-			$theme      = get_option( 'everest_forms_recaptcha_turnstile_theme' );
-			$lang       = get_option( 'everest_forms_recaptcha_recaptcha_language', 'en-GB' );
-		}
+	if ( 'v2' === $recaptcha_type && 'no' === $invisible_recaptcha ) {
+		$site_key   = get_option( 'everest_forms_recaptcha_v2_site_key' );
+		$secret_key = get_option( 'everest_forms_recaptcha_v2_secret_key' );
+	} elseif ( 'v2' === $recaptcha_type && 'yes' === $invisible_recaptcha ) {
+		$site_key   = get_option( 'everest_forms_recaptcha_v2_invisible_site_key' );
+		$secret_key = get_option( 'everest_forms_recaptcha_v2_invisible_secret_key' );
+	} elseif ( 'v3' === $recaptcha_type ) {
+		$site_key   = get_option( 'everest_forms_recaptcha_v3_site_key' );
+		$secret_key = get_option( 'everest_forms_recaptcha_v3_secret_key' );
+	} elseif ( 'hcaptcha' === $recaptcha_type ) {
+		$site_key   = get_option( 'everest_forms_recaptcha_hcaptcha_site_key' );
+		$secret_key = get_option( 'everest_forms_recaptcha_hcaptcha_secret_key' );
+	} elseif ( 'turnstile' === $recaptcha_type ) {
+		$site_key   = get_option( 'everest_forms_recaptcha_turnstile_site_key' );
+		$secret_key = get_option( 'everest_forms_recaptcha_turnstile_secret_key' );
+		$theme      = get_option( 'everest_forms_recaptcha_turnstile_theme' );
+		$lang       = get_option( 'everest_forms_recaptcha_recaptcha_language', 'en-GB' );
+	}
 
-		if ( ! $site_key || ! $secret_key ) {
-			return;
-		}
-		// Check that the CAPTCHA is configured for the specific form.
-		if (
-		! isset( $form_data['settings']['recaptcha_support'] ) ||
-		'1' !== $form_data['settings']['recaptcha_support']
-		) {
-			return;
-		}
-		if ( evf_is_amp() ) {
-			if ( 'v3' === $recaptcha_type ) {
-				printf(
-					'<amp-recaptcha-input name="everest_forms[recaptcha]" data-sitekey="%s" data-action="%s" layout="nodisplay"></amp-recaptcha-input>',
-					esc_attr( $site_key ),
-					esc_attr( 'evf_' . $form_data['id'] )
-				);
-			}
-			return; // Only v3 is supported in AMP.
-		}
-
-		if ( isset( $form_data['settings']['recaptcha_support'] ) && '1' === $form_data['settings']['recaptcha_support'] ) {
-			$form_id = isset( $form_data['id'] ) ? absint( $form_data['id'] ) : 0;
-			$visible = ! empty( self::$parts[ $form_id ] ) ? 'style="display:none;"' : '';
-			$data    = apply_filters(
-				'everest_forms_frontend_recaptcha',
-				array(
-					'sitekey' => trim( sanitize_text_field( $site_key ) ),
-				),
-				$form_data
+	if ( ! $site_key || ! $secret_key ) {
+		return;
+	}
+	// Check that the CAPTCHA is configured for the specific form.
+	if (
+	! isset( $form_data['settings']['recaptcha_support'] ) ||
+	'1' !== $form_data['settings']['recaptcha_support']
+	) {
+		return;
+	}
+	if ( evf_is_amp() ) {
+		if ( 'v3' === $recaptcha_type ) {
+			printf(
+				'<amp-recaptcha-input name="everest_forms[recaptcha]" data-sitekey="%s" data-action="%s" layout="nodisplay"></amp-recaptcha-input>',
+				esc_attr( $site_key ),
+				esc_attr( 'evf_' . $form_data['id'] )
 			);
+		}
+		return; // Only v3 is supported in AMP.
+	}
 
-			// Load reCAPTCHA support if form supports it.
-			if ( $site_key && $secret_key ) {
-				if ( 'v2' === $recaptcha_type ) {
-					$recaptcha_api = apply_filters( 'everest_forms_frontend_recaptcha_url', 'https://www.google.com/recaptcha/api.js?onload=EVFRecaptchaLoad&render=explicit', $recaptcha_type, $form_id );
+	if ( isset( $form_data['settings']['recaptcha_support'] ) && '1' === $form_data['settings']['recaptcha_support'] ) {
+		$form_id = isset( $form_data['id'] ) ? absint( $form_data['id'] ) : 0;
+		$visible = ! empty( self::$parts[ $form_id ] ) ? 'style="display:none;"' : '';
+		$data    = apply_filters(
+			'everest_forms_frontend_recaptcha',
+			array(
+				'sitekey' => trim( sanitize_text_field( $site_key ) ),
+			),
+			$form_data
+		);
 
-					if ( 'yes' === $invisible_recaptcha ) {
-						$data['size']     = 'invisible';
-						$recaptcha_inline = 'var EVFRecaptchaLoad = function(){jQuery(".g-recaptcha").each(function(index, el){var recaptchaID = grecaptcha.render(el,{callback:function(){EVFRecaptchaCallback(el);}},true);   el.closest("form").querySelector("button[type=submit]").recaptchaID = recaptchaID;});};
+		// Load reCAPTCHA support if form supports it.
+		if ( $site_key && $secret_key ) {
+			if ( 'v2' === $recaptcha_type ) {
+				$recaptcha_api = apply_filters( 'everest_forms_frontend_recaptcha_url', 'https://www.google.com/recaptcha/api.js?onload=EVFRecaptchaLoad&render=explicit', $recaptcha_type, $form_id );
+
+				if ( 'yes' === $invisible_recaptcha ) {
+					$data['size']     = 'invisible';
+					$recaptcha_inline = 'var EVFRecaptchaLoad = function(){jQuery(".g-recaptcha").each(function(index, el){var recaptchaID = grecaptcha.render(el,{callback:function(){EVFRecaptchaCallback(el);}},true);   el.closest("form").querySelector("button[type=submit]").recaptchaID = recaptchaID;});};
 						var EVFRecaptchaCallback = function (el) {
 							var $form = el.closest("form");
 							if( typeof jQuery !==  "undefined" ){
@@ -568,58 +568,58 @@ class EVF_Shortcode_Form {
 							}
 						};
 						';
-					} else {
-						$recaptcha_inline  = 'var EVFRecaptchaLoad = function(){jQuery(".g-recaptcha").each(function(index, el){var recaptchaID =  grecaptcha.render(el,{callback:function(){EVFRecaptchaCallback(el);}},true);jQuery(el).attr( "data-recaptcha-id", recaptchaID);});};';
-						$recaptcha_inline .= 'var EVFRecaptchaCallback = function(el){jQuery(el).parent().find(".evf-recaptcha-hidden").val("1").trigger("change").valid();};';
-					}
-				} elseif ( 'v3' === $recaptcha_type ) {
-					$recaptcha_api     = apply_filters( 'everest_forms_frontend_recaptcha_url', 'https://www.google.com/recaptcha/api.js?render=' . $site_key, $recaptcha_type, $form_id );
-					$recaptcha_inline  = 'var EVFRecaptchaLoad = function(){grecaptcha.execute("' . esc_html( $site_key ) . '",{action:"everest_form"}).then(function(token){var f=document.getElementsByName("everest_forms[recaptcha]");for(var i=0;i<f.length;i++){f[i].value = token;}});};grecaptcha.ready(EVFRecaptchaLoad);setInterval(EVFRecaptchaLoad, 110000);';
-					$recaptcha_inline .= 'grecaptcha.ready(function(){grecaptcha.execute("' . esc_html( $site_key ) . '",{action:"everest_form"}).then(function(token){var f=document.getElementsByName("everest_forms[recaptcha]");for(var i=0;i<f.length;i++){f[i].value = token;}});});';
-				} elseif ( 'hcaptcha' === $recaptcha_type ) {
-					$recaptcha_api     = apply_filters( 'everest_forms_frontend_recaptcha_url', 'https://hcaptcha.com/1/api.js??onload=EVFRecaptchaLoad&render=explicit', $recaptcha_type, $form_id );
-					$recaptcha_inline  = 'var EVFRecaptchaLoad = function(){jQuery(".g-recaptcha").each(function(index, el){var recaptchaID =  hcaptcha.render(el,{callback:function(){EVFRecaptchaCallback(el);}},true);jQuery(el).attr( "data-recaptcha-id", recaptchaID);});};';
-					$recaptcha_inline .= 'var EVFRecaptchaCallback = function(el){jQuery(el).parent().find(".evf-recaptcha-hidden").val("1").trigger("change").valid();};';
-				} elseif ( 'turnstile' === $recaptcha_type ) {
-					$recaptcha_api     = apply_filters( 'everest_forms_frontend_recaptcha_url', 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=EVFTurnstileLoad&render=explicit', $recaptcha_type, $form_id );
-					$recaptcha_inline  = 'var EVFTurnstileLoad = function(){jQuery(".g-recaptcha").each(function(index, el){var recaptchaID =  turnstile.render(el,{theme:"' . $theme . '",language:"' . $lang . '",callback:function(){EVFRecaptchaCallback(el);}},true);jQuery(el).attr( "data-recaptcha-id", recaptchaID);});};';
-					$recaptcha_inline .= 'var EVFRecaptchaCallback = function(el){jQuery(el).parent().find(".evf-recaptcha-hidden").val("1").trigger("change").valid();};';
-				}
-
-				// Enqueue reCaptcha scripts.
-				wp_enqueue_script(
-					'evf-recaptcha',
-					$recaptcha_api,
-					'v3' === $recaptcha_type ? array() : array( 'jquery' ),
-					'v3' === $recaptcha_type ? '3.0.0' : '2.0.0',
-					true
-				);
-
-				// Load reCaptcha callback once.
-				static $count = 1;
-				if ( 1 === $count ) {
-						wp_add_inline_script( 'evf-recaptcha', $recaptcha_inline );
-						$count++;
-				}
-
-				// Output the reCAPTCHA container.
-				$class = ( 'v3' === $recaptcha_type || ( 'v2' === $recaptcha_type && 'yes' === $invisible_recaptcha ) ) ? 'recaptcha-hidden' : '';
-				echo '<div class="evf-recaptcha-container ' . esc_attr( $class ) . '" style="display:' . ( ! empty( self::$parts[ $form_id ] ) ? 'none' : 'block' ) . '">';
-
-				if ( 'v2' === $recaptcha_type || 'hcaptcha' === $recaptcha_type || 'turnstile' === $recaptcha_type ) {
-					echo '<div ' . evf_html_attributes( '', array( 'g-recaptcha' ), $data ) . '></div>';
-
-					if ( 'hcaptcha' === $recaptcha_type && 'no' === $invisible_recaptcha || 'turnstile' === $recaptcha_type ) {
-						echo '<input type="text" name="g-recaptcha-hidden" class="evf-recaptcha-hidden" style="position:absolute!important;clip:rect(0,0,0,0)!important;height:1px!important;width:1px!important;border:0!important;overflow:hidden!important;padding:0!important;margin:0!important;" required>';
-					}
 				} else {
-					echo '<input type="hidden" name="everest_forms[recaptcha]" value="">';
+					$recaptcha_inline  = 'var EVFRecaptchaLoad = function(){jQuery(".g-recaptcha").each(function(index, el){var recaptchaID =  grecaptcha.render(el,{callback:function(){EVFRecaptchaCallback(el);}},true);jQuery(el).attr( "data-recaptcha-id", recaptchaID);});};';
+					$recaptcha_inline .= 'var EVFRecaptchaCallback = function(el){jQuery(el).parent().find(".evf-recaptcha-hidden").val("1").trigger("change").valid();};';
 				}
-
-				echo '</div>';
+			} elseif ( 'v3' === $recaptcha_type ) {
+				$recaptcha_api     = apply_filters( 'everest_forms_frontend_recaptcha_url', 'https://www.google.com/recaptcha/api.js?render=' . $site_key, $recaptcha_type, $form_id );
+				$recaptcha_inline  = 'var EVFRecaptchaLoad = function(){grecaptcha.execute("' . esc_html( $site_key ) . '",{action:"everest_form"}).then(function(token){var f=document.getElementsByName("everest_forms[recaptcha]");for(var i=0;i<f.length;i++){f[i].value = token;}});};grecaptcha.ready(EVFRecaptchaLoad);setInterval(EVFRecaptchaLoad, 110000);';
+				$recaptcha_inline .= 'grecaptcha.ready(function(){grecaptcha.execute("' . esc_html( $site_key ) . '",{action:"everest_form"}).then(function(token){var f=document.getElementsByName("everest_forms[recaptcha]");for(var i=0;i<f.length;i++){f[i].value = token;}});});';
+			} elseif ( 'hcaptcha' === $recaptcha_type ) {
+				$recaptcha_api     = apply_filters( 'everest_forms_frontend_recaptcha_url', 'https://hcaptcha.com/1/api.js??onload=EVFRecaptchaLoad&render=explicit', $recaptcha_type, $form_id );
+				$recaptcha_inline  = 'var EVFRecaptchaLoad = function(){jQuery(".g-recaptcha").each(function(index, el){var recaptchaID =  hcaptcha.render(el,{callback:function(){EVFRecaptchaCallback(el);}},true);jQuery(el).attr( "data-recaptcha-id", recaptchaID);});};';
+				$recaptcha_inline .= 'var EVFRecaptchaCallback = function(el){jQuery(el).parent().find(".evf-recaptcha-hidden").val("1").trigger("change").valid();};';
+			} elseif ( 'turnstile' === $recaptcha_type ) {
+				$recaptcha_api     = apply_filters( 'everest_forms_frontend_recaptcha_url', 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=EVFTurnstileLoad&render=explicit', $recaptcha_type, $form_id );
+				$recaptcha_inline  = 'var EVFTurnstileLoad = function(){jQuery(".g-recaptcha").each(function(index, el){var recaptchaID =  turnstile.render(el,{theme:"' . $theme . '",language:"' . $lang . '",callback:function(){EVFRecaptchaCallback(el);}},true);jQuery(el).attr( "data-recaptcha-id", recaptchaID);});};';
+				$recaptcha_inline .= 'var EVFRecaptchaCallback = function(el){jQuery(el).parent().find(".evf-recaptcha-hidden").val("1").trigger("change").valid();};';
 			}
+
+			// Enqueue reCaptcha scripts.
+			wp_enqueue_script(
+				'evf-recaptcha',
+				$recaptcha_api,
+				'v3' === $recaptcha_type ? array() : array( 'jquery' ),
+				'v3' === $recaptcha_type ? '3.0.0' : '2.0.0',
+				true
+			);
+
+			// Load reCaptcha callback once.
+			static $count = 1;
+			if ( 1 === $count ) {
+				wp_add_inline_script( 'evf-recaptcha', $recaptcha_inline );
+				$count++;
+			}
+
+			// Output the reCAPTCHA container.
+			$class = ( 'v3' === $recaptcha_type || ( 'v2' === $recaptcha_type && 'yes' === $invisible_recaptcha ) ) ? 'recaptcha-hidden' : '';
+			echo '<div class="evf-recaptcha-container ' . esc_attr( $class ) . '" style="display:' . ( ! empty( self::$parts[ $form_id ] ) ? 'none' : 'block' ) . '">';
+
+			if ( 'v2' === $recaptcha_type || 'hcaptcha' === $recaptcha_type || 'turnstile' === $recaptcha_type ) {
+				echo '<div ' . evf_html_attributes( '', array( 'g-recaptcha' ), $data ) . '></div>';
+
+				if ( 'hcaptcha' === $recaptcha_type && 'no' === $invisible_recaptcha || 'turnstile' === $recaptcha_type ) {
+					echo '<input type="text" name="g-recaptcha-hidden" class="evf-recaptcha-hidden" style="position:absolute!important;clip:rect(0,0,0,0)!important;height:1px!important;width:1px!important;border:0!important;overflow:hidden!important;padding:0!important;margin:0!important;" required>';
+				}
+			} else {
+				echo '<input type="hidden" name="everest_forms[recaptcha]" value="">';
+			}
+
+			echo '</div>';
 		}
 	}
+}
 
 	/**
 	 * Get field attributes.
@@ -629,72 +629,72 @@ class EVF_Shortcode_Form {
 	 *
 	 * @return array
 	 */
-	private static function get_field_attributes( $field, $form_data ) {
-		$form_id    = absint( $form_data['id'] );
-		$field_id   = esc_attr( $field['id'] );
-		$attributes = array(
-			'field_class'       => array( 'evf-field', 'evf-field-' . sanitize_html_class( $field['type'] ), 'form-row' ),
-			'field_id'          => array( sprintf( 'evf-%d-field_%s-container', $form_id, $field_id ) ),
-			'field_style'       => '',
-			'label_class'       => array( 'evf-field-label' ),
-			'label_id'          => '',
-			'description_class' => array( 'evf-field-description' ),
-			'description_id'    => array(),
-			'input_id'          => array( sprintf( 'evf-%d-field_%s', $form_id, $field_id ) ),
-			'input_class'       => array(),
-			'input_data'        => array(),
-		);
+private static function get_field_attributes( $field, $form_data ) {
+	$form_id    = absint( $form_data['id'] );
+	$field_id   = esc_attr( $field['id'] );
+	$attributes = array(
+		'field_class'       => array( 'evf-field', 'evf-field-' . sanitize_html_class( $field['type'] ), 'form-row' ),
+		'field_id'          => array( sprintf( 'evf-%d-field_%s-container', $form_id, $field_id ) ),
+		'field_style'       => '',
+		'label_class'       => array( 'evf-field-label' ),
+		'label_id'          => '',
+		'description_class' => array( 'evf-field-description' ),
+		'description_id'    => array(),
+		'input_id'          => array( sprintf( 'evf-%d-field_%s', $form_id, $field_id ) ),
+		'input_class'       => array(),
+		'input_data'        => array(),
+	);
 
-		// Check user field defined classes.
-		if ( ! empty( $field['css'] ) ) {
-			$attributes['field_class'] = array_merge( $attributes['field_class'], evf_sanitize_classes( $field['css'], true ) );
-		}
-
-		// Check for input column layouts.
-		if ( ! empty( $field['input_columns'] ) ) {
-			if ( 'inline' === $field['input_columns'] ) {
-				$attributes['field_class'][] = 'everest-forms-list-inline';
-			} elseif ( '' !== $field['input_columns'] ) {
-				$attributes['field_class'][] = 'everest-forms-list-' . $field['input_columns'] . '-columns';
-			}
-		}
-
-		// Input class.
-		if ( ! in_array( $field['type'], array( 'checkbox', 'radio', 'payment-checkbox', 'payment-multiple' ), true ) ) {
-			$attributes['input_class'][] = 'input-text';
-		}
-
-		// Check label visibility.
-		if ( ! empty( $field['label_hide'] ) ) {
-			$attributes['label_class'][] = 'evf-label-hide';
-		}
-
-		// Check size.
-		if ( ! empty( $field['size'] ) ) {
-			$attributes['input_class'][] = 'evf-field-' . sanitize_html_class( $field['size'] );
-		}
-
-		// Check if required.
-		if ( ! empty( $field['required'] ) ) {
-			$attributes['field_class'][] = 'validate-required';
-		}
-
-		// Check if extra validation required.
-		if ( in_array( $field['type'], array( 'email', 'phone' ), true ) ) {
-			$attributes['field_class'][] = 'validate-' . esc_attr( $field['type'] );
-		}
-
-		// Check if there are errors.
-		if ( isset( evf()->task->errors[ $form_id ][ $field_id ] ) ) {
-			$attributes['input_class'][] = 'evf-error';
-			$attributes['field_class'][] = 'everest-forms-invalid';
-		}
-
-		// This filter is deprecated, filter the properties (below) instead.
-		$attributes = apply_filters( 'evf_field_atts', $attributes, $field, $form_data );
-
-		return $attributes;
+	// Check user field defined classes.
+	if ( ! empty( $field['css'] ) ) {
+		$attributes['field_class'] = array_merge( $attributes['field_class'], evf_sanitize_classes( $field['css'], true ) );
 	}
+
+	// Check for input column layouts.
+	if ( ! empty( $field['input_columns'] ) ) {
+		if ( 'inline' === $field['input_columns'] ) {
+			$attributes['field_class'][] = 'everest-forms-list-inline';
+		} elseif ( '' !== $field['input_columns'] ) {
+			$attributes['field_class'][] = 'everest-forms-list-' . $field['input_columns'] . '-columns';
+		}
+	}
+
+	// Input class.
+	if ( ! in_array( $field['type'], array( 'checkbox', 'radio', 'payment-checkbox', 'payment-multiple' ), true ) ) {
+		$attributes['input_class'][] = 'input-text';
+	}
+
+	// Check label visibility.
+	if ( ! empty( $field['label_hide'] ) ) {
+		$attributes['label_class'][] = 'evf-label-hide';
+	}
+
+	// Check size.
+	if ( ! empty( $field['size'] ) ) {
+		$attributes['input_class'][] = 'evf-field-' . sanitize_html_class( $field['size'] );
+	}
+
+	// Check if required.
+	if ( ! empty( $field['required'] ) ) {
+		$attributes['field_class'][] = 'validate-required';
+	}
+
+	// Check if extra validation required.
+	if ( in_array( $field['type'], array( 'email', 'phone' ), true ) ) {
+		$attributes['field_class'][] = 'validate-' . esc_attr( $field['type'] );
+	}
+
+	// Check if there are errors.
+	if ( isset( evf()->task->errors[ $form_id ][ $field_id ] ) ) {
+		$attributes['input_class'][] = 'evf-error';
+		$attributes['field_class'][] = 'everest-forms-invalid';
+	}
+
+	// This filter is deprecated, filter the properties (below) instead.
+	$attributes = apply_filters( 'evf_field_atts', $attributes, $field, $form_data );
+
+	return $attributes;
+}
 
 	/**
 	 * Return base properties for a specific field.
@@ -705,69 +705,68 @@ class EVF_Shortcode_Form {
 	 *
 	 * @return array
 	 */
-	public static function get_field_properties( $field, $form_data, $attributes = array() ) {
-		if ( empty( $attributes ) ) {
-			$attributes = self::get_field_attributes( $field, $form_data );
+public static function get_field_properties( $field, $form_data, $attributes = array() ) {
+	if ( empty( $attributes ) ) {
+		$attributes = self::get_field_attributes( $field, $form_data );
+	}
+
+	// This filter is for backwards compatibility purposes.
+	$types = array( 'text', 'textarea', 'number', 'email', 'hidden', 'url', 'html', 'title', 'password', 'phone', 'address', 'checkbox', 'radio', 'select' );
+	if ( in_array( $field['type'], $types, true ) ) {
+		$field = apply_filters( "everest_forms_{$field['type']}_field_display", $field, $attributes, $form_data );
+	}
+
+	$form_id  = absint( $form_data['id'] );
+	$field_id = sanitize_text_field( $field['id'] );
+
+	// Field container data.
+	$container_data = array();
+
+	// Embed required-field-message to the container if the field is required.
+	if ( isset( $field['required'] ) && ( '1' === $field['required'] || true === $field['required'] ) ) {
+		$has_sub_fields          = false;
+		$sub_field_messages      = array();
+			$required_validation = get_option( 'everest_forms_required_validation' );
+		if ( in_array( $field['type'], array( 'number', 'email', 'url', 'phone' ), true ) ) {
+			$required_validation = get_option( 'everest_forms_' . $field['type'] . '_validation' );
 		}
 
-		// This filter is for backwards compatibility purposes.
-		$types = array( 'text', 'textarea', 'number', 'email', 'hidden', 'url', 'html', 'title', 'password', 'phone', 'address', 'checkbox', 'radio', 'select' );
-		if ( in_array( $field['type'], $types, true ) ) {
-			$field = apply_filters( "everest_forms_{$field['type']}_field_display", $field, $attributes, $form_data );
+		if ( 'likert' === $field['type'] ) {
+			$has_sub_fields = true;
+			$likert_rows    = isset( $field['likert_rows'] ) ? $field['likert_rows'] : array();
+			$row_keys       = array();
+			foreach ( $likert_rows as $row_key => $row_label ) {
+				$row_keys[] = $row_key;
+				$row_slug   = 'required-field-message-' . $row_key;
+
+				$error_message                  = isset( $field[ $row_slug ] ) ? evf_string_translation( $form_data['id'], $field['id'], $field[ $row_slug ], '-' . $row_slug ) : $required_validation;
+				$sub_field_messages[ $row_key ] = htmlspecialchars( wp_kses( html_entity_decode( $error_message ), array() ) );
+			}
+			$container_data['row-keys'] = wp_json_encode( $row_keys );
+		} elseif ( 'address' === $field['type'] ) {
+			$has_sub_fields     = true;
+			$sub_field_messages = array(
+				'address1' => isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ? $required_validation : evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message-address1'], '-required-field-message-address1' ),
+				'city'     => isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ? $required_validation : evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message-city'], '-required-field-message-city' ),
+				'state'    => isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ? $required_validation : evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message-state'], '-required-field-message-state' ),
+				'postal'   => isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ? $required_validation : evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message-postal'], '-required-field-message-postal' ),
+				'country'  => isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ? $required_validation : evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message-country'], '-required-field-message-country' ),
+			);
 		}
 
-		$form_id  = absint( $form_data['id'] );
-		$field_id = sanitize_text_field( $field['id'] );
-
-		// Field container data.
-		$container_data = array();
-
-		// Embed required-field-message to the container if the field is required.
-		if ( isset( $field['required'] ) && ( '1' === $field['required'] || true === $field['required'] ) ) {
-			$has_sub_fields          = false;
-			$sub_field_messages      = array();
-				$required_validation = get_option( 'everest_forms_required_validation' );
-			if ( in_array( $field['type'], array( 'number', 'email', 'url', 'phone' ), true ) ) {
-				$required_validation = get_option( 'everest_forms_' . $field['type'] . '_validation' );
+		if ( true === $has_sub_fields ) {
+			foreach ( $sub_field_messages as $sub_field_type => $error_message ) {
+				$container_data[ 'required-field-message-' . $sub_field_type ] = esc_attr( wp_strip_all_tags( html_entity_decode( $error_message ) ) );
 			}
+		} else {
+			if ( isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ) {
 
-			if ( 'likert' === $field['type'] ) {
-				$has_sub_fields = true;
-				$likert_rows    = isset( $field['likert_rows'] ) ? $field['likert_rows'] : array();
-				$row_keys       = array();
-				foreach ( $likert_rows as $row_key => $row_label ) {
-					$row_keys[] = $row_key;
-					$row_slug   = 'required-field-message-' . $row_key;
-
-					$error_message                  = isset( $field[ $row_slug ] ) ? evf_string_translation( $form_data['id'], $field['id'], $field[ $row_slug ], '-' . $row_slug ) : $required_validation;
-					$sub_field_messages[ $row_key ] = esc_attr( wp_strip_all_tags( html_entity_decode( $error_message ) ) );
-				}
-				$container_data['row-keys'] = wp_json_encode( $row_keys );
-			} elseif ( 'address' === $field['type'] ) {
-				$has_sub_fields     = true;
-				$sub_field_messages = array(
-					'address1' => isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ? $required_validation : evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message-address1'], '-required-field-message-address1' ),
-					'city'     => isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ? $required_validation : evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message-city'], '-required-field-message-city' ),
-					'state'    => isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ? $required_validation : evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message-state'], '-required-field-message-state' ),
-					'postal'   => isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ? $required_validation : evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message-postal'], '-required-field-message-postal' ),
-					'country'  => isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ? $required_validation : evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message-country'], '-required-field-message-country' ),
-				);
-			}
-
-			if ( true === $has_sub_fields ) {
-				foreach ( $sub_field_messages as $sub_field_type => $error_message ) {
-					$container_data[ 'required-field-message-' . $sub_field_type ] = esc_attr( wp_strip_all_tags( html_entity_decode( $error_message ) ) );
-				}
+				$container_data['required-field-message'] = $required_validation;
+			} elseif ( isset( $field['required-field-message'] ) && '' !== $field['required-field-message'] ) {
+				$required_data                            = evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message'], '-required-field-message' );
+				$container_data['required-field-message'] = htmlspecialchars( wp_kses( html_entity_decode( $required_data ), array() ) );
 			} else {
-				if ( isset( $field['required_field_message_setting'] ) && 'global' === $field['required_field_message_setting'] ) {
-
-					$container_data['required-field-message'] = $required_validation;
-				} elseif ( isset( $field['required-field-message'] ) && '' !== $field['required-field-message'] ) {
-					$required_data                            = evf_string_translation( $form_data['id'], $field['id'], $field['required-field-message'], '-required-field-message' );
-					$container_data['required-field-message'] = esc_attr( wp_strip_all_tags( html_entity_decode( $required_data ) ) );
-				} else {
-					$container_data['required-field-message'] = esc_attr( wp_strip_all_tags( html_entity_decode( $required_validation ) ) );
-				}
+				$container_data['required-field-message'] = htmlspecialchars( wp_kses( html_entity_decode( $required_validation ), array() ) );
 			}
 		}
 		$errors     = isset( evf()->task->errors[ $form_id ][ $field_id ] ) ? evf()->task->errors[ $form_id ][ $field_id ] : '';
