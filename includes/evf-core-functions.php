@@ -5671,5 +5671,7 @@ const interval = setInterval( () => {
 	}
 }, 1 );
 JS;
-	wp_print_inline_script_tag( $js );
+	if ( function_exists( 'wp_print_inline_script_tag' ) ) {
+		wp_print_inline_script_tag( $js );
+	}
 } );
