@@ -885,6 +885,22 @@
       ],
       "setting_url": "",
       "demo_video_url": ""
+    },
+    {
+      "title": "Slack",
+      "slug": "everest-forms-slack",
+      "name": "Everest Forms Slack",
+      "image": "extensions-json/sections/images/Slack.png",
+      "excerpt": " Instantly connect Everest Forms with Slack to receive form submission data directly in your channels, keeping your team in the loop in real time.",
+      "link": "https://docs.everestforms.net/docs/slack/?utm_source=dashboard-all-feature&utm_medium=card-documentation-link",
+      "released_date": "xx/xx/xx",
+      "plan": [
+        "personal",
+        "agency",
+        "themegrill agency"
+      ],
+      "setting_url": "",
+      "demo_video_url": ""
     }
   ]
 }
