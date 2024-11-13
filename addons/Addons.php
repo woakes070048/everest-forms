@@ -10,6 +10,7 @@ namespace EverestForms\Addons;
 
 use EverestForms\Addons\BricksBuilder\BricksBuilder;
 use EverestForms\Addons\OxygenBuilder\OxygenBuilder;
+use EverestForms\Addons\DiviBuilder\DiviBuilder;
 use EverestForms\Traits\Singleton;
 
 /**
@@ -47,6 +48,7 @@ class Addons {
 			array(
 				'oxygen-builder' => OxygenBuilder::class,
 				'bricks-builder' => BricksBuilder::class,
+				'divi-builder'   => DiviBuilder::class,
 			)
 		);
 	}

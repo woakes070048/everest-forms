@@ -69,5 +69,4 @@ class OxygenBuilder {
 	public function register_add_plus_subsections() {
 		do_action( 'oxygen_add_plus_everest-forms_form' );
 	}
-
 }
