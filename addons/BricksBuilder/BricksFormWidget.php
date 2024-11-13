@@ -2,7 +2,7 @@
 /**
  * Builder form widget.
  *
- * @since xx.xx.xx
+ * @since 3.0.5
  * @package  EverestForms\Addons\BricksBuilder\BricksFormWidget
  */
 namespace EverestForms\Addons\BricksBuilder;
@@ -20,7 +20,7 @@ class BricksFormWidget extends \Bricks\Element {
 	/**
 	 * Get label.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function get_label() {
 		return esc_html__( 'Everest Forms', 'everest-forms' );
@@ -29,7 +29,7 @@ class BricksFormWidget extends \Bricks\Element {
 	/**
 	 * Set control groups.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function set_control_groups() {
 		$this->control_groups['general'] = array(
@@ -41,7 +41,7 @@ class BricksFormWidget extends \Bricks\Element {
 	/**
 	 * Set controls function.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function set_controls() {
 		$this->controls['everest_forms_control'] = array(
@@ -62,7 +62,7 @@ class BricksFormWidget extends \Bricks\Element {
 	 * Includes border, color, and background color etc. options for the
 	 * element reflected based on components controls.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function render() {
 		$form_id = ! empty( $this->settings['everest_forms_control'] ) ? $this->settings['everest_forms_control'] : null;

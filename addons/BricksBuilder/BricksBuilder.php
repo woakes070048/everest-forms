@@ -2,7 +2,7 @@
 /**
  * Bricks builder integration.
  *
- * @since xx.xx.xx
+ * @since 3.0.5
  * @package EverestForms\Addons\BricksBuilder\BricksBuilder
  */
 namespace EverestForms\Addons\BricksBuilder;
@@ -12,7 +12,7 @@ use EverestForms\Traits\Singleton;
 /**
  * BricksBuilder.
  *
- * @since xx.xx.xx
+ * @since 3.0.5
  */
 class BricksBuilder {
 
@@ -21,7 +21,7 @@ class BricksBuilder {
 	/**
 	 * Constructor.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function __construct() {
 		$this->setup();
@@ -30,7 +30,7 @@ class BricksBuilder {
 	/**
 	 * Init.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function setup() {
 
@@ -55,7 +55,7 @@ class BricksBuilder {
 	/**
 	 * Register bricks elements.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function register_bricks_elements() {
 		$element_files = array(
