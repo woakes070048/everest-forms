@@ -2,7 +2,7 @@
 /**
  * Divi Integration helper functions.
  *
- * @since xx.xx.xx
+ * @since 3.0.5
  * @package EverestForms\Addons\DiviBuilder
  */
 
@@ -13,14 +13,14 @@ namespace EverestForms\Addons\DiviBuilder;
  *
  * @package EverestForms\Addons\DiviBuilder
  *
- * @since xx.xx.xx
+ * @since 3.0.5
  */
 class Helper {
 
 	/**
 	 * Return if Divi is active.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 *
 	 * @return boolean
 	 */
@@ -36,12 +36,12 @@ class Helper {
 	/**
 	 * Notice if the divi is not installed.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public static function print_admin_notice() {
 		add_action(
 			'admin_notices',
-			function() {
+			function () {
 				printf(
 					'<div class="notice notice-warning is-dismissible"><p><strong>%s </strong>%s</p><button type="button" class="notice-dismiss"><span class="screen-reader-text">%s</span></button></div>',
 					esc_html( 'Everest Forms:' ),

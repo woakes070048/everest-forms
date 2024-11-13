@@ -3,7 +3,7 @@
  * Everest Forms Divi Module File.
  *
  * @package EverestForms\Divi
- * @since xx.xx.xx
+ * @since 3.0.5
  */
 namespace EverestForms\Addons\DiviBuilder;
 
@@ -12,13 +12,13 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Everest Forms Divi module class.
  *
- * @since xx.xx.xx
+ * @since 3.0.5
  */
 class EverestFormsModule extends \ET_Builder_Module {
 	/**
 	 * Module slug.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 * @var string
 	 */
 	public $slug = 'everest_forms_divi_builder';
@@ -26,7 +26,7 @@ class EverestFormsModule extends \ET_Builder_Module {
 	/**
 	 * Whether module support visual builder. e.g `on` or `off`.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 * @var string
 	 */
 	public $vb_support = 'on';
@@ -42,7 +42,7 @@ class EverestFormsModule extends \ET_Builder_Module {
 	/**
 	 * Divi builder init function.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function init() {
 		$this->name = esc_html__( 'Everest Forms', 'everest-forms' );
@@ -61,7 +61,7 @@ class EverestFormsModule extends \ET_Builder_Module {
 	/**
 	 * Displays the Module setting fields.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 * @return array $fields Array of settings fields.
 	 */
 	public function get_fields() {
@@ -100,7 +100,7 @@ class EverestFormsModule extends \ET_Builder_Module {
 	/**
 	 * Advanced Fields Settings.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function get_advanced_fields_config() {
 		return array(
@@ -117,7 +117,7 @@ class EverestFormsModule extends \ET_Builder_Module {
 	/**
 	 * Renders the Everest Form in Visual Builder and Frontend.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 * @param array $props Module properties.
 	 * @return string HTML output.
 	 */
@@ -145,7 +145,7 @@ class EverestFormsModule extends \ET_Builder_Module {
 	/**
 	 * Render the module on frontend.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 * @param array  $unprocessed_props Array of unprocessed Properties.
 	 * @param string $content Contents being processed from the prop.
 	 * @param string $render_slug The slug of rendering module for rendering output.
@@ -158,7 +158,7 @@ class EverestFormsModule extends \ET_Builder_Module {
 	/**
 	 * Enqueue Divi Builder JavaScript.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function load_divi_builder_scripts() {
 		$enqueue_script = array( 'wp-element', 'react', 'react-dom' );

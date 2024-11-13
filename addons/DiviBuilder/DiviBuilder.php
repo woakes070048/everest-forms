@@ -2,7 +2,7 @@
 /**
  * Divi builder integration.
  *
- * @since xx.xx.xx
+ * @since 3.0.5
  * @package EverestForms\Addons\DiviBuilder\DiviBuilder
  */
 namespace EverestForms\Addons\DiviBuilder;
@@ -14,7 +14,7 @@ use EverestForms\Addons\DiviBuilder\EverestFormsModule;
 /**
  * DiviBuilder.
  *
- * @since xx.xx.xx
+ * @since 3.0.5
  */
 class DiviBuilder {
 
@@ -23,7 +23,7 @@ class DiviBuilder {
 	/**
 	 * Constructor.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function __construct() {
 		$this->setup();
@@ -31,7 +31,7 @@ class DiviBuilder {
 	/**
 	 * Init.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function setup() {
 
@@ -48,7 +48,7 @@ class DiviBuilder {
 	/**
 	 * Function to check whether the divi module is loaded or not.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.5
 	 */
 	public function everest_form_register_divi_builder() {
 		if ( ! class_exists( 'ET_Builder_Module' ) ) {

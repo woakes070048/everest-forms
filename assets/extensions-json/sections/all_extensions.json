@@ -933,6 +933,22 @@
       ],
       "setting_url": "",
       "demo_video_url": ""
+    },
+    {
+    "title": "Beaver Builder",
+      "slug": "everest-forms-beaver-builder",
+      "name": "Everest Forms Beaver Builder",
+      "image": "extensions-json/sections/images/beaver-builder.png",
+      "excerpt": "Using Beaver Builder's page editor, add your forms from Everest Forms to your website and customize them as needed.",
+      "link": "https://docs.everestforms.net/docs/beaver-builder/?utm_source=dashboard-all-feature&utm_medium=card-documentation-link",
+      "released_date": "xx/xx/xxxx",
+      "plan": [
+        "personal",
+        "agency",
+        "themegrill agency"
+      ],
+      "setting_url": "",
+      "demo_video_url": ""
     }
   ]
 }
