@@ -318,6 +318,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 * Fix            - Tooltips does not work on mobile.
 * Fix            - Background color for PDF submission.
 * Dev            - Get gist integration.
+* Dev   		 - User Registration Social Login.
 * Dev            - Slack Integration Module.
 
 = 3.0.4.2        - 03-11-2024

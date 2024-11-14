@@ -11,6 +11,7 @@
 * Fix            - Background color for PDF submission.
 * Dev            - Get gist integration.
 * Dev            - Slack Integration Module.
+* Dev   		 - User Registration Social Login.
 
 
 = 3.0.4.2        - 03-11-2024
