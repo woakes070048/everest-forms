@@ -12,6 +12,7 @@
 * Dev            - Get gist integration.
 * Dev            - Slack Integration Module.
 * Dev   		 - User Registration Social Login.
+* Dev            - Moved Campaign Monitor to module.
 
 
 = 3.0.4.2        - 03-11-2024
