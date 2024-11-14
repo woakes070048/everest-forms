@@ -853,6 +853,22 @@
       "demo_video_url": ""
     },
     {
+      "title": "Bricks Builder",
+      "slug": "everest-forms-bricks-builder",
+      "name": "Everest Forms Bricks Builder",
+      "image": "extensions-json/sections/images/bricks-builder.png",
+      "excerpt": "Using Bricks Builder’s page editor, add your forms from Everest Forms to your website and customize them as needed.",
+      "link": "https://docs.everestforms.net/docs/bricks-builder/?utm_source=dashboard-all-feature&utm_medium=card-documentation-link",
+      "released_date": "xx/xx/xxxx",
+      "plan": [
+        "personal",
+        "agency",
+        "themegrill agency"
+      ],
+      "setting_url": "",
+      "demo_video_url": ""
+    },
+    {
       "title": "Slack",
       "slug": "everest-forms-slack",
       "name": "Everest Forms Slack",
@@ -1016,6 +1032,22 @@
       "setting_url": "",
       "demo_video_url": "GSYQIiyntW0",
       "popular_rank": 24
+      },
+      {
+        "title": "WP Bakery Builder",
+        "slug": "everest-forms-wpbakery-builder",
+        "name": "Everest Forms WP Bakery Builder",
+        "image": "extensions-json/sections/images/wpbakery.png",
+        "excerpt": "Using WPBakery’s page editor, add your forms from Everest Forms to your website and customize them as needed. ",
+        "link": "https://docs.everestforms.net/docs/wp-bakery-builder/?utm_source=dashboard-all-feature&utm_medium=card-documentation-link",
+        "released_date": "xx/xx/xxxx",
+        "plan": [
+          "personal",
+          "agency",
+          "themegrill agency"
+        ],
+        "setting_url": "",
+        "demo_video_url": ""
       }
   ]
 }
