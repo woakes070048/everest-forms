@@ -470,7 +470,7 @@ class EVF_Smart_Tags {
 							/**
 							 * get_queried_object_id() is used to get current page id.
 							 *
-							 * @since xx.xx.xx
+							 * @since 3.0.4
 							 */
 							$value = get_post_meta( get_queried_object_id(), $key, true );
 
