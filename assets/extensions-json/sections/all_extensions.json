@@ -1014,6 +1014,22 @@
         ],
         "setting_url": "",
         "demo_video_url": ""
+      },
+      {
+        "title": "amoCRM",
+        "slug": "everest-forms-amocrm",
+        "name": "Everest Forms amoCRM",
+        "image": "extensions-json/sections/images/amoCRM.png",
+        "excerpt": "Smoothly sync form submissions with amoCRM for effortless lead management.",
+        "link": "https://docs.everestforms.net/docs/amocrm/?utm_source=dashboard-all-feature&utm_medium=card-documentation-link",
+        "released_date": "xx/xx/xx",
+        "plan": [
+          "personal",
+          "agency",
+          "themegrill agency"
+        ],
+        "setting_url": "admin.php?page=evf-settings&tab=integration&section=amocrm",
+        "demo_video_url": ""
       }
   ]
 }
