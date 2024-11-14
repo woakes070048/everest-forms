@@ -323,23 +323,6 @@
       "popular_rank": 23
     },
     {
-      "title": "Coupons",
-      "slug": "everest-forms-coupons",
-      "name": "Everest Forms Coupons",
-      "image": "extensions-json/sections/images/coupons.png",
-      "excerpt": "With the Everest Forms Coupon add-on, you can quickly create or add a coupon code on a form to encourage users to purchase the products.",
-      "link": "https://docs.everestforms.net/docs/coupons/?utm_source=dashboard-all-feature&utm_medium=card-documentation-link",
-      "released_date": "23/09/2020",
-      "plan": [
-        "personal",
-        "agency",
-        "themegrill agency"
-      ],
-      "setting_url": "",
-      "demo_video_url": "GSYQIiyntW0",
-      "popular_rank": 24
-    },
-    {
       "title": "Advanced Form Analytics",
       "slug": "everest-forms-form-analytics",
       "name": "Everest Forms Advanced Form Analytics",
@@ -836,22 +819,6 @@
       "demo_video_url": ""
     },
     {
-      "title": "Bricks Builder",
-      "slug": "everest-forms-bricks-builder",
-      "name": "Everest Forms Bricks Builder",
-      "image": "extensions-json/sections/images/bricks-builder.png",
-      "excerpt": "Using Bricks Builder’s page editor, add your forms from Everest Forms to your website and customize them as needed.",
-      "link": "https://docs.everestforms.net/docs/bricks-builder/?utm_source=dashboard-all-feature&utm_medium=card-documentation-link",
-      "released_date": "xx/xx/xxxx",
-      "plan": [
-        "personal",
-        "agency",
-        "themegrill agency"
-      ],
-      "setting_url": "",
-      "demo_video_url": ""
-    },
-    {
       "title": "Slack",
       "slug": "everest-forms-slack",
       "name": "Everest Forms Slack",
@@ -999,23 +966,6 @@
       "setting_url": "admin.php?page=evf-settings&tab=integration&section=cleverreach",
       "demo_video_url": ""
     },
-    {
-      "title": "Coupons",
-      "slug": "everest-forms-coupons",
-      "name": "Everest Forms Coupons",
-      "image": "extensions-json/sections/images/coupons.png",
-      "excerpt": "With the Everest Forms Coupon add-on, you can quickly create or add a coupon code on a form to encourage users to purchase the products.",
-      "link": "https://docs.everestforms.net/docs/coupons/?utm_source=dashboard-all-feature&utm_medium=card-documentation-link",
-      "released_date": "23/09/2020",
-      "plan": [
-        "personal",
-        "agency",
-        "themegrill agency"
-      ],
-      "setting_url": "",
-      "demo_video_url": "GSYQIiyntW0",
-      "popular_rank": 24
-      },
       {
         "title": "WP Bakery Builder",
         "slug": "everest-forms-wpbakery-builder",
