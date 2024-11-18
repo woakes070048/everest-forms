@@ -25,4 +25,14 @@ class EverestFormModule extends \FLBuilderModule {
 		);
 	}
 
+	/**
+	 * Icon for the Everest Forms module.
+	 *
+	 * @since 3.0.5
+	 *
+	 * @param  string $icon
+	 */
+	public function get_icon( $icon = '' ) {
+		return file_get_contents( evf()->plugin_path() . '/assets/images/icons/everest_forms_black_logo.svg' );
+	}
 }
