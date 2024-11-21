@@ -218,6 +218,9 @@ class EVF_Frontend_Scripts {
 		}
 
 		foreach ( $register_scripts as $name => $props ) {
+			if ( $name === 'flatpickr' ) {
+				continue;
+			}
 			self::register_script( $name, $props['src'], $props['deps'], $props['version'] );
 		}
 	}
