@@ -167,6 +167,11 @@ class EVF_Frontend_Scripts {
 				'deps'    => array( 'jquery' ),
 				'version' => '4.0.0-beta.58',
 			),
+			'flatpickr'                              => array(
+				'src'     => self::get_asset_url( 'assets/js/flatpickr/flatpickr' . $suffix . '.js' ),
+				'deps'    => array( 'jquery' ),
+				'version' => '4.6.3',
+			),
 			'mailcheck'                              => array(
 				'src'     => self::get_asset_url( 'assets/js/mailcheck/mailcheck' . $suffix . '.js' ),
 				'deps'    => array( 'jquery' ),
@@ -209,18 +214,8 @@ class EVF_Frontend_Scripts {
 			),
 		);
 
-		if ( ! isset( $_GET['ct_builder'] ) && ! isset( $register_scripts['flatpickr'] ) ) {
-			$register_scripts['flatpickr'] = array(
-				'src'     => self::get_asset_url( 'assets/js/flatpickr/flatpickr' . $suffix . '.js' ),
-				'deps'    => array( 'jquery' ),
-				'version' => '4.6.3',
-			);
-		}
-
 		foreach ( $register_scripts as $name => $props ) {
-			if ( $name === 'flatpickr' ) {
-				continue;
-			}
+
 			self::register_script( $name, $props['src'], $props['deps'], $props['version'] );
 		}
 	}
