@@ -18,8 +18,8 @@
 
 	$('.evf-colorpicker').wpColorPicker({
         change: function (event, ui) {
-            // Update the preview background color
-            $(this).closest('.everest-forms-global-settings--field').find('.colorpickpreview').css('background-color', ui.color.toString());
+            // // Update the preview background color
+            // $(this).closest('.everest-forms-global-settings--field').find('.colorpickpreview').css('background-color', ui.color.toString());
         },
         hide: true,  // Keep the picker hidden initially
         border: true
