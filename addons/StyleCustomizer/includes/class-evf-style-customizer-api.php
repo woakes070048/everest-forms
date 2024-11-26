@@ -234,7 +234,7 @@ class EVF_Style_Customizer_API {
 
 		$styles = get_option( 'evf_style_templates' );
 		if ( empty( $styles ) ) {
-			$styles_raw = evf_file_get_contents( '/includes/addons/StyleCustomizer/assets/wp-json/default-templates.json' );
+			$styles_raw = evf_file_get_contents( 'addons/StyleCustomizer/assets/wp-json/default-templates.json' );
 
 			if ( $styles_raw ) {
 				update_option( 'evf_style_templates', $styles_raw );
