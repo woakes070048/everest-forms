@@ -571,47 +571,6 @@
 							}
 						},
 						onOpenBefore: function() {
-							this.$jconfirmBox.css({
-								'background': '#ffffff',
-								'border-radius': '8px',
-								'box-shadow': '0px 4px 16px rgba(0, 0, 0, 0.1)',
-								'padding': '20px',
-								'border': '1px solid #d9d9d9',
-							});
-
-							this.$content.css({
-								'color': '#383838',
-								'font-size': '14px',
-								'line-height': '20px',
-								'text-align': 'center',
-								'padding-bottom': '10px'
-							});
-
-							this.$title.css({
-								'text-align': 'center',
-								'margin-bottom': '10px',
-								'color': '#222222',
-								'font-size': '16px',
-								'font-weight': '500'
-							});
-
-							this.$btnc.find('.btn-light').css({
-								'background': '#f5f5f5',
-								'color': '#595959',
-								'border': '1px solid #d9d9d9',
-								'padding': '8px 20px',
-								'border-radius': '4px',
-								'font-weight': '500'
-							});
-
-							this.$btnc.find('.btn-primary').css({
-								'background': '#2f54eb',
-								'color': '#fff',
-								'border': '1px solid #2f54eb',
-								'padding': '8px 20px',
-								'border-radius': '4px',
-								'font-weight': '500'
-							});
 						}
 					});
 				}

@@ -1220,3 +1220,88 @@
   top: 16px;
   left: 16px;
 }
+
+.wp-customizer .jconfirm-box {
+  width: 360px !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+.wp-customizer .jconfirm-box .jconfirm-title-c {
+  padding: 20px 20px 0 !important;
+  margin-bottom: 20px !important;
+}
+.wp-customizer .jconfirm-box .jconfirm-title-c .jconfirm-icon-c {
+  display: none !important;
+}
+.wp-customizer .jconfirm-box .jconfirm-title-c .jconfirm-title {
+  display: block !important;
+  text-align: right !important;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d3d3d3;
+  color: #222222 !important;
+  font-size: 16px;
+  line-height: 26px !important;
+  margin-bottom: 0 !important;
+}
+.wp-customizer .jconfirm-box .jconfirm-content-pane {
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 4px !important;
+}
+.wp-customizer .jconfirm-box .jconfirm-content-pane .jconfirm-content > div {
+  text-align: right;
+  color: #383838;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.wp-customizer .jconfirm-box .jconfirm-content-pane .jconfirm-content > div > div {
+  background: #fff5f5;
+  padding: 8px 16px !important;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+.wp-customizer .jconfirm-box .jconfirm-buttons {
+  background: #f4f4f4;
+  padding: 18px 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px !important;
+}
+.wp-customizer .jconfirm-box .jconfirm-buttons .btn {
+  margin: 0 !important;
+  width: 50%;
+  padding: 8px 20px !important;
+  text-transform: capitalize !important;
+  font-size: 15px !important;
+  font-weight: 500;
+  line-height: 22px !important;
+  letter-spacing: 0.3px;
+  font-weight: 400 !important;
+  transition: all 0.3s ease-in-out;
+}
+.wp-customizer .jconfirm-box .jconfirm-buttons .btn-primary {
+  background: #3858E9 !important;
+  color: #FFFFFF;
+}
+.wp-customizer .jconfirm-box .jconfirm-buttons .btn-primary:hover {
+  background: #2f49bc !important;
+}
+.wp-customizer .jconfirm-box .jconfirm-buttons .btn-green {
+  background: #3858E9 !important;
+}
+.wp-customizer .jconfirm-box .jconfirm-buttons .btn-green:hover {
+  background: #2f49bc !important;
+}
+.wp-customizer .jconfirm-box .jconfirm-buttons .btn-light {
+  color: #383838 !important;
+  border-radius: 3px;
+  background: #fff !important;
+}
+.wp-customizer .jconfirm-box .jconfirm-buttons .btn-light:hover {
+  border-color: #4e4e4e !important;
+  color: #4e4e4e !important;
+}
