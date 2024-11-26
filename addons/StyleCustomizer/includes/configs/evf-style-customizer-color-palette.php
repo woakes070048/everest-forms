@@ -185,15 +185,18 @@ function evf_style_customizer_color_palette_controls( $controls, $customize ) {
 			'is_custom' => false,
 		),
 	);
-	$custom_palette = get_option( 'everest_forms_custom_color_palettes', array() );
+	if ( defined( 'EFP_PLUGIN_FILE' ) ) {
+		$custom_palette = get_option( 'everest_forms_custom_color_palettes', array() );
 
-	$custom_palette = array_filter(
-		$custom_palette,
-		function( $palette ) {
-			return ! empty( $palette['colors'] );
-		}
-	);
+		$custom_palette = array_filter(
+			$custom_palette,
+			function( $palette ) {
+				return ! empty( $palette['colors'] );
+			}
+		);
+	}
 
+	$custom_palette   = isset( $custom_palette ) ? $custom_palette : array();
 	$color_palettes   = array_merge( $custom_palette, $color_palettes, $pro_palette );
 	$has_custom_field = false;
 

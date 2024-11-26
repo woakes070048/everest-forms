@@ -28,7 +28,7 @@
         var styleArray = currentStyle.split(';');
 
         var updatedStyleArray = styleArray.map(function(style) {
-            if (style.trim() !== '') { // Check if the style is not empty
+            if (style.trim() !== '') {
                 var [property, value] = style.split(':');
                 return `${property.trim()}: ${value.trim()} !important`;
             }
@@ -635,7 +635,6 @@
 
 			$(input).val(JSON.stringify(val)).trigger('change');
 
-			// Remove specified keys
 			$.each(val, (key, value) => {
 				// Check if the key is a string representation of a number
 				if (['0', '1', '2', '3', '4', '5'].includes(key) || value === true || value === false) {
@@ -643,8 +642,6 @@
 				}
 			});
 
-			// Log the updated val object
-			console.log(val);
 
 			// Set the updated val object
 			control.setting.set(val);
