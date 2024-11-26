@@ -45,6 +45,8 @@ class BricksBuilder {
 			return;
 		}
 
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
+
 		add_action(
 			'init',
 			array( $this, 'register_bricks_elements' ),
@@ -65,6 +67,16 @@ class BricksBuilder {
 		foreach ( $element_files as $file ) {
 			\Bricks\Elements::register_element( $file );
 		}
+	}
 
+	/**
+	 * Enqueue styles.
+	 *
+	 * @since 1.7.9
+	 */
+	public function enqueue_styles() {
+		wp_register_style( 'everest-forms-admin-bricks', evf()->plugin_url() . '/assets/css/menu.css', array(), EVF_VERSION );
+		wp_style_add_data( 'everest-forms-admin-bricks', 'rtl', 'replace' );
+		wp_enqueue_style( 'everest-forms-admin-bricks' );
 	}
 }
