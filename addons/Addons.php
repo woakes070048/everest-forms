@@ -10,6 +10,7 @@ namespace EverestForms\Addons;
 
 use EverestForms\Addons\BricksBuilder\BricksBuilder;
 use EverestForms\Addons\OxygenBuilder\OxygenBuilder;
+use EverestForms\Addons\StyleCustomizer\StyleCustomizer;
 use EverestForms\Addons\DiviBuilder\DiviBuilder;
 use EverestForms\Addons\BeaverBuilder\BeaverBuilder;
 use EverestForms\Addons\WPBakeryBuilder\WPBakeryBuilder;
@@ -53,6 +54,7 @@ class Addons {
 				'divi-builder'     => DiviBuilder::class,
 				'beaver-builder'   => BeaverBuilder::class,
 				'wpbakery-builder' => WPBakeryBuilder::class,
+				'style-customizer' => StyleCustomizer::class,
 			)
 		);
 	}
