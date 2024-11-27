@@ -219,6 +219,10 @@ function evf_style_customizer_color_palette_controls( $controls, $customize ) {
 		}
 	}
 
+	if ( isset( $_COOKIE['color_palette'] ) ) {
+		$selected_color_key = $_COOKIE['color_palette'];
+	}
+	
 	foreach ( $color_palettes as $index => $palette ) {
 		$colors_with_values = array();
 		foreach ( $palette['colors'] as $color_name => $color_value ) {

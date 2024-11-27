@@ -504,27 +504,23 @@
 		ready: function () {
 			var control = this;
 
-			// Handle checkbox change event
 			control.container.on('change', 'input[type="checkbox"]', function () {
 				var key = $(this).data('key');
 				var value = $(this).val();
+				var name = $(this).attr('name').match(/\[(\w+)\]$/)?.[1];
+				document.cookie = `color_palette=${name}; path=/`;
+				$(this).closest('li').find('label').addClass('evf-active-color-palette');
 				control.saveValue(key, value);
 			});
 
-			// Handle color palette click
 			control.container.on('click', '.color-palette', function () {
 				var $currentGroup = $(this).closest('.customize-control-evf-color_palette');
 
-				$currentGroup.find('input[type="checkbox"]').each(function () {
-					$(this).prop('checked', false);
-					$('.customize-control-evf-color_palette').not($currentGroup).not(this).prop('checked', false);
-
-				});
+				$('.customize-control-evf-color_palette').not($currentGroup).find('label').removeClass('evf-active-color-palette');
 				$('.customize-control-evf-color_palette').not($currentGroup).find('input[type="checkbox"]').prop('checked', false);
 				$(this).find('input[type="checkbox"]').prop('checked', true).change();
 			});
 
-			// Handle edit icon click for the color palette
 			control.container.on('click', '.color-palette-edit-icon', function () {
 				var labelElement = $(this).closest('label');
 				var dataCustom = labelElement.attr('data-custom');

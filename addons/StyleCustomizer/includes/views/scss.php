@@ -98,6 +98,10 @@ if ( ! empty( $backward_compatibility_color_key ) ) {
 	}
 }
 
+if ( isset( $_COOKIE['color_palette'] ) ) {
+	$palette_key = $_COOKIE['color_palette'];
+}
+
 
 // Form data.
 $form_data = EVF()->form->get( $form_id, array( 'content_only' => true ) );
