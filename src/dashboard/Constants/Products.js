@@ -118,5 +118,6 @@ export const FreeModules = [
 	'everest-forms-beaver-builder',
 	'everest-forms-bricks-builder',
 	'everest-forms-divi-builder',
-	'everest-forms-wpbakery-builder'
+	'everest-forms-wpbakery-builder',
+	'everest-forms-style-customizer',
 ]
