@@ -26,7 +26,7 @@
 						container.css( 'background-color', color );
                         break;
                     case 'field_background':
-                        field_container.css( 'color', color );
+						container.find( 'input, textarea, select, canvas.evf-signature-canvas, .StripeElement' ).css( 'background-color', color );
                         break;
 					case 'field_sublabel':
 						field_sub_label.css( 'color', color );
@@ -929,11 +929,7 @@
 	} );
 
 	// Field Styles: background_color
-	wp.customize( settings + '[typography][field_styles_background_color]', function( value ) {
-		value.bind( function( newval ) {
-			container.find( 'input, textarea, select, canvas.evf-signature-canvas, .StripeElement' ).css( 'background-color', newval );
-		} );
-	} );
+
 
 	// Field Styles: margin
 	wp.customize( settings + '[typography][field_styles_margin]', function( value ) {
