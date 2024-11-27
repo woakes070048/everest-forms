@@ -8,25 +8,30 @@
 
 defined( 'ABSPATH' ) || exit;
 
-if ( isset( $_REQUEST['action'] ) && $_REQUEST['action'] === 'everest_forms_save_form' ) {
-	return array();
-}
+
 
 // Get values.
 $styles = get_option( 'everest_forms_styles' );
 
-if ( isset( $_REQUEST['customized'] ) ) {
-	$current_color_palette = json_decode( wp_unslash( $_REQUEST['customized'] ), true );
+if ( isset( $_REQUEST['action'] ) && $_REQUEST['action'] === 'everest_forms_save_form' ) {
+	$colorPaletteKeys = array_keys( $styles[ $form_id ]['color_palette'] );
+	$colorPaletteKey  = $colorPaletteKeys[0];
+	$palette_key      = $colorPaletteKey;
 }
 
-$palette_key = null;
-foreach ( $current_color_palette as $key => $value ) {
-	if ( preg_match( '/everest_forms_styles\[(\d+)\]\[color_palette\]\[(color_\d+)\]/', $key, $matches ) ) {
-		$form_id     = $matches[1];
-		$palette_key = $matches[2];
-		break;
+if ( isset( $_REQUEST['customized'] ) ) {
+	$current_color_palette = json_decode( wp_unslash( $_REQUEST['customized'] ), true );
+	$palette_key           = null;
+	foreach ( $current_color_palette as $key => $value ) {
+		if ( preg_match( '/everest_forms_styles\[(\d+)\]\[color_palette\]\[(color_\d+)\]/', $key, $matches ) ) {
+			$form_id     = $matches[1];
+			$palette_key = $matches[2];
+			break;
+		}
 	}
 }
+
+
 
 if ( $form_id && $palette_key && isset( $current_color_palette[ "everest_forms_styles[$form_id][color_palette][$palette_key]" ] ) ) {
 	$new_palette                         = $current_color_palette[ "everest_forms_styles[$form_id][color_palette][$palette_key]" ];
