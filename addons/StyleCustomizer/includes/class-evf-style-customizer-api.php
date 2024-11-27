@@ -233,15 +233,22 @@ class EVF_Style_Customizer_API {
 	public static function get_templates() {
 
 		$styles = get_option( 'evf_style_templates' );
-		if ( empty( $styles ) ) {
-			$styles_raw = evf_file_get_contents( 'addons/StyleCustomizer/assets/wp-json/default-templates.json' );
 
-			if ( $styles_raw ) {
-				update_option( 'evf_style_templates', $styles_raw );
-				$styles = $styles_raw;
+			$default_styles_raw = evf_file_get_contents( 'addons/StyleCustomizer/assets/wp-json/default-templates.json' );
+
+		if ( $default_styles_raw ) {
+			$stored_styles  = json_decode( $styles, true );
+			$default_styles = json_decode( $default_styles_raw, true );
+
+			if ( json_last_error() !== JSON_ERROR_NONE ) {
+				// Handle JSON decoding error if necessary
+				error_log( 'JSON decoding error: ' . json_last_error_msg() );
+			} elseif ( ! $stored_styles || ! is_array( $stored_styles ) || $stored_styles !== $default_styles ) {
+				// Update the option if the stored styles do not match the default
+				update_option( 'evf_style_templates', $default_styles_raw );
 			}
 		}
-		return apply_filters( 'evf_style_templates', json_decode( $styles ) );
+					return apply_filters( 'evf_style_templates', json_decode( $styles ) );
 	}
 
 	public static function get_templates_list() {
