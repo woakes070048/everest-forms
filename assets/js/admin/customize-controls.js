@@ -183,7 +183,7 @@
 			const isTemplatePro = `image-radio-everest_forms_styles[${formId}][template]`;
 			document.querySelectorAll(`input[name="${isTemplatePro}"]`)
 				.forEach(element => {
-					if (['layout-two', 'layout-three', 'layout-four','layout-five','layout-six','layout-seven','layout-eight','layout-eleven'].includes(element.value)) {
+					if (['layout-five','layout-six','layout-seven','layout-eight','layout-ten','layout-eleven'].includes(element.value)) {
 						element.classList.add('everest-forms-pro-template');
 					}
 				});
