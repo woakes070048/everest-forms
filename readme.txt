@@ -1,7 +1,7 @@
 === Everest Forms – Build Contact Forms, Surveys, Polls, Quizzes, Newsletter & Application Forms, and Many More with Ease! ===
 Contributors: WPEverest
 Tags: contact form, custom form, form builder, forms, survey
-Requires at least: 5.2
+Requires at least: 5.5
 Tested up to: 6.7.1
 Requires PHP: 7.2
 Stable tag: 3.0.5
