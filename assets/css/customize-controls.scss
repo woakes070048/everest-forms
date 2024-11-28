@@ -708,6 +708,7 @@ $inputBorderColor: #CCCCCC;
             border-radius: 3px;
             margin-bottom: 5px;
             border: 1px solid #ccc;
+			cursor: pointer;
             transition: border-color 0.3s;
             &:hover,
             &:focus {
@@ -717,6 +718,7 @@ $inputBorderColor: #CCCCCC;
 
         .color-palette-label {
             text-align: center;
+
         }
 
         input[type="checkbox"]:checked + .color-palette-color {
@@ -851,6 +853,7 @@ $inputBorderColor: #CCCCCC;
 				margin-top: 12px;
 				margin-bottom: 0;
 				box-sizing: border-box;
+				border: 2px solid transparent !important;
 				background: $whiteColor;
 				position: relative;
 
@@ -1176,12 +1179,13 @@ $inputBorderColor: #CCCCCC;
 					.customize-control {
 						> label {
 							display: block;
-							margin-bottom: 12px;
+
 
 							.customize-control-title {
 								display: flex;
 								align-items: center;
 								justify-content: space-between;
+								cursor: pointer;
 
 								.color-palette-edit-icon {
 									border-radius: 2px;

@@ -519,6 +519,7 @@
   border-radius: 3px;
   margin-bottom: 5px;
   border: 1px solid #ccc;
+  cursor: pointer;
   transition: border-color 0.3s;
 }
 .color-palette .color-palette-item .color-palette-color:hover, .color-palette .color-palette-item .color-palette-color:focus {
@@ -631,6 +632,7 @@
   margin-top: 12px;
   margin-bottom: 0;
   box-sizing: border-box;
+  border: 2px solid transparent !important;
   background: #FFFFFF;
   position: relative;
 }
@@ -864,12 +866,12 @@
 }
 .wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control > label {
   display: block;
-  margin-bottom: 12px;
 }
 .wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control > label .customize-control-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 .wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control > label .customize-control-title .color-palette-edit-icon {
   border-radius: 2px;
