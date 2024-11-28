@@ -92,14 +92,6 @@
         },
         "field_labels_text_alignment": "left",
         "field_labels_line_height": "",
-        "field_labels_margin": {
-          "desktop": {
-            "top": 0,
-            "right": 0,
-            "bottom": 10,
-            "left": 0
-          }
-        },
         "field_labels_padding": {
           "desktop": {
             "top": 0,
@@ -147,14 +139,7 @@
         "field_styles_border_color": "",
         "field_styles_border_focus_color": "",
         "field_styles_background_color": "rgba(255,255,255,0.99)",
-        "field_styles_margin": {
-          "desktop": {
-            "top": 0,
-            "right": 0,
-            "bottom": 10,
-            "left": 0
-          }
-        },
+
         "field_styles_padding": {
           "desktop": {
             "top": 6,
@@ -489,14 +474,6 @@
         "field_styles_border_color": "#b3bec9",
         "field_styles_border_focus_color": "#27b9f7",
         "field_styles_background_color": "rgba(255,255,255,0.99)",
-        "field_styles_margin": {
-          "desktop": {
-            "top": 0,
-            "right": 0,
-            "bottom": 10,
-            "left": 0
-          }
-        },
         "field_styles_padding": {
           "desktop": {
             "top": 6,
@@ -781,14 +758,6 @@
      },
      "field_styles_placeholder_font_color": "#26262e",
      "field_styles_alignment": "left",
-     "field_styles_margin": {
-      "desktop": {
-           "top": 0,
-           "right": 0,
-           "bottom": "29",
-           "left": 0
-        }
-     },
        "checkbox_radio_font_size": "16",
        "checkbox_radio_font_color": "#576380",
        "section_title_font_size": "20",
@@ -910,14 +879,6 @@
      },
      "field_styles_placeholder_font_color": "#26262e",
      "field_styles_alignment": "left",
-     "field_styles_margin": {
-      "desktop": {
-           "top": 0,
-           "right": 0,
-           "bottom": "29",
-           "left": 0
-        }
-     },
        "checkbox_radio_font_size": "16",
        "checkbox_radio_font_color": "#576380",
        "section_title_font_size": "20",
@@ -1031,14 +992,6 @@
         "field_styles_background_color": "rgba(255,255,255,0)",
         "field_styles_border_focus_color": "#e5e5e5",
         "border_focus_color": "#3951ff",
-        "field_styles_margin": {
-          "desktop": {
-            "top": "10",
-            "right": 12,
-            "bottom": "10",
-            "left": 12
-          }
-        },
         "field_styles_placeholder_font_color": "#e5e5e5",
         "field_styles_alignment": "left",
         "field_styles_padding": {
@@ -1171,14 +1124,6 @@
         },
         "field_styles_placeholder_font_color": "#26262e",
         "field_styles_alignment": "left",
-        "field_styles_margin": {
-          "desktop": {
-            "top": 0,
-            "right": 0,
-            "bottom": "29",
-            "left": 0
-          }
-        },
         "checkbox_radio_font_size": "16",
         "checkbox_radio_font_color": "#576380",
         "section_title_font_size": "20",
@@ -1662,14 +1607,6 @@
       },
       "field_styles_placeholder_font_color": "#26262e",
       "field_styles_alignment": "left",
-      "field_styles_margin": {
-        "desktop": {
-          "top": "-58",
-          "right": 0,
-          "bottom": "28",
-          "left": 0
-        }
-      },
         "checkbox_radio_font_size": "16",
         "checkbox_radio_font_color": "#576380",
         "section_title_font_size": "20",

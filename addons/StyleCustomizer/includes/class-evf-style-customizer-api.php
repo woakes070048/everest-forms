@@ -241,10 +241,7 @@ class EVF_Style_Customizer_API {
 			$default_styles = json_decode( $default_styles_raw, true );
 
 			if ( json_last_error() !== JSON_ERROR_NONE ) {
-				// Handle JSON decoding error if necessary
-				error_log( 'JSON decoding error: ' . json_last_error_msg() );
 			} elseif ( ! $stored_styles || ! is_array( $stored_styles ) || $stored_styles !== $default_styles ) {
-				// Update the option if the stored styles do not match the default
 				update_option( 'evf_style_templates', $default_styles_raw );
 			}
 		}
