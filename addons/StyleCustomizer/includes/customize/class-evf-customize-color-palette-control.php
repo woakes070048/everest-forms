@@ -66,7 +66,7 @@ class EVF_Customize_Color_Palette_Control extends WP_Customize_Control {
 			<?php } ?>
 		 </span><# } #>
 			<# if ( data.description ) { #><span class="description customize-control-description">{{{ data.description }}}</span><# } #>
-		</label>
+
 		<ul class="color-palette">
 		<# Object.keys( data.choices ).forEach( function( key ) { #>
 
@@ -79,6 +79,7 @@ class EVF_Customize_Color_Palette_Control extends WP_Customize_Control {
 		<# } ); #>
 		</ul>
 		<input class="color-palette-hidden-value" type="hidden" {{{ data.link }}} >
+		</label> 
 		<?php
 	}
 }
