@@ -59,7 +59,7 @@ if ( ! class_exists( 'EverestForms_Style_Customizer' ) ) {
 		 * Configs.
 		 */
 		private function configs() {
-		 require_once __DIR__ . '/configs/evf-style-customizer-form-wrapper-configs.php';
+			require_once __DIR__ . '/configs/evf-style-customizer-form-wrapper-configs.php';
 			require_once __DIR__ . '/configs/evf-style-customizer-color-palette.php';
 			require_once __DIR__ . '/configs/evf-style-customizer-submission-message-configs.php';
 		}
@@ -136,12 +136,16 @@ if ( ! class_exists( 'EverestForms_Style_Customizer' ) ) {
 				wp_enqueue_style( 'everest-forms-style-' . $form_id, esc_url_raw( set_url_scheme( $upload_dir['baseurl'] . '/everest_forms_styles/everest-forms-' . $form_id . '.css' ) ), array(), filemtime( trailingslashit( $upload_dir['basedir'] ) . 'everest_forms_styles/everest-forms-' . $form_id . '.css' ), 'all' );
 			}
 
-			// Enqueue google fonts styles.
-			if ( isset( $style_options[ $form_id ]['wrapper']['font_family'] ) && '' !== $style_options[ $form_id ]['wrapper']['font_family'] ) {
-				$font_family = $style_options[ $form_id ]['wrapper']['font_family'];
-
+			error_log( print_r( $style_options[ $form_id ], true ) );
+			if (
+				isset( $style_options[ $form_id ]['font']['show_theme_font'], $style_options[ $form_id ]['font']['font_family'] ) && isset( $style_options[ $form_id ]['font']['show_theme_font'] )
+				&& 0 === absint( $style_options[ $form_id ]['font']['show_theme_font'] ) &&
+				'' !== $style_options[ $form_id ]['font']['font_family']
+			) {
+				$font_family = $style_options[ $form_id ]['font']['font_family'];
 				evfsc_enqueue_fonts( $font_family );
 			}
+
 		}
 
 		/**

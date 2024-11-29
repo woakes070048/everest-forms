@@ -735,6 +735,10 @@
 		// Control visibility for default controls.
 		$.each( ['font','form_container','field_styles', 'checkbox_radio_styles', 'button', 'success_message', 'error_message', 'validation_message','typography'], function( i, type ) {
 			$.each( {
+				'show_theme_font': {
+					controls: [ 'font_family'],
+					callback: function( to ) { return ! to; }
+				},
 				'border_type': {
 					controls: [ 'border_width', 'border_color' ],
 					callback: function( to ) { return 'none' !== to; }
