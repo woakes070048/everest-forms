@@ -44,6 +44,13 @@ jQuery( function( $ ) {
 							window.open(evf_upgrade.upgrade_url, '_blank');
 						}
 					},
+				},
+
+				onOpen: function () {
+			
+					$('.jconfirm').addClass('everest-forms-upgrade-customizer');
+
+					$('.btn-confirm').addClass('everst-forms-customizer-class');
 				}
 			});
 		},
