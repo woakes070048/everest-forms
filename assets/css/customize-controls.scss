@@ -852,8 +852,7 @@ $inputBorderColor: #CCCCCC;
 				padding: 16px;
 				margin-top: 12px;
 				margin-bottom: 0;
-				box-sizing: border-box;
-				border: 2px solid transparent !important;
+				box-sizing: border-box;				
 				background: $whiteColor;
 				position: relative;
 
@@ -1053,6 +1052,8 @@ $inputBorderColor: #CCCCCC;
 				}
 
 				&-evf-color_palette {
+					border: 2px solid transparent !important;
+
 					.color-palette-edit-interface {
 						.color-palette-edit-item {
 							> label {
@@ -1796,5 +1797,11 @@ $inputBorderColor: #CCCCCC;
                 }
             }
         }
+
+		&-holder {
+			.container {
+				max-width: 100%;
+			}
+		}
     }
 }
