@@ -136,7 +136,6 @@ if ( ! class_exists( 'EverestForms_Style_Customizer' ) ) {
 				wp_enqueue_style( 'everest-forms-style-' . $form_id, esc_url_raw( set_url_scheme( $upload_dir['baseurl'] . '/everest_forms_styles/everest-forms-' . $form_id . '.css' ) ), array(), filemtime( trailingslashit( $upload_dir['basedir'] ) . 'everest_forms_styles/everest-forms-' . $form_id . '.css' ), 'all' );
 			}
 
-			error_log( print_r( $style_options[ $form_id ], true ) );
 			if (
 				isset( $style_options[ $form_id ]['font']['show_theme_font'], $style_options[ $form_id ]['font']['font_family'] ) && isset( $style_options[ $form_id ]['font']['show_theme_font'] )
 				&& 0 === absint( $style_options[ $form_id ]['font']['show_theme_font'] ) &&

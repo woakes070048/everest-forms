@@ -1,5 +1,6 @@
 /* global evf_upgrade, evf_data */
 jQuery( function( $ ) {
+
 	/**
 	 * Upgrade actions.
 	 */
@@ -23,9 +24,29 @@ jQuery( function( $ ) {
 			$( document.body ).on( 'click dragstart', '.evf-registered-item.hcaptcha_empty_key_validate', this.hcaptcha_empty_key_validate );
 			$( document.body ).on( 'click dragstart', '.evf-registered-item.turnstile_empty_key_validate', this.turnstile_empty_key_validate );
 			$( document.body ).on( 'click ', '.upgrade-addons-settings', this.integration_upgrade );
+			$( document.body ).on( 'click ', '.evf-pro-feature', this.customizerupgrade );
 
 		},
-
+		customizerupgrade : function (e) {
+			e.preventDefault();
+			$.alert({
+				title: evf_upgrade.upgrade_title,
+				icon: 'dashicons dashicons-lock',
+				content: evf_upgrade.upgrade_message,
+				type: 'red',
+				closeIcon: true, // This will add the close (cross) button
+				buttons: {
+					confirm: {
+						text: evf_upgrade.upgrade_button,
+						btnClass: 'btn-confirm',
+						keys: ['enter'],
+						action: function () {
+							window.open(evf_upgrade.upgrade_url, '_blank');
+						}
+					},
+				}
+			});
+		},
 		integration_upgrade: function( e ) {
 			e.preventDefault();
 			if(''=== $(this).find('h3').text()){

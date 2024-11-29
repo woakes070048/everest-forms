@@ -73,6 +73,12 @@ class Addons {
 		}
 
 		$enabled_features = get_option( 'everest_forms_enabled_features', array() );
+		$new_feature      = 'everest-forms-style-customizer';
+		if ( false === get_option( 'everest_forms_style_enabled' ) && ! in_array( $new_feature, $enabled_features, true ) ) {
+			$enabled_features[] = $new_feature;
+			update_option( 'everest_forms_style_enabled', true );
+			update_option( 'everest_forms_enabled_features', $enabled_features );
+		}
 
 		if ( empty( $enabled_features ) ) {
 			return;

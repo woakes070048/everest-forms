@@ -15,7 +15,8 @@ defined( 'ABSPATH' ) || exit;
  */
 function evf_get_screen_ids() {
 	$evf_screen_id = sanitize_title( esc_html__( 'Everest Forms', 'everest-forms' ) );
-	$screen_ids    = array(
+	error_log( print_r( $evf_screen_id, true ) );
+	$screen_ids = array(
 		'toplevel_page_' . $evf_screen_id,
 		$evf_screen_id . '_page_evf-dashboard',
 		$evf_screen_id . '_page_evf-builder',

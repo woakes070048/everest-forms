@@ -526,8 +526,10 @@ class EVF_Style_Customizer_API {
 		wp_register_script( 'selectWoo', EVF()->plugin_url() . "/assets/js/selectWoo/selectWoo.full{$suffix}.js", array( 'jquery' ), '1.0.4', true );
 		wp_register_style( 'jquery-confirm', evf()->plugin_url() . '/assets/css/jquery-confirm/jquery-confirm.min.css', array(), '3.3.0' );
 		wp_register_script( 'jquery-confirm', evf()->plugin_url() . "/assets/js/jquery-confirm/jquery-confirm{$suffix}.js", array( 'jquery' ), '3.3.0', true );
+		wp_register_script( 'evf-upgrade', evf()->plugin_url() . '/assets/js/admin/upgrade.js', array( 'jquery', 'jquery-confirm' ), EVF_VERSION, false );
 		wp_enqueue_script( 'jquery-confirm' );
 		wp_enqueue_style( 'jquery-confirm' );
+		wp_enqueue_script( 'evf-upgrade' );
 		// Enqueue controls scripts.
 		wp_enqueue_style( 'everest-forms-customize-controls', plugins_url( 'assets/css/customize-controls.css', EVF_PLUGIN_FILE ), array(), EVF_VERSION );
 		wp_enqueue_script( 'everest-forms-customize-controls', plugins_url( "assets/js/admin/customize-controls{$suffix}.js", EVF_PLUGIN_FILE ), array( 'jquery' ), EVF_VERSION, true );
@@ -558,6 +560,20 @@ class EVF_Style_Customizer_API {
 				),
 			)
 		);
+
+		wp_localize_script(
+			'evf-upgrade',
+			'evf_upgrade',
+			array(
+				'upgrade_title'   => esc_html__( 'Upgrade to Pro Version to Gain Access', 'everest-forms' ),
+				'upgrade_message' => esc_html__( 'Unfortunately, this feature is available on the Pro version. Please upgrade to unlock it.', 'everest-forms' ),
+				'upgrade_button'  => esc_html__( 'Upgrade to PRO', 'everest-forms' ),
+				'i18n_ok'         => esc_html__( 'OK', 'everest-forms' ),
+				'upgrade_url'     => apply_filters( 'everest_forms_upgrade_url', 'https://everestforms.net/pricing/?utm_source=style-customizer&utm_medium=premium-style-customizer&utm_campaign=' . evf()->utm_campaign ),
+
+			)
+		);
+
 	}
 
 	public function modify_customized_data( $response, $wp_customize ) {

@@ -61,9 +61,8 @@ class EVF_Customize_Color_Palette_Control extends WP_Customize_Control {
 	protected function content_template() {
 		?>
 		<label {{{data.inputAttrs}}}>
-			<# if ( data.label ) { #><span class="customize-control-title">{{{ data.label }}}  <?php if ( defined( 'EFP_PLUGIN_FILE' ) ) { ?>
-				<span class="color-palette-edit-icon" style="cursor:pointer;">&#9998;</span>
-			<?php } ?>
+			<# if ( data.label ) { #><span class="customize-control-title">{{{ data.label }}}
+			<span class="<?php echo ! defined( 'EFP_PLUGIN_FILE' ) ? 'evf-pro-feature' : 'color-palette-edit-icon'; ?>" style="cursor:pointer;">&#9998;</span>
 		 </span><# } #>
 			<# if ( data.description ) { #><span class="description customize-control-description">{{{ data.description }}}</span><# } #>
 
@@ -79,7 +78,7 @@ class EVF_Customize_Color_Palette_Control extends WP_Customize_Control {
 		<# } ); #>
 		</ul>
 		<input class="color-palette-hidden-value" type="hidden" {{{ data.link }}} >
-		</label> 
+		</label>
 		<?php
 	}
 }
