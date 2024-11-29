@@ -508,11 +508,7 @@
 				var key = $(this).data('key');
 				var value = $(this).val();
 
-				var $saveButtonWrapper = $('#customize-save-button-wrapper'); // Store the jQuery object
-
-				$saveButtonWrapper.find('input[type="submit"]').on('click', function () {
-					console.log('Save button clicked!');
-				});
+				var $saveButtonWrapper = $('#customize-save-button-wrapper');
 
 				var name = $(this).attr('name').match(/\[(\w+)\]$/)?.[1];
 
