@@ -507,11 +507,28 @@
 			control.container.on('change', 'input[type="checkbox"]', function () {
 				var key = $(this).data('key');
 				var value = $(this).val();
+
+				var $saveButtonWrapper = $('#customize-save-button-wrapper'); // Store the jQuery object
+
+				$saveButtonWrapper.find('input[type="submit"]').on('click', function () {
+					console.log('Save button clicked!');
+				});
+
 				var name = $(this).attr('name').match(/\[(\w+)\]$/)?.[1];
-				document.cookie = `color_palette=${name}; path=/`;
+
+				$saveButtonWrapper
+					.find('input[type="submit"]')
+					.on('click', function () {
+						if (name) {
+							document.cookie = `color_palette=${localStorage.getItem('color_palette', name)}; path=/`;
+						}
+					});
+				document.cookie = `color_palette_save=${name}; path=/`;
+				localStorage.setItem('color_palette', name);
 				$(this).closest('li').find('label').addClass('evf-active-color-palette');
 				control.saveValue(key, value);
 			});
+
 
 			control.container.on('click', '.color-palette', function () {
 				var $currentGroup = $(this).closest('.customize-control-evf-color_palette');

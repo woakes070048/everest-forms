@@ -98,8 +98,8 @@ if ( ! empty( $backward_compatibility_color_key ) ) {
 	}
 }
 
-if ( isset( $_COOKIE['color_palette'] ) ) {
-	$palette_key = $_COOKIE['color_palette'];
+if ( isset( $_COOKIE['color_palette_save'] ) ) {
+	$palette_key = $_COOKIE['color_palette_save'];
 }
 
 
