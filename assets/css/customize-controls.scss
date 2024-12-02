@@ -1188,7 +1188,8 @@ $inputBorderColor: #CCCCCC;
 								justify-content: space-between;
 								cursor: pointer;
 
-								.color-palette-edit-icon {
+								.color-palette-edit-icon,
+								.evf-pro-feature {
 									border-radius: 2px;
 									border: 1px solid #F4F4F4;
 									width: 20px;
@@ -1197,6 +1198,10 @@ $inputBorderColor: #CCCCCC;
 									align-items: center;
 									justify-content: center;
 									background: #f4f4f4;
+								}
+
+								.evf-pro-feature {
+									opacity: .4;
 								}
 							}
 						}
@@ -1765,7 +1770,7 @@ $inputBorderColor: #CCCCCC;
                     line-height: 22px !important;
                     letter-spacing: .3px;
                     font-weight: 400 !important;
-                    transition: all .3s ease-in-out;
+                    transition: all .3s ease-in-out !important;
 
                     &-primary {
                         background: $customizerPrimaryColor !important;
@@ -1802,6 +1807,65 @@ $inputBorderColor: #CCCCCC;
 			.container {
 				max-width: 100%;
 			}
+		}
+
+		&.everest-forms-upgrade-customizer {
+			.jconfirm {
+				&-box {
+					padding: 40px 30px !important;
+				}
+				
+				&-title-c {
+					margin-bottom: 12px !important;
+					padding: 0 12px !important;
+					
+					.jconfirm-title {
+						border-bottom: 0;
+						padding-bottom: 0;
+						font-size: 26px !important;
+						line-height: 34px !important;
+						text-align: center !important;
+						font-weight: 600;
+						color: #222222 !important;
+					}
+				}
+				
+				&-content-pane {
+					margin-bottom: 0 !important;
+					
+					.jconfirm-content {
+						> div {
+							text-align: center;
+							color: #646464;
+							font-size: 16px;
+							line-height: 26px;
+							font-weight: 400;
+						}
+					}
+				}
+				
+				&-buttons {
+					margin-top: 20px !important;
+					padding: 0 !important;
+					float: unset !important;
+					background: none;
+					
+					.everst-forms-customizer-class {
+						width: 100%;
+						border-radius: 4px;
+						background: #2563EB;
+						color: #ffffff;
+						font-size: 16px;
+						font-weight: 600;
+						line-height: 24px !important;
+						padding: 10px !important;
+
+						&:hover {
+							background: #2f49bc !important;
+						}
+					}
+				}
+			}			
 		}
     }
 }
