@@ -262,7 +262,7 @@ class EVF_Style_Customizer_API {
 
 
 	public static function get_templates_list() {
-		$templates = self::get_templates();
+		$templates = (array) self::get_templates();
 
 		$templates_list = array();
 

@@ -13,11 +13,16 @@ defined( 'ABSPATH' ) || exit;
 // Get values.
 $styles = get_option( 'everest_forms_styles' );
 
+$styles = get_option( 'everest_forms_styles' );
+
 if ( isset( $_REQUEST['action'] ) && $_REQUEST['action'] === 'everest_forms_save_form' ) {
-	$colorPaletteKeys = array_keys( $styles[ $form_id ]['color_palette'] );
-	$colorPaletteKey  = $colorPaletteKeys[0];
-	$palette_key      = $colorPaletteKey;
+	if ( isset( $styles[ $form_id ]['color_palette'] ) && is_array( $styles[ $form_id ]['color_palette'] ) ) {
+		$colorPaletteKeys = array_keys( $styles[ $form_id ]['color_palette'] );
+		$colorPaletteKey  = $colorPaletteKeys[0];
+		$palette_key      = $colorPaletteKey;
+	}
 }
+
 
 if ( isset( $_REQUEST['customized'] ) ) {
 	$current_color_palette = json_decode( wp_unslash( $_REQUEST['customized'] ), true );
