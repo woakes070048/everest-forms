@@ -31,43 +31,71 @@ jQuery( function( $ ) {
 			e.preventDefault();
 
 			var customStyles = `
-				.jconfirm-title {
-					font-size: 26px !important;
-					line-height: 34px !important;
-					text-align: center !important;
-					font-weight: 600;
-					color: #222222 !important;
-					border-bottom: none;
-					padding-bottom: 0 !important;
+				.wp-customizer .jconfirm-box {
+					padding: 40px 30px !important;
 				}
 
-				.jconfirm-content > div {
+				.wp-customizer .jconfirm-box .jconfirm-title-c {
+					margin-bottom: 24px !important;
+					padding: 0 !important;
+				}
+
+				.wp-customizer .jconfirm-box .jconfirm-title-c .jconfirm-title {
+					text-align: center !important;
+				}
+
+				.wp-customizer .jconfirm-box .jconfirm-content-pane {
+					margin-bottom: 0 !important;
+				}
+
+				.wp-customizer .jconfirm-box .jconfirm-content-pane .jcontent-content > div {
 					text-align: center !important;
 					color: #646464 !important;
 					font-size: 16px !important;
-					line-height: 26px;
-					font-weight: 400;
+					line-height: 26px !important;
+					font-weight: 400 !important;
 				}
 
-				.jconfirm-buttons {
+				.wp-customizer .jconfirm-box .jconfirm-content-pane .jconfirm-content > div h2 {
+					margin-top: 0 !important;
+					margin-bottom: 12px !important;
+					font-size: 26px !important;
+					line-height: 34px !important;
+					text-align: center !important;
+					font-weight: 600 !important;
+					color: #222222 !important;
+					border-bottom: 0 !important;
+					padding-bottom: 0 !important;
+				}
+
+				.wp-customizer .jconfirm-box .jconfirm-content-pane .jconfirm-content > div p {
+					color: #646464 !important;
+					text-align: center !important;
+					font-size: 15px !important;
+					font-weight: 400 !important;
+					line-height: 25px !important;
+					margin: 0 !important;
+				}
+
+				.wp-customizer .jconfirm-box .jconfirm-buttons {
 					margin-top: 20px !important;
 					padding: 0 !important;
 					background: none !important;
 					float: unset !important;
 				}
 
-				.btn-confirm {
+				.wp-customizer .jconfirm-box .jconfirm-buttons .btn-confirm {
 					width: 100% !important;
 					border-radius: 4px !important;
 					background: #2563EB !important;
 					color: #ffffff !important;
 					font-size: 16px !important;
-					font-weight: 600 !important;
+					font-weight: 500 !important;
 					line-height: 24px !important;
 					padding: 10px !important;
 				}
 
-				.btn-confirm:hover {
+				.wp-customizer .jconfirm-box .jconfirm-buttons .btn-confirm:hover {
 					background: #2f49bc !important;
 				}
 
