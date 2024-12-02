@@ -632,7 +632,6 @@
   margin-top: 12px;
   margin-bottom: 0;
   box-sizing: border-box;
-  border: 2px solid transparent !important;
   background: #FFFFFF;
   position: relative;
 }
@@ -774,6 +773,9 @@
   padding: 0;
   margin-left: 0;
 }
+.wpeverest-customizer-style#customize-controls #customize-theme-controls .customize-control-evf-color_palette {
+  border: 2px solid transparent !important;
+}
 .wpeverest-customizer-style#customize-controls #customize-theme-controls .customize-control-evf-color_palette .color-palette-edit-interface .color-palette-edit-item > label {
   font-weight: 500;
 }
@@ -873,7 +875,8 @@
   justify-content: space-between;
   cursor: pointer;
 }
-.wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control > label .customize-control-title .color-palette-edit-icon {
+.wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control > label .customize-control-title .color-palette-edit-icon,
+.wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control > label .customize-control-title .evf-pro-feature {
   border-radius: 2px;
   border: 1px solid #F4F4F4;
   width: 20px;
@@ -882,6 +885,9 @@
   align-items: center;
   justify-content: center;
   background: #f4f4f4;
+}
+.wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control > label .customize-control-title .evf-pro-feature {
+  opacity: 0.4;
 }
 .wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control:has(.evf-active-color-palette) {
   border: 2px solid #3858E9 !important;
@@ -1283,7 +1289,7 @@
   line-height: 22px !important;
   letter-spacing: 0.3px;
   font-weight: 400 !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
 }
 .wp-customizer .jconfirm-box .jconfirm-buttons .btn-primary {
   background: #3858E9 !important;
@@ -1306,4 +1312,52 @@
 .wp-customizer .jconfirm-box .jconfirm-buttons .btn-light:hover {
   border-color: #4e4e4e !important;
   color: #4e4e4e !important;
+}
+.wp-customizer .jconfirm-holder .container {
+  max-width: 100%;
+}
+.wp-customizer .jconfirm.everest-forms-upgrade-customizer .jconfirm-box {
+  padding: 40px 30px !important;
+}
+.wp-customizer .jconfirm.everest-forms-upgrade-customizer .jconfirm-title-c {
+  margin-bottom: 12px !important;
+  padding: 0 12px !important;
+}
+.wp-customizer .jconfirm.everest-forms-upgrade-customizer .jconfirm-title-c .jconfirm-title {
+  border-bottom: 0;
+  padding-bottom: 0;
+  font-size: 26px !important;
+  line-height: 34px !important;
+  text-align: center !important;
+  font-weight: 600;
+  color: #222222 !important;
+}
+.wp-customizer .jconfirm.everest-forms-upgrade-customizer .jconfirm-content-pane {
+  margin-bottom: 0 !important;
+}
+.wp-customizer .jconfirm.everest-forms-upgrade-customizer .jconfirm-content-pane .jconfirm-content > div {
+  text-align: center;
+  color: #646464;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.wp-customizer .jconfirm.everest-forms-upgrade-customizer .jconfirm-buttons {
+  margin-top: 20px !important;
+  padding: 0 !important;
+  float: unset !important;
+  background: none;
+}
+.wp-customizer .jconfirm.everest-forms-upgrade-customizer .jconfirm-buttons .everst-forms-customizer-class {
+  width: 100%;
+  border-radius: 4px;
+  background: #2563EB;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px !important;
+  padding: 10px !important;
+}
+.wp-customizer .jconfirm.everest-forms-upgrade-customizer .jconfirm-buttons .everst-forms-customizer-class:hover {
+  background: #2f49bc !important;
 }
