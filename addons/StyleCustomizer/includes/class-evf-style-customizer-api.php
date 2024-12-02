@@ -234,19 +234,32 @@ class EVF_Style_Customizer_API {
 
 		$styles = get_option( 'evf_style_templates' );
 
-			$default_styles_raw = evf_file_get_contents( 'addons/StyleCustomizer/assets/wp-json/default-templates.json' );
+		$default_styles_raw = evf_file_get_contents( 'addons/StyleCustomizer/assets/wp-json/default-templates.json' );
 
 		if ( $default_styles_raw ) {
 			$stored_styles  = json_decode( $styles, true );
 			$default_styles = json_decode( $default_styles_raw, true );
 
 			if ( json_last_error() !== JSON_ERROR_NONE ) {
-			} elseif ( ! $stored_styles || ! is_array( $stored_styles ) || $stored_styles !== $default_styles ) {
-				update_option( 'evf_style_templates', $default_styles_raw );
+			} else {
+				if ( ! $stored_styles || ! is_array( $stored_styles ) ) {
+					update_option( 'evf_style_templates', $default_styles_raw );
+				} else {
+					foreach ( $default_styles as $key => $value ) {
+						if ( ! isset( $stored_styles[ $key ] ) ) {
+							$stored_styles[ $key ] = $value;
+						}
+					}
+
+					update_option( 'evf_style_templates', json_encode( $stored_styles ) );
+				}
 			}
 		}
-					return apply_filters( 'evf_style_templates', json_decode( $styles ) );
+
+		return apply_filters( 'evf_style_templates', json_decode( $styles ) );
 	}
+
+
 
 	public static function get_templates_list() {
 		$templates = self::get_templates();
