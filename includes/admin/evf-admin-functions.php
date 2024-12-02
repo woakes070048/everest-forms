@@ -15,8 +15,7 @@ defined( 'ABSPATH' ) || exit;
  */
 function evf_get_screen_ids() {
 	$evf_screen_id = sanitize_title( esc_html__( 'Everest Forms', 'everest-forms' ) );
-	error_log( print_r( $evf_screen_id, true ) );
-	$screen_ids = array(
+	$screen_ids    = array(
 		'toplevel_page_' . $evf_screen_id,
 		$evf_screen_id . '_page_evf-dashboard',
 		$evf_screen_id . '_page_evf-builder',
@@ -352,7 +351,7 @@ function everest_forms_panel_field( $option, $panel, $field, $form_data, $label,
 					$output .= sprintf( ' <i class="dashicons dashicons-editor-help everest-forms-help-tooltip" title="%s"></i>', esc_attr( $item['tooltip'] ) );
 				}
 				$output .= '</label></span>';
-				$x++;
+				++$x;
 			}
 			break;
 
@@ -407,7 +406,7 @@ function everest_forms_panel_field( $option, $panel, $field, $form_data, $label,
 
 			foreach ( $options as $key => $item ) {
 				if ( true === $is_multiple && is_array( $value ) ) {
-					 $output .= sprintf( '<option value="%s" %s>%s</option>', esc_attr( $key ), selected( in_array( $key, $value, true ), true, false ), $item );
+					$output .= sprintf( '<option value="%s" %s>%s</option>', esc_attr( $key ), selected( in_array( $key, $value, true ), true, false ), $item );
 				} else {
 					$output .= sprintf( '<option value="%s" %s>%s</option>', esc_attr( $key ), selected( $key, $value, false ), $item );
 				}
@@ -469,7 +468,7 @@ function everest_forms_panel_field( $option, $panel, $field, $form_data, $label,
 					esc_html( $item['image'] )
 				);
 				$output .= '</label>';
-				$x ++;
+				++$x;
 			}
 			$output .= '</div>';
 			break;
