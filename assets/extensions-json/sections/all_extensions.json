@@ -904,7 +904,7 @@
       "slug": "everest-forms-getgist",
       "name": "Everest Forms GetGist",
       "image": "extensions-json/sections/images/getgist.png",
-      "excerpt": "GetGist is a marketing platform that combines email marketing, SMS campaigns, marketing automation, and CRM tools. It helps businesses streamline their marketing efforts, automate workflows, and analyze performance in one place.",
+      "excerpt": "Manage email marketing, automation of workflow, and customer engagement just from a single integration.",
       "link": "https://docs.everestforms.net/docs/getgist/?utm_source=dashboard-all-feature&utm_medium=card-documentation-link",
       "released_date": "xx/xx/2024",
       "plan": [
@@ -955,7 +955,7 @@
       "slug": "everest-forms-cleverreach",
       "name": "Everest Forms CleverReach",
       "image": "extensions-json/sections/images/cleverreach.png",
-      "excerpt": "Connect Everest Forms with CleverReach to grow your CleverReach subscriber list.",
+      "excerpt": " Sync form submissions automatically with CleverReach to build and manage email campaigns.",
       "link": "https://docs.everestforms.net/docs/cleverreach/?utm_source=dashboard-all-feature&utm_medium=card-documentation-link",
       "released_date": "xx/xx/xxxx",
       "plan": [
