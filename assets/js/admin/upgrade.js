@@ -45,6 +45,7 @@ jQuery( function( $ ) {
 
 				.wp-customizer .jconfirm-box .jconfirm-title-c .jconfirm-title {
 					text-align: center !important;
+					border-bottom: 0px;
 				}
 
 				.wp-customizer .jconfirm-box .jconfirm-content-pane {
@@ -148,15 +149,7 @@ jQuery( function( $ ) {
 				onOpen: function () {
 					var $alertBox = this.$jconfirmBox;
 
-					$alertBox.find('.jconfirm-title').css({
-						'font-size': '26px',
-						'line-height': '34px',
-						'text-align': 'center',
-						'font-weight': '600',
-						'color': '#222222',
-						'border-bottom': 'none',
-						'padding-bottom': '0'
-					});
+
 
 					$alertBox.find('.jconfirm-content > div').css({
 						'text-align': 'center',
