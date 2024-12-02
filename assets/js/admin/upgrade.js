@@ -25,6 +25,9 @@ jQuery( function( $ ) {
 			$( document.body ).on( 'click dragstart', '.evf-registered-item.turnstile_empty_key_validate', this.turnstile_empty_key_validate );
 			$( document.body ).on( 'click ', '.upgrade-addons-settings', this.integration_upgrade );
 			$( document.body ).on( 'click ', '.evf-pro-feature', this.customizerupgrade );
+			$( document.body ).on( 'click ', '.evf-pro-palette', this.customizerupgrade );
+			$( document.body ).on( 'click ', '.everest-forms-pro-template', this.customizerupgrade );
+
 
 		},
 		customizerupgrade: function (e) {

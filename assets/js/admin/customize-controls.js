@@ -503,7 +503,9 @@
 	api.ColorPaletteControl = api.Control.extend({
 		ready: function () {
 			var control = this;
-
+			if (control.container.find('label').hasClass('evf-pro-palette')) {
+				return;
+			}
 			control.container.on('change', 'input[type="checkbox"]', function () {
 				var key = $(this).data('key');
 				var value = $(this).val();

@@ -852,7 +852,7 @@ $inputBorderColor: #CCCCCC;
 				padding: 16px;
 				margin-top: 12px;
 				margin-bottom: 0;
-				box-sizing: border-box;				
+				box-sizing: border-box;
 				background: $whiteColor;
 				position: relative;
 
@@ -1141,18 +1141,10 @@ $inputBorderColor: #CCCCCC;
 								}
 
 								&:has(.everest-forms-pro-template) {
-									cursor: not-allowed;
+									// cursor: not-allowed;
 
-									&::before {
-										content: "";
-										background: #fff;
-										width: 100%;
-										height: 100%;
-										position: absolute;
-										top: 0;
-										left: 0;
-										opacity: .7;
-										z-index: 1;
+									> label {
+										opacity: .5;
 									}
 
 									&::after {
@@ -1166,7 +1158,6 @@ $inputBorderColor: #CCCCCC;
 										height: 22px;
 										top: 50%;
 										left: 50%;
-										z-index: 2;
 										transform: translate(-50%, -50%);
 									}
 								}
@@ -1211,18 +1202,22 @@ $inputBorderColor: #CCCCCC;
 						}
 
 						&:has(.evf-pro-palette) {
-							cursor: not-allowed;
+							// cursor: not-allowed;
 
-							&::before {
-								content: "";
-								background: #fff;
-								width: 100%;
-								height: 100%;
-								position: absolute;
-								top: 0;
-								left: 0;
-								opacity: .7;
-								z-index: 1;
+							// &::before {
+							// 	content: "";
+							// 	background: #fff;
+							// 	width: 100%;
+							// 	height: 100%;
+							// 	position: absolute;
+							// 	top: 0;
+							// 	left: 0;
+							// 	opacity: .7;
+							// 	z-index: 1;
+							// }
+
+							> label {
+								opacity: .5;
 							}
 
 							&::after {
@@ -1814,11 +1809,11 @@ $inputBorderColor: #CCCCCC;
 				&-box {
 					padding: 40px 30px !important;
 				}
-				
+
 				&-title-c {
 					margin-bottom: 12px !important;
 					padding: 0 12px !important;
-					
+
 					.jconfirm-title {
 						border-bottom: 0;
 						padding-bottom: 0;
@@ -1829,10 +1824,10 @@ $inputBorderColor: #CCCCCC;
 						color: #222222 !important;
 					}
 				}
-				
+
 				&-content-pane {
 					margin-bottom: 0 !important;
-					
+
 					.jconfirm-content {
 						> div {
 							text-align: center;
@@ -1843,13 +1838,13 @@ $inputBorderColor: #CCCCCC;
 						}
 					}
 				}
-				
+
 				&-buttons {
 					margin-top: 20px !important;
 					padding: 0 !important;
 					float: unset !important;
 					background: none;
-					
+
 					.everst-forms-customizer-class {
 						width: 100%;
 						border-radius: 4px;
@@ -1865,7 +1860,7 @@ $inputBorderColor: #CCCCCC;
 						}
 					}
 				}
-			}			
+			}
 		}
     }
 }

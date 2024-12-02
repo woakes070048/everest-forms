@@ -838,19 +838,8 @@
 .wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_templates .customize-control-evf-image_radio .image-radio-wrapper > li .evf-delete-template-btn {
   color: #EA4741;
 }
-.wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_templates .customize-control-evf-image_radio .image-radio-wrapper > li:has(.everest-forms-pro-template) {
-  cursor: not-allowed;
-}
-.wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_templates .customize-control-evf-image_radio .image-radio-wrapper > li:has(.everest-forms-pro-template)::before {
-  content: "";
-  background: #fff;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.7;
-  z-index: 1;
+.wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_templates .customize-control-evf-image_radio .image-radio-wrapper > li:has(.everest-forms-pro-template) > label {
+  opacity: 0.5;
 }
 .wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_templates .customize-control-evf-image_radio .image-radio-wrapper > li:has(.everest-forms-pro-template)::after {
   content: "";
@@ -863,7 +852,6 @@
   height: 22px;
   top: 50%;
   left: 50%;
-  z-index: 2;
   transform: translate(-50%, -50%);
 }
 .wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control > label {
@@ -892,19 +880,8 @@
 .wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control:has(.evf-active-color-palette) {
   border: 2px solid #3858E9 !important;
 }
-.wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control:has(.evf-pro-palette) {
-  cursor: not-allowed;
-}
-.wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control:has(.evf-pro-palette)::before {
-  content: "";
-  background: #fff;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.7;
-  z-index: 1;
+.wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control:has(.evf-pro-palette) > label {
+  opacity: 0.5;
 }
 .wpeverest-customizer-style#customize-controls #customize-theme-controls #sub-accordion-section-everest_forms_color_palette .customize-control:has(.evf-pro-palette)::after {
   content: "";
