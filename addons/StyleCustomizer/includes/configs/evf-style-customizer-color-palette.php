@@ -55,10 +55,10 @@ function evf_style_customizer_color_palette_controls( $controls, $customize ) {
 			'colors'    => array(
 				'form_background'   => '#ffffff',
 				'field_background'  => '#f7f7f7',
-				'field_label'       => '#0c2e45',
-				'field_sublabel'    => '#0f3a57',
+				'field_label'       => '#262626',
+				'field_sublabel'    => '#666666',
 				'button_text'       => '#ffffff',
-				'button_background' => '#3951a5',
+				'button_background' => '#1a1a1a',
 			),
 			'is_pro'    => false,
 			'is_custom' => false,
@@ -222,7 +222,7 @@ function evf_style_customizer_color_palette_controls( $controls, $customize ) {
 	if ( isset( $_COOKIE['color_palette'] ) ) {
 		$selected_color_key = $_COOKIE['color_palette'];
 	}
-	
+
 	foreach ( $color_palettes as $index => $palette ) {
 		$colors_with_values = array();
 		foreach ( $palette['colors'] as $color_name => $color_value ) {
