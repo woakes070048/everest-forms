@@ -11,5 +11,5 @@ jobs:
       - name: WordPress Plugin Deploy
         uses: 10up/action-wordpress-plugin-deploy@stable
         env:
-          SVN_USERNAME: ${{ secrets.SVN_USERNAMESSS }}
-          SVN_PASSWORD: ${{ secrets.SVN_PASSWORDSSS }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
