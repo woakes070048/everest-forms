@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-11-20T04:34:58+00:00\n"
+"POT-Creation-Date: 2024-12-03T06:24:56+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: everest-forms\n"
@@ -79,11 +79,11 @@ msgstr ""
 msgid "Choose a form from the list."
 msgstr ""
 
-#: addons/BeaverBuilder/includes/frontend.php:25
+#: addons/BeaverBuilder/includes/frontend.php:37
 msgid "Seems like you haven't created a form. Please create one to use it."
 msgstr ""
 
-#: addons/BeaverBuilder/includes/frontend.php:27
+#: addons/BeaverBuilder/includes/frontend.php:43
 msgid "Please select a form"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgstr ""
 msgid "Select Form"
 msgstr ""
 
-#: addons/BricksBuilder/BricksFormWidget.php:71
+#: addons/BricksBuilder/BricksFormWidget.php:73
 msgid "No form selected."
 msgstr ""
 
@@ -109,11 +109,13 @@ msgid "Everest Forms Preview"
 msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:95
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:45
 msgid "Form Container"
 msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:103
 #: addons/OxygenBuilder/OxygenFormWidget.php:205
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:191
 msgid "Background Color"
 msgstr ""
 
@@ -123,20 +125,62 @@ msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:118
 #: addons/OxygenBuilder/OxygenFormWidget.php:234
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:311
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:417
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:768
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1186
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1492
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1633
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1704
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:770
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:927
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1287
 msgid "Padding"
 msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:125
 #: addons/OxygenBuilder/OxygenFormWidget.php:241
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:324
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:434
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:781
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1199
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1480
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1621
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1717
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:747
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:904
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1264
 msgid "Margin"
 msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:132
 #: addons/OxygenBuilder/OxygenFormWidget.php:246
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:223
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:270
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1524
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1571
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1675
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1765
 msgid "Border"
 msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:139
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:231
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:278
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:630
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:680
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:963
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1005
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1362
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1404
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1532
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1579
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1683
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1773
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:223
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:458
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:607
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:265
 msgid "Border Radius"
 msgstr ""
 
@@ -150,6 +194,15 @@ msgid "Labels"
 msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:168
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:460
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:497
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:822
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:851
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1097
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1126
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1221
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1250
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1654
 msgid "Text Color"
 msgstr ""
 
@@ -173,6 +226,8 @@ msgid "Hover Color"
 msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:215
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1153
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:138
 msgid "Width"
 msgstr ""
 
@@ -181,6 +236,8 @@ msgid "Margin Top"
 msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:245
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:80
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:95
 msgid "Typography"
 msgstr ""
 
@@ -190,6 +247,1194 @@ msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:249
 msgid "Hover Box Shadow"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:155
+msgid "Form Designer"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:174
+msgid "Form Wrapper"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:182
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:381
+msgid "Form Padding"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:194
+msgid " Form Margin"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:208
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:453
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:601
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:714
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:815
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:939
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1035
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1214
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1338
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1434
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1507
+msgid "Normal"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:253
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1243
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1379
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1451
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1554
+msgid "Hover"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:303
+msgid "Field Label"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:345
+#: includes/abstracts/class-evf-form-fields.php:457
+#: includes/evf-core-functions.php:3989
+msgid "Label"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:357
+msgid "Inline/Description Text"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:369
+msgid "Required Symbol"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:382
+msgid "Input Fields"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:402
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:802
+msgid "Placeholder Color"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:490
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:651
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:735
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:844
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:980
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1052
+msgid "Focus"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:529
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:875
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1274
+msgid "Border Options"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:538
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:884
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1283
+msgid "Box Border"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:540
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:886
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1285
+msgid "Show"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:541
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:887
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1286
+msgid "Hide"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:549
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:895
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1294
+msgid "Border Style"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:553
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:899
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1298
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:164
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:413
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:562
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:210
+msgid "Solid"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:554
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:900
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1299
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:162
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:411
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:560
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:208
+#: includes/fields/class-evf-field-divider.php:66
+msgid "Dotted"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:555
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:901
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1300
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:163
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:412
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:561
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:209
+#: includes/fields/class-evf-field-divider.php:65
+msgid "Dashed"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:556
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:902
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1301
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:166
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:415
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:564
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:212
+msgid "Groove"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:574
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:916
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1315
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:185
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:434
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:583
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:231
+msgid "Border Width"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:611
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:661
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:949
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:990
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1348
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1389
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:203
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1060
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1558
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1919
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:249
+msgid "Border Color"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:703
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1024
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1423
+msgid "Box Shadow Options"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:760
+msgid "Textarea Fields"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1073
+msgid "Radio/Checkbox Field"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1082
+msgid "Check Box"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1111
+#: includes/fields/class-evf-field-likert.php:109
+msgid "Radio Button"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1144
+msgid "Button Styles"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1472
+msgid "Outer Field"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1605
+msgid "Form Message"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1614
+msgid "Success"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1697
+msgid "Validation/Error"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1738
+msgid "Text Color/Field Border"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1753
+msgid "Background"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1791
+msgid "Extra Option"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1800
+msgid "Maximum Width"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-ajax.php:35
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-ajax.php:77
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-ajax.php:138
+msgid "Nonce error. Please refresh the page."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-ajax.php:43
+msgid "Colors array is empty."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-ajax.php:60
+msgid "Color palette saved successfully!"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-ajax.php:99
+msgid "Template name exists. Please change the template name and try again."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-ajax.php:150
+msgid "Template deleted successfully."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:96
+#: includes/admin/views/html-admin-page-builder.php:115
+msgid "Save"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:99
+msgid "Saved"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:194
+msgid "Looking for a template? You can browse our templates, import and preview templates, then activate them right here."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:195
+msgid "While previewing a new template, you can continue to tailor things like form styles and custom css, and explore template-specific options."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:211
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-templates-section.php:56
+msgid "Templates"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:212
+msgid "Choose your desire templates."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:454
+msgid "Invalid value for background repeat."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:458
+msgid "Invalid value for background attachment."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:462
+msgid "Invalid value for background position X."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:466
+msgid "Invalid value for background position Y."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:470
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:474
+msgid "Invalid value for background size."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:479
+msgid "Unrecognized background setting."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:520
+#: includes/admin/settings/class-evf-settings-validation.php:52
+#: includes/class-evf-frontend-scripts.php:346
+#: includes/evf-core-functions.php:1543
+msgid "This field is required."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:521
+msgid "This is a sample form error message for customize puropse only."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:522
+msgid "This is a sample form success message for customize puropse only."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:554
+msgid "Everest Forms &ndash; Styles"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:555
+msgid "Everest Forms &ndash; Styles Customizer allows you to preview changes and customize any form elements."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:581
+msgid "Upgrade to Pro Version to Gain Access"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:582
+msgid "Unfortunately, this feature is available on the Pro version. Please upgrade to unlock it."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:583
+#: includes/admin/class-evf-admin-assets.php:219
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:584
+#: includes/admin/class-evf-admin-assets.php:157
+#: includes/admin/class-evf-admin-assets.php:264
+msgid "OK"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:757
+msgid "ScssPhp: Unable to compile content"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:21
+msgid "Color Palette"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:22
+msgid "This is color palette description."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:41
+msgid "Classic"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:54
+msgid "Monochrome"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:70
+msgid "Autumn Blaze"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:83
+msgid "Sunset Glow"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:96
+msgid "Majestic"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:109
+msgid "Fresh Greenery"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:122
+msgid "Cloudy Sky"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:135
+msgid "Earthy Warm"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:149
+msgid "Blushing Blossom"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:162
+msgid "Thunder"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-color-palette.php:175
+msgid "Midnight Charm"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:23
+#: includes/admin/builder/class-evf-builder-settings.php:43
+#: includes/admin/builder/class-evf-builder-settings.php:183
+#: includes/admin/settings/class-evf-settings-general.php:25
+msgid "General"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:24
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:23
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:43
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:50
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:57
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:64
+msgid "This is field Submission message description."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:38
+msgid "Font"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:39
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:46
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:53
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:60
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:67
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:74
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:81
+msgid "This is font description."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:52
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:947
+msgid "Field Styles"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:59
+msgid "File Upload Styles"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:66
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1802
+msgid "Button"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:73
+msgid "Radio Checkbox"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:105
+msgid "Use Theme Font"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:116
+msgid "Font Family"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:117
+msgid "Select a desire Google font."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:122
+msgctxt "enhanced select"
+msgid "Select Font Family&hellip;"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:139
+msgid "Choose a form width (in %)."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:156
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:405
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:554
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:203
+msgid "Border Type"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:157
+msgid "This is form wrapper border type"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:160
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:409
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:558
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:206
+msgid "None"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:161
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:410
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:559
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:207
+#: includes/abstracts/class-evf-form-fields.php:833
+#: includes/fields/class-evf-field-ai.php:193
+msgid "Hidden"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:165
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:414
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:563
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:211
+#: includes/fields/class-evf-field-divider.php:68
+msgid "Double"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:167
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:416
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:565
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:213
+msgid "Ridge"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:168
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:417
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:566
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:214
+msgid "Inset"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:169
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:418
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:567
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:215
+msgid "Outset"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:170
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:419
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:568
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:216
+msgid "Initial"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:171
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:420
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:569
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:217
+msgid "Inherit"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:186
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:584
+msgid "This is a form button border width."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:204
+msgid "This is a form border color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:224
+msgid "This is a form border radius."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:234
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:469
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:618
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:275
+msgid "PX"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:235
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:470
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:619
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:276
+msgid "%"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:246
+#: includes/admin/class-evf-admin-settings.php:369
+msgid "Background Image"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:257
+msgid "Background Preset"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:261
+msgctxt "Default Preset"
+msgid "Default"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:262
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:303
+msgid "Fill Screen"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:263
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:302
+msgid "Fit to Screen"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:264
+msgctxt "Repeat Image"
+msgid "Repeat"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:265
+msgctxt "Custom Preset"
+msgid "Custom"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:282
+msgid "Image Position"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:297
+msgid "Image Size"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:301
+msgid "Original"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:313
+msgid "Repeat Background Image"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:324
+msgid "Scroll with Page"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:335
+msgid "Image Opacity"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:336
+msgid "Choose a Image opacity (in %)."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:358
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1785
+msgid "Form Margin"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:359
+msgid "This is a form margin."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:382
+msgid "This is a form padding."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:406
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:555
+msgid "This is form field border type"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:435
+msgid "This is a form field border width."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:459
+msgid "This is a form field border radius."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:608
+msgid "This is a button border radius."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:633
+msgid "Field Labels"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:647
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:804
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:961
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1153
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1492
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1636
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:107
+msgid "Font Size"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:648
+msgid "This is a form field label font size (px)."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:668
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:825
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1004
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1185
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1668
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1837
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:127
+msgid "Font Style"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:669
+msgid "This is a form field label font style."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:674
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:831
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1010
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1191
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1674
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1843
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:132
+msgid "Bold"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:678
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:835
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1014
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1195
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1678
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1847
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:136
+msgid "Italic"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:682
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:839
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1018
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1199
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1682
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1851
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:140
+msgid "Underline"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:686
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:843
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1022
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1203
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1686
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1855
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:144
+msgid "Uppercase"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:698
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:855
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1215
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:156
+msgid "Text Alignment"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:699
+msgid "This is a form field label text alignment."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:704
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:861
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1040
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1221
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1704
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1898
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:161
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-dimension-control.php:256
+msgid "Left"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:708
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:865
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1044
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1225
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1708
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1902
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:165
+msgid "Center"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:712
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:869
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1048
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1229
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1712
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1906
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:169
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-dimension-control.php:254
+msgid "Right"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:724
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:881
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1241
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1943
+msgid "Line Height"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:725
+msgid "This is a form field label line height."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:748
+msgid "This is a form field label margin."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:771
+msgid "This is a form field label padding."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:790
+msgid "Field sublabels"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:805
+msgid "This is a form field sublabel font size (px)."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:826
+msgid "This is a form field sublabel font style."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:856
+msgid "This is a form field sublabel text alignment."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:882
+msgid "This is a form field sublabel line height."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:905
+msgid "This is a form field sublabel margin."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:928
+msgid "This is a form field sublabel padding."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:962
+msgid "This is a form field style font size in px."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:977
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1169
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1508
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1652
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:180
+msgid "Font Color"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:978
+msgid "This is a form field style font color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:988
+msgid "Placeholder Font Color"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:989
+msgid "This is a form field style placeholder font color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1005
+msgid "This is a form field style font style."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1034
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1698
+msgid "Alignment"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1035
+msgid "This is a form field alignment."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1061
+msgid "This is a form field style border color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1074
+msgid "Border Focus Color"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1075
+msgid "This is a form field style border color on focus."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1096
+msgid "Field Margin"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1097
+msgid "This is a form field margin."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1119
+msgid "Field Padding"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1120
+msgid "This is a form field padding."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1139
+msgid "Field Description"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1154
+msgid "This is a form field description font size (px)."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1170
+msgid "This is a form field description font color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1186
+msgid "This is a form field description font style."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1216
+msgid "This is a form field description text alignment."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1242
+msgid "This is a form field description line height."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1265
+msgid "This is a form field description margin."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1288
+msgid "This is a form field description padding."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1307
+#: includes/fields/class-evf-field-title.php:20
+msgid "Section Title"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1478
+#: includes/fields/class-evf-field-file-upload.php:20
+msgid "File Upload"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1493
+msgid "Set the font-size(px) for file upload fields."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1509
+msgid "Select the font color for file upload fields."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1519
+msgid "File Upload Background"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1520
+msgid "Choose background color for file upload fields."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1533
+msgid "Icon Background"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1534
+msgid "Choose background color for icon inside the file upload fields."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1547
+#: includes/fields/class-evf-field-rating.php:173
+msgid "Icon Color"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1548
+msgid "Fill color for icon inside file upload fields."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1559
+msgid "Choose the border color for file upload fields."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1579
+msgid "File Upload Margin"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1580
+msgid "Set the margins for file upload fields."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1602
+msgid "File Uploads Padding"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1603
+msgid "Set the paddings for file upload fields."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1622
+msgid "Radio/Checkbox Styles"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1637
+msgid "This is a form checkbox/radio font size (px)."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1653
+msgid "This is a form checkbox/radio font color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1669
+msgid "This is a form checkbox/radio font style."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1699
+msgid "This is a form field alignment only for default style."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1723
+msgid "Style Variation"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1724
+msgid "This is a form radio/checkbox style variation."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1728
+#: includes/admin/builder/class-evf-builder-settings.php:231
+#: includes/fields/class-evf-field-phone.php:83
+msgid "Default"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1729
+msgid "Outline"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1730
+msgid "Filled"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1740
+msgid "Radio/Checkbox Size"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1741
+msgid "This is a form checkbox/radio size (px)."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1756
+msgid "Radio/Checkbox Color"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1757
+msgid "This is a form checkbox/radio color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1767
+msgid "Radio/Checkbox Checked Color"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1768
+msgid "This is a form checkbox/radio checked color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1786
+msgid "This is a form radio/checkbox margin."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1838
+msgid "This is a form button font style."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1868
+msgid "Hover Font Color"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1869
+msgid "This is a form button hover font color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1880
+msgid "Button Hover Color"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1881
+msgid "This is a form button hover color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1892
+msgid "Button Alignment"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1893
+msgid "This is a form button alignment."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1920
+msgid "This is a form button style border color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1931
+msgid "Border Hover Color"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1932
+msgid "This is a form button style border color in hover."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1944
+msgid "This is a form button line height."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1966
+msgid "Button Margin"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1967
+msgid "This is a form button margin."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1989
+msgid "Button Padding"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1990
+msgid "This is a form button padding."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:22
+msgid "Form Messages"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:42
+msgid "Success Message"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:49
+msgid "Error Message"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:56
+msgid "Info Message"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:63
+msgid "Warning Message"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:70
+msgid "Validation Message"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:71
+msgid "This is field validation message description."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-dimension-control.php:232
+#: includes/evf-core-functions.php:4177
+msgid "Desktop"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-dimension-control.php:236
+#: includes/evf-core-functions.php:4173
+msgid "Tablet"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-dimension-control.php:240
+#: includes/evf-core-functions.php:4175
+msgid "Mobile"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-dimension-control.php:253
+msgid "Top"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-dimension-control.php:255
+msgid "Bottom"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-templates-section.php:40
+msgid "Active template"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-templates-section.php:43
+msgid "Change template"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-templates-section.php:43
+msgctxt "template"
+msgid "Change"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-templates-section.php:50
+msgid "Back"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-templates-section.php:54
+msgid "You are browsing"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-templates-section.php:59
+#: src/dashboard/Constants/index.js:22
+msgid "Help"
 msgstr ""
 
 #: addons/WPBakeryBuilder/WPBakeryBuilder.php:58
@@ -364,11 +1609,6 @@ msgstr ""
 msgid "Enter text for the form field label. This is recommended and can be hidden in the Advanced Settings."
 msgstr ""
 
-#: includes/abstracts/class-evf-form-fields.php:457
-#: includes/evf-core-functions.php:3989
-msgid "Label"
-msgstr ""
-
 #: includes/abstracts/class-evf-form-fields.php:487
 #: includes/evf-core-functions.php:3998
 msgid "Enter meta key to be stored in database."
@@ -477,11 +1717,6 @@ msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:822
 msgid "Readonly "
-msgstr ""
-
-#: includes/abstracts/class-evf-form-fields.php:833
-#: includes/fields/class-evf-field-ai.php:193
-msgid "Hidden"
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:854
@@ -1235,12 +2470,6 @@ msgstr ""
 msgid "QR Generator"
 msgstr ""
 
-#: includes/admin/builder/class-evf-builder-settings.php:43
-#: includes/admin/builder/class-evf-builder-settings.php:183
-#: includes/admin/settings/class-evf-settings-general.php:25
-msgid "General"
-msgstr ""
-
 #: includes/admin/builder/class-evf-builder-settings.php:44
 #: includes/admin/builder/class-evf-builder-settings.php:361
 #: includes/admin/settings/class-evf-settings-email.php:25
@@ -1325,11 +2554,6 @@ msgstr ""
 msgid "Choose design template for the Form"
 msgstr ""
 
-#: includes/admin/builder/class-evf-builder-settings.php:231
-#: includes/fields/class-evf-field-phone.php:83
-msgid "Default"
-msgstr ""
-
 #: includes/admin/builder/class-evf-builder-settings.php:232
 msgid "Classic Layout"
 msgstr ""
@@ -1349,8 +2573,8 @@ msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:259
 #: includes/admin/form-migrator/class-evf-fm-contactform7.php:411
-#: includes/class-evf-frontend-scripts.php:309
-#: includes/class-evf-frontend-scripts.php:342
+#: includes/class-evf-frontend-scripts.php:311
+#: includes/class-evf-frontend-scripts.php:344
 #: includes/shortcodes/class-evf-shortcode-form.php:97
 #: includes/templates/contact.php:67
 msgid "Submit"
@@ -1729,7 +2953,7 @@ msgid "Updating Templates"
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:124
-#: includes/class-evf-frontend-scripts.php:321
+#: includes/class-evf-frontend-scripts.php:323
 msgctxt "enhanced select"
 msgid "No matches found"
 msgstr ""
@@ -1791,11 +3015,6 @@ msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:156
 msgid "field"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:157
-#: includes/admin/class-evf-admin-assets.php:264
-msgid "OK"
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:158
@@ -1928,10 +3147,6 @@ msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:218
 msgid "We're sorry, the %name% is not available on your plan.<br>Please upgrade to the PRO plan to unlock all these awesome features."
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:219
-msgid "Upgrade to PRO"
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:222
@@ -2142,7 +3357,7 @@ msgid "Please enter in a value greater or equal to 0."
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:398
-#: includes/class-evf-frontend-scripts.php:329
+#: includes/class-evf-frontend-scripts.php:331
 msgid "Please enter in a value less than 100."
 msgstr ""
 
@@ -2650,30 +3865,26 @@ msgstr ""
 msgid "Header Logo"
 msgstr ""
 
-#: includes/admin/class-evf-admin-settings.php:369
-msgid "Background Image"
-msgstr ""
-
-#: includes/admin/class-evf-admin-settings.php:753
+#: includes/admin/class-evf-admin-settings.php:752
 msgid "Select a page&hellip;"
 msgstr ""
 
-#: includes/admin/class-evf-admin-settings.php:762
+#: includes/admin/class-evf-admin-settings.php:761
 #: includes/evf-formatting-functions.php:576
 msgid "Day(s)"
 msgstr ""
 
-#: includes/admin/class-evf-admin-settings.php:763
+#: includes/admin/class-evf-admin-settings.php:762
 #: includes/evf-formatting-functions.php:577
 msgid "Week(s)"
 msgstr ""
 
-#: includes/admin/class-evf-admin-settings.php:764
+#: includes/admin/class-evf-admin-settings.php:763
 #: includes/evf-formatting-functions.php:578
 msgid "Month(s)"
 msgstr ""
 
-#: includes/admin/class-evf-admin-settings.php:765
+#: includes/admin/class-evf-admin-settings.php:764
 #: includes/evf-formatting-functions.php:579
 msgid "Year(s)"
 msgstr ""
@@ -3179,12 +4390,6 @@ msgstr ""
 msgid "Enter the message for the required form field"
 msgstr ""
 
-#: includes/admin/settings/class-evf-settings-validation.php:52
-#: includes/class-evf-frontend-scripts.php:344
-#: includes/evf-core-functions.php:1543
-msgid "This field is required."
-msgstr ""
-
 #: includes/admin/settings/class-evf-settings-validation.php:55
 msgid "Website URL"
 msgstr ""
@@ -3215,7 +4420,7 @@ msgid "Enter the message for the valid email suggestion"
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-validation.php:79
-#: includes/class-evf-frontend-scripts.php:316
+#: includes/class-evf-frontend-scripts.php:318
 msgid "Did you mean {suggestion}?"
 msgstr ""
 
@@ -3228,7 +4433,7 @@ msgid "Enter the message for confirm field value."
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-validation.php:88
-#: includes/class-evf-frontend-scripts.php:318
+#: includes/class-evf-frontend-scripts.php:320
 msgid "Field values do not match."
 msgstr ""
 
@@ -3241,7 +4446,7 @@ msgid "Enter the message for the checkbox selection limit."
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-validation.php:97
-#: includes/class-evf-frontend-scripts.php:319
+#: includes/class-evf-frontend-scripts.php:321
 #: includes/fields/class-evf-field-checkbox.php:483
 msgid "You have exceeded number of allowed selections: {#}."
 msgstr ""
@@ -3362,10 +4567,6 @@ msgstr ""
 
 #: includes/admin/views/html-admin-page-builder.php:114
 msgid "Embed"
-msgstr ""
-
-#: includes/admin/views/html-admin-page-builder.php:115
-msgid "Save"
 msgstr ""
 
 #: includes/admin/views/html-admin-page-entries-view.php:55
@@ -4365,35 +5566,35 @@ msgstr ""
 msgid "seconds, security checkup is being executed."
 msgstr ""
 
-#: includes/class-evf-frontend-scripts.php:317
+#: includes/class-evf-frontend-scripts.php:319
 msgid "Click to accept this suggestion."
 msgstr ""
 
-#: includes/class-evf-frontend-scripts.php:325
+#: includes/class-evf-frontend-scripts.php:327
 msgid "Please enter at least {0} words."
 msgstr ""
 
-#: includes/class-evf-frontend-scripts.php:326
+#: includes/class-evf-frontend-scripts.php:328
 msgid "Please enter at least {0} characters."
 msgstr ""
 
-#: includes/class-evf-frontend-scripts.php:328
+#: includes/class-evf-frontend-scripts.php:330
 msgid "Please enter a valid phone number."
 msgstr ""
 
-#: includes/class-evf-frontend-scripts.php:334
+#: includes/class-evf-frontend-scripts.php:336
 msgid "{count} of {limit} max characters."
 msgstr ""
 
-#: includes/class-evf-frontend-scripts.php:335
+#: includes/class-evf-frontend-scripts.php:337
 msgid "{count} of {limit} max words."
 msgstr ""
 
-#: includes/class-evf-frontend-scripts.php:343
+#: includes/class-evf-frontend-scripts.php:345
 msgid "Something went wrong while making an AJAX submission"
 msgstr ""
 
-#: includes/class-evf-frontend-scripts.php:345
+#: includes/class-evf-frontend-scripts.php:347
 msgid "Click here to download your pdf submission"
 msgstr ""
 
@@ -13472,18 +14673,6 @@ msgstr ""
 msgid "Enter CSS class for this field container. Class names should be separated with spaces."
 msgstr ""
 
-#: includes/evf-core-functions.php:4173
-msgid "Tablet"
-msgstr ""
-
-#: includes/evf-core-functions.php:4175
-msgid "Mobile"
-msgstr ""
-
-#: includes/evf-core-functions.php:4177
-msgid "Desktop"
-msgstr ""
-
 #: includes/evf-core-functions.php:5010
 #: includes/evf-core-functions.php:5052
 #: includes/evf-core-functions.php:5094
@@ -13927,20 +15116,8 @@ msgstr ""
 msgid "Plain"
 msgstr ""
 
-#: includes/fields/class-evf-field-divider.php:65
-msgid "Dashed"
-msgstr ""
-
-#: includes/fields/class-evf-field-divider.php:66
-msgid "Dotted"
-msgstr ""
-
 #: includes/fields/class-evf-field-divider.php:67
 msgid "Thick"
-msgstr ""
-
-#: includes/fields/class-evf-field-divider.php:68
-msgid "Double"
 msgstr ""
 
 #: includes/fields/class-evf-field-email.php:121
@@ -13968,10 +15145,6 @@ msgstr ""
 msgid "Confirmation Email do not match."
 msgstr ""
 
-#: includes/fields/class-evf-field-file-upload.php:20
-msgid "File Upload"
-msgstr ""
-
 #: includes/fields/class-evf-field-hidden.php:20
 msgid "Hidden Field"
 msgstr ""
@@ -13988,7 +15161,7 @@ msgstr ""
 msgid "Contents of this field are not displayed in the admin area."
 msgstr ""
 
-#: includes/fields/class-evf-field-image-upload.php:20
+#: includes/fields/class-evf-field-image-upload.php:24
 msgid "Image Upload"
 msgstr ""
 
@@ -14032,10 +15205,6 @@ msgstr ""
 
 #: includes/fields/class-evf-field-likert.php:98
 msgid "Select an input method."
-msgstr ""
-
-#: includes/fields/class-evf-field-likert.php:109
-msgid "Radio Button"
 msgstr ""
 
 #: includes/fields/class-evf-field-likert.php:110
@@ -14274,10 +15443,6 @@ msgstr ""
 msgid "Select rating icon to display"
 msgstr ""
 
-#: includes/fields/class-evf-field-rating.php:173
-msgid "Icon Color"
-msgstr ""
-
 #: includes/fields/class-evf-field-rating.php:174
 msgid "Select the primary color for the rating icon"
 msgstr ""
@@ -14402,10 +15567,6 @@ msgstr ""
 
 #: includes/fields/class-evf-field-textarea.php:23
 msgid "Paragraph Text"
-msgstr ""
-
-#: includes/fields/class-evf-field-title.php:20
-msgid "Section Title"
 msgstr ""
 
 #: includes/fields/class-evf-field-turnstile.php:20
@@ -14776,10 +15937,6 @@ msgstr ""
 
 #: src/dashboard/Constants/index.js:13
 msgid "All Features"
-msgstr ""
-
-#: src/dashboard/Constants/index.js:22
-msgid "Help"
 msgstr ""
 
 #: src/dashboard/Constants/index.js:26
