@@ -25,10 +25,7 @@ none
 Thumbs.db
 
 # Composer
-/vendor/
 
-# Src
-/src/
 
 # Build
 build/
