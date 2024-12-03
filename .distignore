@@ -10,7 +10,6 @@ composer.*
 Gruntfile.js
 webpack.config.js
 tests/
-vendor/
 src/
 node_modules/
 none
