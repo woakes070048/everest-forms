@@ -3,7 +3,7 @@
         'name' => 'wpeverest/everest-forms',
         'pretty_version' => 'dev-develop',
         'version' => 'dev-develop',
-        'reference' => '9c1928a5bd111ce9d6f2b9e1842599a5924f4e8f',
+        'reference' => 'ca40145ba55c72a74bf8ba80f3dcf155986f0d4a',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -19,15 +19,6 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'gettext/gettext' => array(
-            'pretty_version' => 'v4.8.12',
-            'version' => '4.8.12.0',
-            'reference' => '11af89ee6c087db3cf09ce2111a150bca5c46e12',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../gettext/gettext',
-            'aliases' => array(),
-            'dev_requirement' => true,
-        ),
         'scssphp/scssphp' => array(
             'pretty_version' => 'v1.13.0',
             'version' => '1.13.0.0',
@@ -40,7 +31,7 @@
         'wpeverest/everest-forms' => array(
             'pretty_version' => 'dev-develop',
             'version' => 'dev-develop',
-            'reference' => '9c1928a5bd111ce9d6f2b9e1842599a5924f4e8f',
+            'reference' => 'ca40145ba55c72a74bf8ba80f3dcf155986f0d4a',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
