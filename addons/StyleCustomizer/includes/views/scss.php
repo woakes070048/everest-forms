@@ -250,7 +250,7 @@ $validation_message_border_color: <?php echo evf_clean( $values['validation_mess
 			<?php if ( '' !== $values['font']['font_family'] ) : ?>
 				font-family: <?php echo evf_clean( $values['font']['font_family'] ); ?>;
 			<?php endif; ?>
-			<?php if ( isset( $values['color_palette'][ $palette_key ]['form_background'] ) && '#ffffff' !== $values['color_palette'][ $palette_key ]['form_background'] ) : ?>
+			<?php if ( isset( $values['color_palette'][ $palette_key ]['form_background'] ) ) : ?>
 				background-color: <?php echo evf_clean( $values['color_palette'][ $palette_key ]['form_background'] ); ?>;
 			<?php endif; ?>
 			<?php if ( ! empty( $values['form_container']['background_image'] ) ) : ?>
