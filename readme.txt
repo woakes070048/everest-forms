@@ -308,6 +308,9 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 
 == Changelog ==
 
+= 3.0.5.2        - 03-12-2024
+* Enhance        - SCSS PHP Compiler Updated.
+
 = 3.0.5.1        - 03-12-2024
 * Removed        - Vendor from the .distignore file.
 
