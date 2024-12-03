@@ -558,7 +558,12 @@
 				} else if (dataCustom === '') {
 					$.confirm({
 						title: 'Edit Color Palette',
-						content: 'Are you sure you want to edit this color palette?<br><div style="color: #ff4d4f; padding-top: 10px;"><i class="fa fa-exclamation-triangle" aria-hidden="true" style="margin-right: 5px;"></i>Your other customized palette will be lost!</div>',
+						content: _evfCustomizeControlsL10n.color_palette_edit_title +
+							'<br>' +
+							'<div style="color: #ff4d4f; padding-top: 10px;">' +
+								'<i class="fa fa-exclamation-triangle" aria-hidden="true" style="margin-right: 2px;"></i>' +
+								_evfCustomizeControlsL10n.color_palette_edit_description +
+							'</div>',
 						theme: 'modern',
 						type: 'red',
 						boxWidth: '30%',

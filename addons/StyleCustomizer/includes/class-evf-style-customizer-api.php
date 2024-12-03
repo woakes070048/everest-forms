@@ -550,15 +550,17 @@ class EVF_Style_Customizer_API {
 			'everest-forms-customize-controls',
 			'_evfCustomizeControlsL10n',
 			array(
-				'form_id'             => $this->form_id,
-				'panelTitle'          => esc_html__( 'Everest Forms &ndash; Styles', 'everest-forms' ),
-				'panelDescription'    => esc_html__( 'Everest Forms &ndash; Styles Customizer allows you to preview changes and customize any form elements.', 'everest-forms' ),
-				'templates'           => self::get_templates(),
-				'is_pro'              => defined( 'EFP_PLUGIN_FILE' ) ? true : false,
-				'ajax_url'            => admin_url( 'admin-ajax.php' ),
-				'save_nonce'          => wp_create_nonce( 'save_template' ),
-				'delete_nonce'        => wp_create_nonce( 'delete_template' ),
-				'color_palette_nonce' => wp_create_nonce( 'color_palette' ),
+				'form_id'                        => $this->form_id,
+				'panelTitle'                     => esc_html__( 'Everest Forms &ndash; Styles', 'everest-forms' ),
+				'panelDescription'               => esc_html__( 'Everest Forms &ndash; Styles Customizer allows you to preview changes and customize any form elements.', 'everest-forms' ),
+				'templates'                      => self::get_templates(),
+				'is_pro'                         => defined( 'EFP_PLUGIN_FILE' ) ? true : false,
+				'ajax_url'                       => admin_url( 'admin-ajax.php' ),
+				'save_nonce'                     => wp_create_nonce( 'save_template' ),
+				'delete_nonce'                   => wp_create_nonce( 'delete_template' ),
+				'color_palette_nonce'            => wp_create_nonce( 'color_palette' ),
+				'color_palette_edit_title'       => esc_html__( 'Are you sure you want to edit this color palette?', 'everest-forms' ),
+				'color_palette_edit_description' => esc_html__( 'Your previous custom color palette will be lost!', 'everest-forms' ),
 			)
 		);
 
