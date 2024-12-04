@@ -1,0 +1,39 @@
+name: test build action
+
+on:
+    push:
+        branches:
+            - develop
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Code From Current Branch
+              uses: actions/checkout@v2
+
+            - name: Add Private SSH Key
+              run: |
+                mkdir -p ~/.ssh
+                echo "${{ secrets.TG_PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
+                chmod 600 ~/.ssh/id_rsa
+
+            - name: Add GitHub Email & Username
+              env:
+                MY_EMAIL: ${{ secrets.TG_GITHUB_EMAIL }}
+                MY_USERNAME: ${{ secrets.TG_GITHUB_USERNAME }}
+              run: |
+                git config --global user.email "$MY_EMAIL"
+                git config --global user.name "$MY_USERNAME"
+
+            - name: Build
+              id: build
+              uses: wpeverest/action-build@3.0.0
+              with:
+                generate-zip: true
+
+            - name: Upload Artifact Zip
+              uses: actions/upload-artifact@v4
+              with:
+                name: build-zip
+                path: ./everest-forms/*.zip
