@@ -3,7 +3,7 @@ name: test build action
 on:
     push:
         branches:
-            - develop
+            - staging
 
 jobs:
     deploy:
