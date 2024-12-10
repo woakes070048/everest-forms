@@ -10141,7 +10141,7 @@ everest-forms-field-option-row-rating-icon {
 				color: $color-white;
 				background: $everestforms;
 				border-color: $everestforms;
-				
+
 				svg {
 					fill: $color-white;
 				}
@@ -10214,3 +10214,12 @@ body {
 	  }
 	}
   }
+
+.everest-forms-title-desc {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#evf-edit-form-name {
+    width: 100%;
+}
