@@ -1,4 +1,4 @@
-name: EVF Staging QA Automation Test ci/cd Final 
+name: EVF QA Automation Test ci/cd Final 
 
 on:
     push:
