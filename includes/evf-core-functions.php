@@ -988,7 +988,7 @@ function evf_html_attributes( $id = '', $class = array(), $datas = array(), $att
 		if ( ! empty( $class ) ) {
 			// While editing hidden field should be visible.
 			if ( $is_edit_entry ) {
-				$class   = str_replace( 'evf-field-hidden', '', $class );
+				$class = str_replace( 'evf-field-hidden', '', $class );
 			}
 			$parts[] = 'class="' . $class . '"';
 		}
@@ -1550,47 +1550,59 @@ function evf_get_required_label() {
  * @return bool|string Plan on success, false on failure.
  */
 function evf_get_license_plan() {
-    $license_key = get_option( 'everest-forms-pro_license_key' );
+	$license_key = get_option( 'everest-forms-pro_license_key' );
 
-    if ( ! function_exists( 'is_plugin_active' ) ) {
-        include_once ABSPATH . 'wp-admin/includes/plugin.php';
-    }
+	if ( ! function_exists( 'is_plugin_active' ) ) {
+		include_once ABSPATH . 'wp-admin/includes/plugin.php';
+	}
 
-    if ( $license_key && is_plugin_active( 'everest-forms-pro/everest-forms-pro.php' ) ) {
-        $license_data = get_transient( 'evf_pro_license_plan' );
+	if ( $license_key && is_plugin_active( 'everest-forms-pro/everest-forms-pro.php' ) ) {
+		$license_data = get_transient( 'evf_pro_license_plan' );
 
-        // Check for cached error state
-        if ( 'error' === $license_data ) {
-            return false;
-        }
+		if ( 'error' === $license_data ) {
+			return false;
+		}
 
-        // Fetch new license data if transient is missing
-        if ( false === $license_data ) {
-            $license_response = EVF_Updater_Key_API::check( array( 'license' => $license_key ) );
-            $license_data = json_decode( $license_response );
+		if ( false === $license_data ) {
+			$license_response = EVF_Updater_Key_API::check( array( 'license' => $license_key ) );
+			$license_data     = json_decode( $license_response );
 
-            if ( ! empty( $license_data->item_name ) ) {
-                // Process and cache the license data
-                $license_data->item_plan = strtolower( $license_data->item_name );
-                $license_data->item_plan = str_replace(
-                    array( 'everest forms', 'lifetime', '-lifetime' ),
-                    '',
-                    $license_data->item_plan
-                );
-                $license_data->item_plan = trim( $license_data->item_plan );
+			if ( ! empty( $license_data->item_name ) ) {
+				$license_data->item_plan = strtolower( $license_data->item_name );
+				$license_data->item_plan = str_replace(
+					array( 'everest forms', 'lifetime', '-lifetime' ),
+					'',
+					$license_data->item_plan
+				);
+				$license_data->item_plan = trim( $license_data->item_plan );
 
-                set_transient( 'evf_pro_license_plan', $license_data, WEEK_IN_SECONDS );
-            } else {
-                // Cache error state for 24 hours
-                set_transient( 'evf_pro_license_plan', 'error', DAY_IN_SECONDS );
-                return false;
-            }
-        }
+				set_transient( 'evf_pro_license_plan', $license_data, WEEK_IN_SECONDS );
+			} else {
+				set_transient( 'evf_pro_license_plan', 'error', 6 * HOUR_IN_SECONDS );
+				return false;
+			}
+		}
 
-        return evf_handle_license_plan_compatibility( isset( $license_data->item_plan ) ? $license_data->item_plan : false );
-    }
+		return evf_handle_license_plan_compatibility( isset( $license_data->item_plan ) ? $license_data->item_plan : false );
+	}
 
-    return false;
+	return false;
+}
+
+add_action( 'admin_init', 'evf_handle_force_update' );
+
+if ( ! function_exists( 'evf_handle_force_update' ) ) {
+
+	/**
+	 * Delete our plugins addon updater transient during force update.
+	 */
+	function evf_handle_force_update() {
+		global $pagenow;
+
+		if ( 'update-core.php' === $pagenow && ( isset( $_GET['force-check'] ) ) && ( '1' === $_GET['force-check'] ) ) {
+			delete_transient( 'evf_pro_license_plan' );
+		}
+	}
 }
 
 
@@ -4569,14 +4581,13 @@ function evf_sanitize_builder( $post_data = array() ) {
 			$value = wp_kses_post( $data->value );
 		} elseif ( 'settings[external_url]' === $data->name ) {
 			$value = esc_url_raw( $data->value );
-		} elseif ( preg_match( '/evf_email_message/', $data->name ) || preg_match( '/telegram_message/', $data->name ) || preg_match( '/slack_message/', $data->name )) {
+		} elseif ( preg_match( '/evf_email_message/', $data->name ) || preg_match( '/telegram_message/', $data->name ) || preg_match( '/slack_message/', $data->name ) ) {
 			$value = wp_kses_post( $data->value );
-		} elseif ( preg_match('/calculation_field/', $data->name) ) {
+		} elseif ( preg_match( '/calculation_field/', $data->name ) ) {
 			$value = wp_kses_post( $data->value );
-		} elseif ( preg_match('/successful_form_submission_message/', $data->name )) {
+		} elseif ( preg_match( '/successful_form_submission_message/', $data->name ) ) {
 			$value = wp_kses_post( $data->value );
-		}
-		else {
+		} else {
 			$value = sanitize_text_field( $data->value );
 		}
 
@@ -5260,7 +5271,7 @@ function evf_get_next_key_array( $arr, $key ) {
 		$next_key = $keys[ $position + 1 ];
 	}
 
-	return isset( $next_key ) ? $next_key : '' ;
+	return isset( $next_key ) ? $next_key : '';
 }
 /**
  * Function to generate the api key base on the string.
@@ -5271,10 +5282,10 @@ function evf_get_next_key_array( $arr, $key ) {
 function generate_api_key( $string = 'evf_restapi', $length = 32 ) {
 	$key = bin2hex( random_bytes( $length ) );
 
-    return $key;
+	return $key;
 }
 
-if ( !function_exists( 'evf_hex_to_rgb' ) ) {
+if ( ! function_exists( 'evf_hex_to_rgb' ) ) {
 	/**
 	 * Converts a hex color code to an RGB array.
 	 *
@@ -5286,18 +5297,18 @@ if ( !function_exists( 'evf_hex_to_rgb' ) ) {
 		$hexcolor = ltrim( $hexcolor, '#' );
 
 		if ( strlen( $hexcolor ) == 6 ) {
-			$r = hexdec(substr($hexcolor, 0, 2));
-			$g = hexdec(substr($hexcolor, 2, 2));
-			$b = hexdec(substr($hexcolor, 4, 2));
-		} elseif (strlen($hexcolor) == 3) {
-			$r = hexdec(str_repeat(substr($hexcolor, 0, 1), 2));
-			$g = hexdec(str_repeat(substr($hexcolor, 1, 1), 2));
-			$b = hexdec(str_repeat(substr($hexcolor, 2, 1), 2));
+			$r = hexdec( substr( $hexcolor, 0, 2 ) );
+			$g = hexdec( substr( $hexcolor, 2, 2 ) );
+			$b = hexdec( substr( $hexcolor, 4, 2 ) );
+		} elseif ( strlen( $hexcolor ) == 3 ) {
+			$r = hexdec( str_repeat( substr( $hexcolor, 0, 1 ), 2 ) );
+			$g = hexdec( str_repeat( substr( $hexcolor, 1, 1 ), 2 ) );
+			$b = hexdec( str_repeat( substr( $hexcolor, 2, 1 ), 2 ) );
 		} else {
-			return [0, 0, 0];
+			return array( 0, 0, 0 );
 		}
 
-		return [$r, $g, $b];
+		return array( $r, $g, $b );
 	}
 }
 
@@ -5311,7 +5322,7 @@ if ( ! function_exists( 'evf_email_send_failed_handler' ) ) {
 	 * @param object $error_instance WP_Error message instance.
 	 */
 	function evf_email_send_failed_handler( $error_instance ) {
-		$error_message = '';
+		$error_message   = '';
 		$decoded_message = json_decode( $error_instance->get_error_message() );
 
 		if ( json_last_error() === JSON_ERROR_NONE && ! empty( $decoded_message ) ) {
@@ -5337,8 +5348,10 @@ if ( ! function_exists( 'evf_email_send_failed_handler' ) ) {
 	}
 }
 
-add_action( 'admin_head', function() {
-	$js = <<<JS
+add_action(
+	'admin_head',
+	function () {
+		$js = <<<JS
 const isSidebarEnabled = localStorage.getItem( 'isPremiumSidebarEnabled' );
 const interval = setInterval( () => {
 	if ( document.body ) {
@@ -5351,7 +5364,8 @@ const interval = setInterval( () => {
 	}
 }, 1 );
 JS;
-	if ( function_exists( 'wp_print_inline_script_tag' ) ) {
-		wp_print_inline_script_tag( $js );
+		if ( function_exists( 'wp_print_inline_script_tag' ) ) {
+			wp_print_inline_script_tag( $js );
+		}
 	}
-} );
+);
