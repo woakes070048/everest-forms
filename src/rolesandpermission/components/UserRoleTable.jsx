@@ -13,7 +13,7 @@ import React, { useEffect, useState } from 'react';
 import { __ } from "@wordpress/i18n";
 import { SearchIcon } from '@chakra-ui/icons';
 import { Select } from 'chakra-react-select';
-import { bulkRemoveManager, getManagers, getWPRoles, removeManager } from './RoleAndPermissionAPI';
+import { bulkAssignPermission, bulkRemoveManager, getManagers, getWPRoles, removeManager } from './RoleAndPermissionAPI';
 import TrashUserRoleModel from './TrashUserRoleModel';
 import UserDisplayModal from './UserDisplayModal';
 import { debounce } from "lodash";
