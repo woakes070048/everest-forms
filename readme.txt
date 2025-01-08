@@ -4,7 +4,7 @@ Tags: contact form, custom form, form builder, forms, survey
 Requires at least: 5.5
 Tested up to: 6.7.1
 Requires PHP: 7.2
-Stable tag: 3.0.7.1
+Stable tag: 3.0.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -308,11 +308,16 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 
 == Changelog ==
 
-= 3.0.8         - xx-xx-2025
-* Feature 		- SMTP settings in Everest Forms.
-* Tweak         - Captcha design on admin.
-* Tweak         - Meta key field readonly.
-* Fix			- Date Picker and File upload field not working in elementor popup.
+= 3.0.8         - 08-01-2025
+* Feature		- User Roles and Permission.
+* Feature		- SMTP settings in Everest Forms.
+* Enhancement	- Forms table design.
+* Tweak			- Meta key field readonly.
+* Tweak         - Captcha design on admin.
+* Tweak			- Add mark as spam option in entries list.
+* Fix       - Minimize the license hit when server is unavailable .
+* Fix       - Date Picker and File upload field not working in elementor popup.
+
 
 = 3.0.7.1       - 30-12-2024
 * Added         -  Transient for addon update.

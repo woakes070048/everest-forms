@@ -23,7 +23,7 @@ final class EverestForms {
 	 *
 	 * @var string
 	 */
-	public $version = '3.0.7.1';
+	public $version = '3.0.8';
 
 	/**
 	 * The single instance of the class.
@@ -503,7 +503,7 @@ final class EverestForms {
 	/**
 	 * Bulk actions in the entries table
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @param  Array $actions Array of actions for bulk action.
 	 *
