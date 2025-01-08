@@ -26,7 +26,7 @@ if ( in_array( 'smart-smtp/smart-smtp.php', $all_active_plugins ) ) {
 	$is_smtp_active = 0;
 }
 
-if ( $all_installed_plugins['smart-smtp/smart-smtp.php'] ) {
+if ( isset($all_installed_plugins['smart-smtp/smart-smtp.php']) ) {
 	$is_smtp_installed = 1;
 } else {
 	$is_smtp_installed = 0;
