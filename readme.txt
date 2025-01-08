@@ -311,12 +311,16 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 = 3.0.8         - 08-01-2025
 * Feature		- User Roles and Permission.
 * Feature		- SMTP settings in Everest Forms.
-* Enhancement	- Forms table design.
 * Tweak			- Meta key field readonly.
 * Tweak         - Captcha design on admin.
 * Tweak			- Add mark as spam option in entries list.
+* Tweak         - Select all option in import forms.
 * Fix       - Minimize the license hit when server is unavailable .
-* Fix       - Date Picker and File upload field not working in elementor popup.
+* Fix       - Date Picker and File upload field not working in Elementor popup.
+* Fix 			- Escaping issue in Email Preview template.
+* Fix           - Favorite color issue.
+* Fix           - Post Meta smart tag issue.
+* Fix           - Print option not working.
 
 
 = 3.0.7.1       - 30-12-2024
