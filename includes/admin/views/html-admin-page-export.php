@@ -11,7 +11,9 @@ defined( 'ABSPATH' ) || exit;
 <div class="everest-forms-tabs-wrapper">
 	<ul class="everest-forms-tabs">
 		<li class="active" data-tab="export-forms-tab"><?php esc_html_e( 'Export Forms', 'everest-forms' ); ?></li>
+		<?php if ( defined( 'EFP_PLUGIN_FILE' ) ) { ?>
 		<li data-tab="export-entries-tab"><?php esc_html_e( 'Export Entries', 'everest-forms' ); ?></li>
+		<?php } ?>
 	</ul>
 
 	<div class="everest-forms-tab-content active" id="export-forms-tab">

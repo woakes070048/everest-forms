@@ -591,53 +591,53 @@ if ( ! class_exists( 'EVF_Admin_Settings', false ) ) :
 
 						<?php
 						break;
-
 					// Radio image inputs.
 					case 'radio-image':
 						$option_value = $value['value'];
-						if ( isset( $value['id'] ) && 'everest_forms_recaptcha_type' === $value['id']  ){
+						if ( isset( $value['id'] ) && 'everest_forms_recaptcha_type' === $value['id'] ) {
 							$class = 'everest-forms-recaptcha-settings';
 						}
 
 						?>
-<div class="everest-forms-global-settings">
-	<label for="<?php echo esc_attr( $value['id'] ); ?>"><?php echo esc_html( $value['title'] ); ?>
-						<?php echo wp_kses_post( $tooltip_html ); ?></label>
-	<div
-		class="everest-forms-global-settings--field forminp-<?php echo esc_attr( sanitize_title( $value['type'] ) ); ?>">
-		<fieldset>
-			<ul>
-						<?php
-						foreach ( $value['options'] as $key => $val ) {
-							?>
-				<li>
-					<input name="<?php echo esc_attr( $value['id'] ); ?>" value="<?php echo esc_attr( $key ); ?>"
-						type="radio" style="<?php echo esc_attr( $value['css'] ); ?>"
-						class="<?php echo esc_attr( $value['class'] ); ?>"
-						id="evf-global-settings-<?php echo esc_attr( str_replace( ' ', '-', strtolower( $val['name'] ) ) ); ?>"
-														   <?php
-															if ( ! empty( $value['custom_attributes'] ) && is_array( $value['custom_attributes'] ) ) {
-																foreach ( $value['custom_attributes'] as $attribute => $attribute_value ) {
-																	echo esc_attr( $attribute ) . '="' . esc_attr( $attribute_value ) . '"';
-																}
-															}
-															?>
-							 <?php checked( $key, $option_value ); ?> />
-					<label
-						for="evf-global-settings-<?php echo esc_attr( str_replace( ' ', '-', strtolower( $val['name'] ) ) ); ?>">
-						<img src="<?php echo esc_html( $val['image'] ); ?>">
-							<?php echo esc_html( $val['name'] ); ?>
-					</label>
-				</li>
+							<div class="everest-forms-global-settings">
+									<label for="<?php echo esc_attr( $value['id'] ); ?>"><?php echo esc_html( $value['title'] ); ?> <?php echo wp_kses_post( $tooltip_html ); ?></label>
+									<div class="everest-forms-global-settings--field forminp-<?php echo esc_attr( sanitize_title( $value['type'] ) ); ?> <?php echo esc_attr( $class ); ?>">
+									<fieldset>
+										<ul>
 							<?php
-						}
-						?>
-			</ul>
-						<?php echo wp_kses_post( $description ); ?>
-		</fieldset>
-	</div>
-</div>
-						<?php
+							foreach ( $value['options'] as $key => $val ) {
+								?>
+											<li>
+											<input
+													name="<?php echo esc_attr( $value['id'] ); ?>"
+													value="<?php echo esc_attr( $key ); ?>"
+													type="radio"
+													style="<?php echo esc_attr( $value['css'] ); ?>"
+													class="<?php echo esc_attr( $value['class'] ); ?>"
+													id="evf-global-settings-<?php echo esc_attr( str_replace( ' ', '-', strtolower( $val['name'] ) ) ); ?>"
+								<?php
+								if ( ! empty( $value['custom_attributes'] ) && is_array( $value['custom_attributes'] ) ) {
+									foreach ( $value['custom_attributes'] as $attribute => $attribute_value ) {
+										echo esc_attr( $attribute ) . '="' . esc_attr( $attribute_value ) . '"';
+									}
+								}
+								?>
+								<?php checked( $key, $option_value ); ?>
+													/>
+													<label for="evf-global-settings-<?php echo esc_attr( str_replace( ' ', '-', strtolower( $val['name'] ) ) ); ?>">
+													<img src="<?php echo esc_html( $val['image'] ); ?>">
+								<?php echo esc_html( $val['name'] ); ?>
+													</label>
+											</li>
+									<?php
+							}
+							?>
+										</ul>
+							<?php echo wp_kses_post( $description ); ?>
+									</fieldset>
+								</div>
+							</div>
+							<?php
 						break;
 
 							// Checkbox input.
