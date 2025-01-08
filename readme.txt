@@ -309,6 +309,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 == Changelog ==
 
 = 3.0.8         - xx-xx-2025
+* Feature 		- SMTP settings in Everest Forms.
 * Tweak         - Captcha design on admin.
 * Tweak         - Meta key field readonly.
 

@@ -313,7 +313,7 @@ class Everest_Forms_Template_Section_Data {
 	/**
 	 * Retrieves the favorite forms of user.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @param  WP_REST_Request $request
 	 */

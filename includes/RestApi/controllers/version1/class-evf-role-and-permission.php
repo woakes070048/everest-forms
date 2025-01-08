@@ -2,7 +2,7 @@
 /**
  * Roles and Permission controller class.
  *
- * @since xx.xx.xx
+ * @since 3.0.8
  *
  * @package  EverestFroms/Classes
  */
@@ -30,7 +30,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Register routes.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @return void
 	 */
@@ -94,7 +94,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Assign permissions based on role.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @param WP_REST_Request $request Full data about the request.
 	 * @return WP_REST_Response
@@ -162,7 +162,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Get WordPress roles.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @return void
 	 */
@@ -205,7 +205,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Add user manager.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @param WP_REST_Request $request Full data about the request.
 	 * @return WP_REST_Response
@@ -318,7 +318,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Get user permissions.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @param mixed $user User object or user ID.
 	 * @return array User permissions.
@@ -352,7 +352,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Check if the user is an admin.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @param mixed $user User object or user ID.
 	 * @return bool True if the user is an admin, false otherwise.
@@ -368,7 +368,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Attach permissions to a user.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @param mixed $user User object or user ID.
 	 * @param array $assigned_permission List of permissions to assign.
@@ -405,7 +405,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Get EVF permissions.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @return array List of EVF permissions.
 	 */
@@ -435,8 +435,8 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Retrieves a list of managers based on the provided attributes.
 	 *
-	 * @since xx.xx.xx
-	 * 
+	 * @since 3.0.8
+	 *
 	 * @param array $attributes {
 	 *     Array of attributes for querying managers.
 	 *
@@ -499,7 +499,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Get user roles as a string.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @param array $roles Array of user roles.
 	 * @return string User roles as a comma-separated string.
@@ -520,7 +520,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Remove a manager.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @param WP_REST_Request $request Full data about the request.
 	 * @return WP_REST_Response
@@ -576,7 +576,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Remove multiple managers.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @param WP_REST_Request $request Full data about the request.
 	 * @return WP_REST_Response
@@ -637,7 +637,7 @@ class EVF_Roles_And_Permission {
 	/**
 	 * Check if a given request has access to update a setting
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.8
 	 *
 	 * @param WP_REST_Request $request Full data about the request.
 	 * @return WP_Error|bool
