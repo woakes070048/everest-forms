@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Everest Forms 3.0.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/everest-forms\n"
-"POT-Creation-Date: 2025-01-08 10:50:10+00:00\n"
+"POT-Creation-Date: 2025-01-08 11:35:54+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1657,20 +1657,20 @@ msgstr ""
 msgid "Failed to update enabled features."
 msgstr ""
 
-#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:457
+#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:456
 #: includes/RestApi/controllers/version1/class-evf-templates.php:296
 msgid "You do not have permissions to perform this action."
 msgstr ""
 
-#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:466
+#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:465
 #: includes/RestApi/controllers/version1/class-evf-templates.php:305
 msgid "You are not allowed to access this resource."
 msgstr ""
 
 #: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:108
 #: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:219
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:544
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:600
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:537
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:593
 msgid "Request data not found."
 msgstr ""
 
@@ -1700,20 +1700,20 @@ msgstr ""
 msgid "Manager added successfully."
 msgstr ""
 
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:559
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:627
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:552
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:620
 msgid "Associate user could not be found."
 msgstr ""
 
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:581
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:574
 msgid "Manager deleted successfully."
 msgstr ""
 
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:614
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:607
 msgid "Please select user."
 msgstr ""
 
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:642
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:635
 msgid "Managers deleted successfully."
 msgstr ""
 
@@ -16072,7 +16072,7 @@ msgstr ""
 msgid "how to disable."
 msgstr ""
 
-#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
 msgid "https://everestforms.net/"
 msgstr ""
 
@@ -16084,10 +16084,6 @@ msgstr ""
 
 #. Author of the plugin/theme
 msgid "WPEverest"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://wpeverest.com"
 msgstr ""
 
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:122

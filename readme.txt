@@ -1,5 +1,5 @@
-=== Everest Forms – Build Contact Forms, Surveys, Polls, Quizzes, Newsletter & Application Forms, and Many More with Ease! ===
-Contributors: WPEverest
+=== Everest Forms – WP Form Builder for Contact, Payment, Quiz, Newsletter, Survey & Poll! ===
+Contributors:everestforms,WPEverest
 Tags: contact form, custom form, form builder, forms, survey
 Requires at least: 5.5
 Tested up to: 6.7.1
