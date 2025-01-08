@@ -1,78 +1,54 @@
 # Copyright (C) 2025 WPEverest
-# This file is distributed under the same license as the Everest Forms plugin.
+# This file is distributed under the same license as the Everest Forms package.
 msgid ""
 msgstr ""
 "Project-Id-Version: Everest Forms 3.0.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/everest-forms\n"
+"POT-Creation-Date: 2025-01-08 10:45:19+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-08T16:14:56+05:45\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
-"X-Domain: everest-forms\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
 
-#. Plugin Name of the plugin
-#: everest-forms.php
-#: addons/BeaverBuilder/Helper.php:92
-#: addons/BricksBuilder/BricksFormWidget.php:26
-#: addons/BricksBuilder/BricksFormWidget.php:36
-#: addons/DiviBuilder/EverestFormsModule.php:48
-#: addons/OxygenBuilder/OxygenBuilder.php:60
-#: addons/WPBakeryBuilder/WPBakeryBuilder.php:65
-#: addons/WPBakeryBuilder/WPBakeryBuilder.php:68
-#: includes/admin/class-evf-admin-menus.php:153
-#: includes/admin/class-evf-admin.php:207
-#: includes/admin/evf-admin-functions.php:17
-#: includes/admin/form-migrator/class-evf-fm-contactform7.php:376
-#: includes/blocks/class-evf-blocks.php:102
-#: includes/class-evf-post-types.php:44
-#: includes/class-evf-post-types.php:111
-#: includes/class-evf-privacy.php:31
-#: includes/elementor/class-evf-elementor.php:65
-#: includes/elementor/class-evf-widget.php:43
-#: src/blocks/blocks/form-selector/Edit.js:49
-#: src/blocks/blocks/form-selector/Edit.js:87
-#: src/blocks/blocks/frontend-listing/Edit.js:71
+#: includes/admin/views/html-admin-page-smart-smtp-setup.php:93
+msgid "1"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-smart-smtp-setup.php:118
+msgid "2"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
 msgid "Everest Forms"
 msgstr ""
 
-#. Plugin URI of the plugin
-#: everest-forms.php
-msgid "https://everestforms.net/"
+#: addons/BeaverBuilder/EverestFormModule.php:16
+msgid "Renders the everest form"
 msgstr ""
 
-#. Description of the plugin
-#: everest-forms.php
-msgid "Drag and Drop contact form builder to easily create simple to complex forms for any purpose. Lightweight, Beautiful design, responsive and more."
-msgstr ""
-
-#. Author of the plugin
-#: everest-forms.php
-msgid "WPEverest"
-msgstr ""
-
-#. Author URI of the plugin
-#: everest-forms.php
-msgid "https://wpeverest.com"
-msgstr ""
-
-#: addons/BeaverBuilder/Helper.php:57
-#: addons/BricksBuilder/Helper.php:51
-#: addons/DiviBuilder/Helper.php:49
-#: addons/OxygenBuilder/Helper.php:56
+#: addons/BeaverBuilder/Helper.php:57 addons/BricksBuilder/Helper.php:51
+#: addons/DiviBuilder/Helper.php:49 addons/OxygenBuilder/Helper.php:56
 #: addons/WPBakeryBuilder/Helper.php:57
 msgid "Dismiss this notice."
 msgstr ""
 
-#: addons/BeaverBuilder/Helper.php:77
-#: addons/BeaverBuilder/Helper.php:99
+#: addons/BeaverBuilder/Helper.php:77 addons/BeaverBuilder/Helper.php:99
 #: addons/OxygenBuilder/Helper.php:76
 #: addons/OxygenBuilder/OxygenFormWidget.php:72
-#: src/blocks/blocks/form-selector/Edit.js:51
-#: src/blocks/blocks/form-selector/Edit.js:55
 msgid "Select a Form"
 msgstr ""
 
@@ -184,6 +160,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1773
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:223
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:458
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:528
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:607
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:265
 msgid "Border Radius"
@@ -196,6 +173,13 @@ msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:158
 msgid "Labels"
+msgstr ""
+
+#: addons/OxygenBuilder/OxygenFormWidget.php:164
+#: addons/OxygenBuilder/OxygenFormWidget.php:245
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:80
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:95
+msgid "Typography"
 msgstr ""
 
 #: addons/OxygenBuilder/OxygenFormWidget.php:168
@@ -240,12 +224,6 @@ msgstr ""
 msgid "Margin Top"
 msgstr ""
 
-#: addons/OxygenBuilder/OxygenFormWidget.php:245
-#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:80
-#: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:95
-msgid "Typography"
-msgstr ""
-
 #: addons/OxygenBuilder/OxygenFormWidget.php:247
 msgid "Hover Border"
 msgstr ""
@@ -264,6 +242,7 @@ msgstr ""
 
 #: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:182
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:381
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1458
 msgid "Form Padding"
 msgstr ""
 
@@ -374,6 +353,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1299
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:162
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:411
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:490
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:560
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:208
 #: includes/fields/class-evf-field-divider.php:66
@@ -385,6 +365,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1300
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:163
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:412
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:489
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:561
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:209
 #: includes/fields/class-evf-field-divider.php:65
@@ -406,6 +387,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/class-everest-forms-style-customizer.php:1315
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:185
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:434
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:504
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:583
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:231
 msgid "Border Width"
@@ -502,6 +484,12 @@ msgstr ""
 msgid "Template name exists. Please change the template name and try again."
 msgstr ""
 
+#: addons/StyleCustomizer/includes/class-evf-style-customizer-ajax.php:121
+msgid ""
+"Template saved successfully. Please reload the page to view changes. Reload "
+"Now?"
+msgstr ""
+
 #: addons/StyleCustomizer/includes/class-evf-style-customizer-ajax.php:150
 msgid "Template deleted successfully."
 msgstr ""
@@ -516,11 +504,15 @@ msgid "Saved"
 msgstr ""
 
 #: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:197
-msgid "Looking for a template? You can browse our templates, import and preview templates, then activate them right here."
+msgid ""
+"Looking for a template? You can browse our templates, import and preview "
+"templates, then activate them right here."
 msgstr ""
 
 #: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:198
-msgid "While previewing a new template, you can continue to tailor things like form styles and custom css, and explore template-specific options."
+msgid ""
+"While previewing a new template, you can continue to tailor things like "
+"form styles and custom css, and explore template-specific options."
 msgstr ""
 
 #: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:214
@@ -577,7 +569,9 @@ msgid "Everest Forms &ndash; Styles"
 msgstr ""
 
 #: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:558
-msgid "Everest Forms &ndash; Styles Customizer allows you to preview changes and customize any form elements."
+msgid ""
+"Everest Forms &ndash; Styles Customizer allows you to preview changes and "
+"customize any form elements."
 msgstr ""
 
 #: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:565
@@ -593,7 +587,9 @@ msgid "Upgrade to Pro Version to Gain Access"
 msgstr ""
 
 #: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:587
-msgid "Unfortunately, this feature is available on the Pro version. Please upgrade to unlock it."
+msgid ""
+"Unfortunately, this feature is available on the Pro version. Please upgrade "
+"to unlock it."
 msgstr ""
 
 #: addons/StyleCustomizer/includes/class-evf-style-customizer-api.php:588
@@ -723,17 +719,13 @@ msgstr ""
 msgid "Select a desire Google font."
 msgstr ""
 
-#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:122
-msgctxt "enhanced select"
-msgid "Select Font Family&hellip;"
-msgstr ""
-
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:139
 msgid "Choose a form width (in %)."
 msgstr ""
 
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:156
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:405
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:485
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:554
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:203
 msgid "Border Type"
@@ -817,6 +809,7 @@ msgstr ""
 
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:234
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:469
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:539
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:618
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:275
 msgid "PX"
@@ -824,6 +817,7 @@ msgstr ""
 
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:235
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:470
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:540
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:619
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:276
 msgid "%"
@@ -838,11 +832,6 @@ msgstr ""
 msgid "Background Preset"
 msgstr ""
 
-#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:261
-msgctxt "Default Preset"
-msgid "Default"
-msgstr ""
-
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:262
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:303
 msgid "Fill Screen"
@@ -851,16 +840,6 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:263
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:302
 msgid "Fit to Screen"
-msgstr ""
-
-#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:264
-msgctxt "Repeat Image"
-msgid "Repeat"
-msgstr ""
-
-#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:265
-msgctxt "Custom Preset"
-msgid "Custom"
 msgstr ""
 
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:282
@@ -892,6 +871,7 @@ msgid "Choose a Image opacity (in %)."
 msgstr ""
 
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:358
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1435
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1785
 msgid "Form Margin"
 msgstr ""
@@ -917,6 +897,18 @@ msgstr ""
 msgid "This is a form field border radius."
 msgstr ""
 
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:486
+msgid "Set the border type for file upload fields."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:505
+msgid "Set the border width for file upload fields."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:529
+msgid "Set the border radius for file upload fields."
+msgstr ""
+
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:608
 msgid "This is a button border radius."
 msgstr ""
@@ -929,8 +921,10 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:804
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:961
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1153
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1321
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1492
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1636
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1816
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:107
 msgid "Font Size"
 msgstr ""
@@ -943,6 +937,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:825
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1004
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1185
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1356
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1668
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1837
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:127
@@ -957,6 +952,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:831
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1010
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1191
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1362
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1674
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1843
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:132
@@ -967,6 +963,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:835
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1014
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1195
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1366
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1678
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1847
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:136
@@ -977,6 +974,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:839
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1018
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1199
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1370
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1682
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1851
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:140
@@ -987,6 +985,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:843
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1022
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1203
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1374
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1686
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1855
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:144
@@ -996,6 +995,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:698
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:855
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1215
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1386
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:156
 msgid "Text Alignment"
 msgstr ""
@@ -1008,6 +1008,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:861
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1040
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1221
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1392
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1704
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1898
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:161
@@ -1019,6 +1020,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:865
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1044
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1225
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1396
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1708
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1902
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:165
@@ -1029,6 +1031,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:869
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1048
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1229
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1400
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1712
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1906
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:169
@@ -1039,6 +1042,7 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:724
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:881
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1241
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1412
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1943
 msgid "Line Height"
 msgstr ""
@@ -1089,6 +1093,7 @@ msgstr ""
 
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:977
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1169
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1337
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1508
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1652
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-submission-message-configs.php:180
@@ -1183,6 +1188,34 @@ msgstr ""
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1307
 #: includes/fields/class-evf-field-title.php:20
 msgid "Section Title"
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1322
+msgid "This is a section title font size."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1338
+msgid "This is a section title font color."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1357
+msgid "This is a form section title font style."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1387
+msgid "This is a section title text alignment."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1413
+msgid "This is a section title line height."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1436
+msgid "This is a section title margin."
+msgstr ""
+
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1459
+msgid "This is a section title padding."
 msgstr ""
 
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1478
@@ -1313,6 +1346,10 @@ msgstr ""
 msgid "This is a form radio/checkbox margin."
 msgstr ""
 
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1817
+msgid "This is a form button font size (px)."
+msgstr ""
+
 #: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:1838
 msgid "This is a form button font style."
 msgstr ""
@@ -1432,11 +1469,6 @@ msgstr ""
 msgid "Change template"
 msgstr ""
 
-#: addons/StyleCustomizer/includes/customize/class-evf-customize-templates-section.php:43
-msgctxt "template"
-msgid "Change"
-msgstr ""
-
 #: addons/StyleCustomizer/includes/customize/class-evf-customize-templates-section.php:50
 msgid "Back"
 msgstr ""
@@ -1446,7 +1478,6 @@ msgid "You are browsing"
 msgstr ""
 
 #: addons/StyleCustomizer/includes/customize/class-evf-customize-templates-section.php:59
-#: src/dashboard/Constants/index.js:22
 msgid "Help"
 msgstr ""
 
@@ -1468,14 +1499,250 @@ msgstr ""
 msgid "Select Form."
 msgstr ""
 
+#: everest-forms.php:42 everest-forms.php:61
 #. translators: 1: composer command. 2: plugin directory
-#: everest-forms.php:42
-#: everest-forms.php:61
-msgid "Your installation of the Everest Forms plugin is incomplete. Please run %1$s within the %2$s directory."
+msgid ""
+"Your installation of the Everest Forms plugin is incomplete. Please run "
+"%1$s within the %2$s directory."
 msgstr ""
 
-#. translators: %d: interval
+#: includes/RestApi/controllers/version1/class-evf-changelog.php:78
+msgid "Failed to read changelog."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:64
+msgid "No entry data found!"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:76
+msgid "Form id is missing!"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:88
+msgid "Form is not found!"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:100
+msgid "Form is disalbed!"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:110
+msgid "Form is empty!"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:120
+msgid "Save entris is enable! Please disable to save the entry."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:211
+msgid "Error found!!"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:251
+msgid "Contact your administrator to enable REST API access"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:261
+msgid "Contact your administrator to generate the api key."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:271
+msgid "Missing api key!"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:279
+msgid "Empty api key!"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:290
+msgid "Unauthorized api key."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:117
+#: includes/admin/views/html-admin-page-form-templates.php:33
+#: includes/admin/views/html-admin-page-setting.php:62
+msgid "Free"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:142
+#: includes/admin/class-evf-admin-assets.php:123
+msgid "Pro"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:175
+msgid "Module slug is a required field"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:202
+msgid "Module couldn't be activated at the moment. Please try again later."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:210
+msgid "Module activated successfully"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:299
+#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:306
+msgid "Addons activated successfully"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:372
+#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:378
+#: includes/class-evf-ajax.php:667
+msgid "Unable to connect to the filesystem. Please confirm your credentials."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:385
+#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:391
+msgid "Addon installed Successfully"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:403
+msgid "Addon slug is a required field"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:425
+msgid "Module couldn't be deactivated. Please try again later."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:433
+msgid "Module deactivated successfully"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:490
+msgid "Please select addons to activate"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:522
+#. translators: 1: Failed Addon Names
+msgid "%1$s activation failed. Please try again sometime later."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:530
+#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:197
+msgid "All of the selected modules have been activated successfully."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:552
+msgid "Please select a module to deactivate"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:583
+msgid "All of the selected modules have been deactivated."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:591
+msgid ""
+"Some of the selected modules may not have been deactivated. Please try "
+"again later"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:733
+msgid "Everest Forms Pro activated successfully."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-modules.php:742
+msgid "Please enter the valid license key."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:157
+msgid "Invalid module data format."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:189
+msgid "%1$s activation failed. Please try again later."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:265
+msgid "Failed to update enabled features."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:457
+#: includes/RestApi/controllers/version1/class-evf-templates.php:296
+msgid "You do not have permissions to perform this action."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:466
+#: includes/RestApi/controllers/version1/class-evf-templates.php:305
+msgid "You are not allowed to access this resource."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:108
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:219
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:544
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:600
+msgid "Request data not found."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:131
+msgid "Sorry, you can not give access to the Subscriber role."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:156
+msgid "Successfully role saved."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:235
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:260
+msgid "User email is required."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:236
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:248
+msgid "User permission is required"
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:280
+msgid "Assigning permissions to yourself is not allowed."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:327
+msgid "Manager added successfully."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:559
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:627
+msgid "Associate user could not be found."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:581
+msgid "Manager deleted successfully."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:614
+msgid "Please select user."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:642
+msgid "Managers deleted successfully."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-templates.php:153
+msgid "Failed to fetch templates."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-templates.php:160
+msgid "No templates found."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-templates.php:165
+msgid "An error occurred while fetching templates."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-templates.php:232
+msgid "The template name is required and cannot be empty."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-templates.php:241
+msgid "The template slug is required and cannot be empty."
+msgstr ""
+
+#: includes/RestApi/controllers/version1/class-evf-templates.php:273
+msgid "Something went wrong, please try again later."
+msgstr ""
+
 #: includes/abstracts/class-evf-background-process.php:172
+#. translators: %d: interval
 msgid "Every %d minutes"
 msgstr ""
 
@@ -1491,8 +1758,8 @@ msgstr ""
 msgid "File exceeds max size allowed."
 msgstr ""
 
-#. translators: %s: Max upload size
 #: includes/abstracts/class-evf-form-fields-upload.php:66
+#. translators: %s: Max upload size
 msgid "File exceeds the upload limit allowed (%s)."
 msgstr ""
 
@@ -1512,13 +1779,13 @@ msgstr ""
 msgid "No file was uploaded"
 msgstr ""
 
-#. translators: %s - error text.
 #: includes/abstracts/class-evf-form-fields-upload.php:238
+#. translators: %s - error text.
 msgid "File upload error. %s"
 msgstr ""
 
-#. translators: %s: max upload size
 #: includes/abstracts/class-evf-form-fields-upload.php:250
+#. translators: %s: max upload size
 msgid "File exceeds max size allowed (%s)."
 msgstr ""
 
@@ -1572,10 +1839,10 @@ msgstr ""
 msgid "Enter text to be displayed as file upload limit message"
 msgstr ""
 
-#. translators: 1: Number of Files
 #: includes/abstracts/class-evf-form-fields-upload.php:574
 #: includes/abstracts/class-evf-form-fields-upload.php:904
 #: includes/abstracts/class-evf-form-fields-upload.php:950
+#. translators: 1: Number of Files
 msgid "You can upload up to %s files."
 msgstr ""
 
@@ -1583,9 +1850,11 @@ msgstr ""
 msgid "Max File Size"
 msgstr ""
 
-#. translators: %s - max upload size.
 #: includes/abstracts/class-evf-form-fields-upload.php:599
-msgid "Enter the max file size, in megabytes, to allow. If left blank, the value defaults to the maximum size the server allows which is %s."
+#. translators: %s - max upload size.
+msgid ""
+"Enter the max file size, in megabytes, to allow. If left blank, the value "
+"defaults to the maximum size the server allows which is %s."
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields-upload.php:630
@@ -1603,23 +1872,58 @@ msgid "Store file in WordPress Media Library"
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields-upload.php:668
-msgid "Check this option to store the final uploaded file in the WordPress Media Library"
+msgid ""
+"Check this option to store the final uploaded file in the WordPress Media "
+"Library"
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields-upload.php:801
 #: includes/abstracts/class-evf-form-fields.php:2124
-#: includes/class-evf-emails.php:477
-#: includes/class-evf-emails.php:608
+#: includes/class-evf-emails.php:477 includes/class-evf-emails.php:608
+#: includes/fields/class-evf-field-wysiwyg.php:203
 msgid "(empty)"
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields-upload.php:1136
+#. translators: %d - max number of files.
 msgid "Something went wrong while uploading file,Please try again"
+msgstr ""
+
+#: includes/abstracts/class-evf-form-fields-upload.php:1535
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr ""
+
+#: includes/abstracts/class-evf-form-fields-upload.php:1536
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form."
+msgstr ""
+
+#: includes/abstracts/class-evf-form-fields-upload.php:1537
+msgid "The uploaded file was only partially uploaded."
+msgstr ""
+
+#: includes/abstracts/class-evf-form-fields-upload.php:1538
+msgid "No file was uploaded."
+msgstr ""
+
+#: includes/abstracts/class-evf-form-fields-upload.php:1539
+msgid "Missing a temporary folder."
+msgstr ""
+
+#: includes/abstracts/class-evf-form-fields-upload.php:1540
+msgid "Failed to write file to disk."
+msgstr ""
+
+#: includes/abstracts/class-evf-form-fields-upload.php:1541
+msgid "File upload stopped by extension."
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:452
 #: includes/evf-core-functions.php:4015
-msgid "Enter text for the form field label. This is recommended and can be hidden in the Advanced Settings."
+msgid ""
+"Enter text for the form field label. This is recommended and can be hidden "
+"in the Advanced Settings."
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:488
@@ -1643,7 +1947,9 @@ msgid "Description"
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:562
-msgid "Check this option to mark the field required. A form will not submit unless all required fields are provided."
+msgid ""
+"Check this option to mark the field required. A form will not submit unless "
+"all required fields are provided."
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:569
@@ -1733,7 +2039,10 @@ msgid "Readonly "
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:855
-msgid "Select this option to limit user input to unique values only. This will require that a value entered in a field does not currently exist in the entry database for that field.."
+msgid ""
+"Select this option to limit user input to unique values only. This will "
+"require that a value entered in a field does not currently exist in the "
+"entry database for that field.."
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:862
@@ -1837,7 +2146,9 @@ msgid "Change image"
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:1212
-msgid "For best results, images should be square and at least 200 × 160 pixels or smaller."
+msgid ""
+"For best results, images should be square and at least 200 × 160 pixels or "
+"smaller."
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:1221
@@ -2152,7 +2463,9 @@ msgid "Validation Message for Regular expression"
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:1694
-msgid "Enter CSS class names for this field container. Multiple class names should be separated with spaces."
+msgid ""
+"Enter CSS class names for this field container. Multiple class names should "
+"be separated with spaces."
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:1703
@@ -2206,7 +2519,9 @@ msgid "Layout"
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:1844
-msgid "Please enter valid allowed or denied domains, separated by commas. For example: google.com, yahoo.com"
+msgid ""
+"Please enter valid allowed or denied domains, separated by commas. For "
+"example: google.com, yahoo.com"
 msgstr ""
 
 #: includes/abstracts/class-evf-form-fields.php:1850
@@ -2311,7 +2626,6 @@ msgstr ""
 #: includes/admin/builder/class-evf-builder-settings.php:25
 #: includes/admin/class-evf-admin-menus.php:268
 #: includes/class-evf-install.php:719
-#: src/dashboard/Constants/index.js:17
 msgid "Settings"
 msgstr ""
 
@@ -2332,23 +2646,23 @@ msgstr ""
 msgid "Please enter a valid number"
 msgstr ""
 
-#. translators: %s Number of max words.
 #: includes/abstracts/class-evf-form-fields.php:2651
+#. translators: %s Number of max words.
 msgid "This field contains at most %s words"
 msgstr ""
 
-#. translators: %s Number of max characters.
 #: includes/abstracts/class-evf-form-fields.php:2654
+#. translators: %s Number of max characters.
 msgid "This field contains at most %s characters"
 msgstr ""
 
-#. translators: %s Number of minimum words.
 #: includes/abstracts/class-evf-form-fields.php:2663
+#. translators: %s Number of minimum words.
 msgid "This field contains at least %s words"
 msgstr ""
 
-#. translators: %s Number of minimum characters.
 #: includes/abstracts/class-evf-form-fields.php:2666
+#. translators: %s Number of minimum characters.
 msgid "This field contains at least %s characters"
 msgstr ""
 
@@ -2442,13 +2756,11 @@ msgstr ""
 
 #: includes/admin/builder/class-evf-builder-page.php:157
 #: includes/admin/builder/class-evf-builder-settings.php:853
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:217
 msgid "Post Submission"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-page.php:161
 #: includes/admin/builder/class-evf-builder-settings.php:854
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:247
 msgid "Save and Continue"
 msgstr ""
 
@@ -2469,7 +2781,6 @@ msgstr ""
 
 #: includes/admin/builder/class-evf-builder-page.php:177
 #: includes/admin/builder/class-evf-builder-settings.php:858
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:267
 msgid "SMS Notifications"
 msgstr ""
 
@@ -2509,8 +2820,7 @@ msgstr ""
 #: includes/admin/builder/class-evf-builder-settings.php:383
 #: includes/admin/form-migrator/class-evf-fm-contactform7.php:374
 #: includes/admin/form-migrator/class-evf-fm-wpforms.php:163
-#: includes/class-evf-form-task.php:918
-#: includes/evf-update-functions.php:140
+#: includes/class-evf-form-task.php:918 includes/evf-update-functions.php:140
 #: includes/templates/contact.php:71
 msgid "Admin Notification"
 msgstr ""
@@ -2524,8 +2834,7 @@ msgid "Email Notifications"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:190
-#: includes/class-evf-ajax.php:1026
-#: includes/class-evf-smart-tags.php:43
+#: includes/class-evf-ajax.php:1026 includes/class-evf-smart-tags.php:43
 #: templates/emails/summary-email-body-default.php:90
 #: templates/emails/summary-email-body-default.php:128
 msgid "Form Name"
@@ -2575,9 +2884,11 @@ msgstr ""
 msgid "Form Class"
 msgstr ""
 
-#. translators: %1$s - general settings docs url
 #: includes/admin/builder/class-evf-builder-settings.php:245
-msgid "Enter CSS class names for the form wrapper. Multiple class names should be separated with spaces. <a href=\"%s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - general settings docs url
+msgid ""
+"Enter CSS class names for the form wrapper. Multiple class names should be "
+"separated with spaces. <a href=\"%s\" target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:257
@@ -2608,7 +2919,9 @@ msgid "Processing&hellip;"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:271
-msgid "Enter the submit button text that you would like the button to display while the form submission is processing."
+msgid ""
+"Enter the submit button text that you would like the button to display "
+"while the form submission is processing."
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:279
@@ -2616,7 +2929,9 @@ msgid "Submit button class"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:282
-msgid "Enter CSS class names for submit button. Multiple class names should be separated with spaces."
+msgid ""
+"Enter CSS class names for submit button. Multiple class names should be "
+"separated with spaces."
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:293
@@ -2631,15 +2946,17 @@ msgstr ""
 msgid "Disable storing entry information"
 msgstr ""
 
-#. translators: %1$s - general settings docs url
 #: includes/admin/builder/class-evf-builder-settings.php:308
-msgid "Disable storing form entries. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - general settings docs url
+msgid ""
+"Disable storing form entries. <a href=\"%1$s\" target=\"_blank\">Learn "
+"More</a>"
 msgstr ""
 
-#. translators: %s: Form Name
 #: includes/admin/builder/class-evf-builder-settings.php:327
 #: includes/admin/builder/class-evf-builder-settings.php:506
 #: includes/templates/contact.php:77
+#. translators: %s: Form Name
 msgid "New Form Entry %s"
 msgstr ""
 
@@ -2656,9 +2973,11 @@ msgstr ""
 msgid "To Address"
 msgstr ""
 
-#. translators: %1$s - general settings docs url
 #: includes/admin/builder/class-evf-builder-settings.php:399
-msgid "Enter the recipient's email address (comma separated) to receive form entry notifications. <a href=\"%s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - general settings docs url
+msgid ""
+"Enter the recipient's email address (comma separated) to receive form entry "
+"notifications. <a href=\"%s\" target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:414
@@ -2666,7 +2985,9 @@ msgid "Cc Address"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:417
-msgid "Enter Cc recipient's email address (comma separated) to receive form entry notifications."
+msgid ""
+"Enter Cc recipient's email address (comma separated) to receive form entry "
+"notifications."
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:431
@@ -2674,34 +2995,43 @@ msgid "Bcc Address"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:434
-msgid "Enter Bcc recipient's email address (comma separated) to receive form entry notifications."
+msgid ""
+"Enter Bcc recipient's email address (comma separated) to receive form entry "
+"notifications."
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:449
 msgid "From Name"
 msgstr ""
 
-#. translators: %1$s - general settings docs url
 #: includes/admin/builder/class-evf-builder-settings.php:453
-msgid "Enter the From Name to be displayed in Email. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - general settings docs url
+msgid ""
+"Enter the From Name to be displayed in Email. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:467
 msgid "From Address"
 msgstr ""
 
-#. translators: %1$s - general settings docs url
 #: includes/admin/builder/class-evf-builder-settings.php:471
-msgid "Enter the Email address from which you want to send Email. <a href=\"%s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - general settings docs url
+msgid ""
+"Enter the Email address from which you want to send Email. <a href=\"%s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:485
 msgid "Reply To"
 msgstr ""
 
-#. translators: %1$s - general settings docs url
 #: includes/admin/builder/class-evf-builder-settings.php:489
-msgid "Enter the reply to email address where you want the email to be received when this email is replied. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - general settings docs url
+msgid ""
+"Enter the reply to email address where you want the email to be received "
+"when this email is replied. <a href=\"%1$s\" target=\"_blank\">Learn "
+"More</a>"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:503
@@ -2709,27 +3039,33 @@ msgstr ""
 msgid "Email Subject"
 msgstr ""
 
-#. translators: %1$s - General Settings docs url
 #: includes/admin/builder/class-evf-builder-settings.php:508
-msgid "Enter the subject of the email. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - General Settings docs url
+msgid ""
+"Enter the subject of the email. <a href=\"%1$s\" target=\"_blank\">Learn "
+"More</a>"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:527
 msgid "Enable Email Prompt"
 msgstr ""
 
-#. translators: %1$s - email message prompt doc url
 #: includes/admin/builder/class-evf-builder-settings.php:532
-msgid "Check this option to enable the email message prompt. <a href=\"%s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - email message prompt doc url
+msgid ""
+"Check this option to enable the email message prompt. <a href=\"%s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:542
 msgid "Email Message Prompt"
 msgstr ""
 
-#. translators: %1$s - general settings docs url
 #: includes/admin/builder/class-evf-builder-settings.php:547
-msgid "Enter the email message prompt. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - general settings docs url
+msgid ""
+"Enter the email message prompt. <a href=\"%1$s\" target=\"_blank\">Learn "
+"More</a>"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:565
@@ -2741,19 +3077,22 @@ msgstr ""
 msgid "{all_fields}"
 msgstr ""
 
-#. translators: %1$s - general settings docs url
 #: includes/admin/builder/class-evf-builder-settings.php:569
-msgid "Enter the message of the email. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - general settings docs url
+msgid ""
+"Enter the message of the email. <a href=\"%1$s\" target=\"_blank\">Learn "
+"More</a>"
 msgstr ""
 
-#. translators: %s - all fields smart tag.
 #: includes/admin/builder/class-evf-builder-settings.php:577
+#. translators: %s - all fields smart tag.
 msgid "To display all form fields, use the %s Smart Tag."
 msgstr ""
 
-#. translators: %s - all fields smart tag.
 #: includes/admin/builder/class-evf-builder-settings.php:577
-msgid "To display all form fields, use the %1$s Smart Tag. Use %2$s Smart Tag for AI-generated emails"
+msgid ""
+"To display all form fields, use the %1$s Smart Tag. Use %2$s Smart Tag for "
+"AI-generated emails"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:603
@@ -2765,9 +3104,11 @@ msgstr ""
 msgid "Thanks for contacting us! We will be in touch with you shortly"
 msgstr ""
 
-#. translators: %1$s - general settings docs url
 #: includes/admin/builder/class-evf-builder-settings.php:608
-msgid "Success message that shows up after submitting form. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - general settings docs url
+msgid ""
+"Success message that shows up after submitting form. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:616
@@ -2782,9 +3123,11 @@ msgstr ""
 msgid "Redirect To"
 msgstr ""
 
-#. translators: %1$s - general settings docs url
 #: includes/admin/builder/class-evf-builder-settings.php:633
-msgid "Choose where to redirect after form submission. <a href=\"%s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - general settings docs url
+msgid ""
+"Choose where to redirect after form submission. <a href=\"%s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:635
@@ -2810,7 +3153,9 @@ msgid "Query String"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:689
-msgid "Example: firstname= {field_id=\"name_ys0GeZISRs-1\"}&email={field_id=\"email_LbH5NxasXM-2\"}"
+msgid ""
+"Example: firstname= "
+"{field_id=\"name_ys0GeZISRs-1\"}&email={field_id=\"email_LbH5NxasXM-2\"}"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:701
@@ -2889,7 +3234,10 @@ msgid "Protection type"
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:781
-msgid "Please select the protection type. Choosing 'Mark as Spam' allows the submission but marks the entry as spam, while selecting 'Make the form submission as failed' will prevent the form submission."
+msgid ""
+"Please select the protection type. Choosing 'Mark as Spam' allows the "
+"submission but marks the entry as spam, while selecting 'Make the form "
+"submission as failed' will prevent the form submission."
 msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:783
@@ -2957,75 +3305,8 @@ msgstr ""
 msgid "Preview"
 msgstr ""
 
-#: includes/admin/class-evf-admin-assets.php:123
-#: includes/RestApi/controllers/version1/class-evf-modules.php:142
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:416
-msgid "Pro"
-msgstr ""
-
 #: includes/admin/class-evf-admin-assets.php:124
 msgid "Updating Templates"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:132
-#: includes/class-evf-frontend-scripts.php:323
-msgctxt "enhanced select"
-msgid "No matches found"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:133
-msgctxt "enhanced select"
-msgid "Loading failed"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:134
-msgctxt "enhanced select"
-msgid "Please enter 1 or more characters"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:135
-msgctxt "enhanced select"
-msgid "Please enter %qty% or more characters"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:136
-msgctxt "enhanced select"
-msgid "Please delete 1 character"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:137
-msgctxt "enhanced select"
-msgid "Please delete %qty% characters"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:138
-msgctxt "enhanced select"
-msgid "You can only select 1 item"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:139
-msgctxt "enhanced select"
-msgid "You can only select %qty% items"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:140
-msgctxt "enhanced select"
-msgid "Loading more results&hellip;"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:141
-msgctxt "enhanced select"
-msgid "Searching&hellip;"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:142
-msgctxt "enhanced select"
-msgid "Select All"
-msgstr ""
-
-#: includes/admin/class-evf-admin-assets.php:143
-msgctxt "enhanced select"
-msgid "Unselect All"
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:164
@@ -3060,7 +3341,6 @@ msgstr ""
 #: includes/admin/class-evf-admin-assets.php:172
 #: includes/admin/class-evf-admin-assets.php:275
 #: includes/admin/class-evf-admin-editor.php:97
-#: src/dashboard/components/common/UsePluginInstallActivate.js:165
 msgid "Cancel"
 msgstr ""
 
@@ -3161,7 +3441,9 @@ msgid "is a PRO Feature"
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:226
-msgid "We're sorry, the %name% is not available on your plan.<br>Please upgrade to the PRO plan to unlock all these awesome features."
+msgid ""
+"We're sorry, the %name% is not available on your plan.<br>Please upgrade to "
+"the PRO plan to unlock all these awesome features."
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:230
@@ -3192,7 +3474,9 @@ msgid " Cloudflare Turnstile"
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:236
-msgid "Please enter a  Cloudflare Turnstile key on Everest Forms>Settings>Captcha>Cloudflare Turnstile."
+msgid ""
+"Please enter a  Cloudflare Turnstile key on Everest "
+"Forms>Settings>Captcha>Cloudflare Turnstile."
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:237
@@ -3216,13 +3500,14 @@ msgid "is a Premium Addon"
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:244
-msgid "This addon requires premium plan. Please upgrade to the Premium plan to unlock all these awesome field."
+msgid ""
+"This addon requires premium plan. Please upgrade to the Premium plan to "
+"unlock all these awesome field."
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:245
 #: includes/admin/class-evf-admin-assets.php:376
 #: includes/admin/views/html-admin-page-addons.php:218
-#: src/dashboard/screens/Modules/components/ModuleItem.js:478
 msgid "Upgrade Plan"
 msgstr ""
 
@@ -3231,7 +3516,9 @@ msgid "File upload"
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:251
-msgid "field can only be used once. To use it multiple times, please upgrade to the pro version."
+msgid ""
+"field can only be used once. To use it multiple times, please upgrade to "
+"the pro version."
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:269
@@ -3252,7 +3539,9 @@ msgid "New Form Entry"
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:289
-msgid "Please enter in meta key with alphanumeric characters, dashes and underscores."
+msgid ""
+"Please enter in meta key with alphanumeric characters, dashes and "
+"underscores."
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:290
@@ -3292,7 +3581,9 @@ msgid "You must provide a Form name"
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:377
-msgid "This template requires premium addons. Please upgrade to the Premium plan to unlock all these awesome Templates."
+msgid ""
+"This template requires premium addons. Please upgrade to the Premium plan "
+"to unlock all these awesome Templates."
 msgstr ""
 
 #: includes/admin/class-evf-admin-assets.php:378
@@ -3448,9 +3739,11 @@ msgstr ""
 msgid "Select a form below to insert"
 msgstr ""
 
-#. translators: %s - Everest Builder page.
 #: includes/admin/class-evf-admin-editor.php:81
-msgid "Whoops, you haven't created a form yet. Want to <a href=\"%s\">give it a go</a>?"
+#. translators: %s - Everest Builder page.
+msgid ""
+"Whoops, you haven't created a form yet. Want to <a href=\"%s\">give it a "
+"go</a>?"
 msgstr ""
 
 #: includes/admin/class-evf-admin-entries-table-list.php:94
@@ -3485,8 +3778,8 @@ msgstr ""
 msgid "Remove From Spam"
 msgstr ""
 
-#. translators: %s: entry name
 #: includes/admin/class-evf-admin-entries-table-list.php:338
+#. translators: %s: entry name
 msgid "Trash form entry"
 msgstr ""
 
@@ -3507,8 +3800,8 @@ msgstr ""
 msgid "Restore"
 msgstr ""
 
-#. translators: %s: entry name
 #: includes/admin/class-evf-admin-entries-table-list.php:369
+#. translators: %s: entry name
 msgid "Delete form entry permanently"
 msgstr ""
 
@@ -3517,71 +3810,55 @@ msgstr ""
 msgid "Delete Permanently"
 msgstr ""
 
-#. translators: %s: count
-#: includes/admin/class-evf-admin-entries-table-list.php:428
-msgctxt "entries"
-msgid "All <span class=\"count\">(%s)</span>"
-msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-
-#. translators: %s: count
-#: includes/admin/class-evf-admin-entries-table-list.php:430
-msgctxt "entries"
-msgid "Spam <span class=\"count\">(%s)</span>"
-msgid_plural "Spam <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-
 #: includes/admin/class-evf-admin-entries-table-list.php:464
 msgid "Move to Trash"
 msgstr ""
 
-#. translators: %d: number of entries, %s: entries status
 #: includes/admin/class-evf-admin-entries-table-list.php:510
+#. translators: %d: number of entries, %s: entries status
 msgid "%1$d entry successfully %2$s."
 msgid_plural "%1$d entries successfully %2$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: %d: number of entries, %s: entries status
 #: includes/admin/class-evf-admin-entries-table-list.php:526
+#. translators: %d: number of entries, %s: entries status
 msgid "%1$d entry successfully marked as %2$s."
 msgid_plural "%1$d entries successfully marked as %2$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: %d: number of entries
 #: includes/admin/class-evf-admin-entries-table-list.php:549
+#. translators: %d: number of entries
 msgid "%d entry moved to the Trash."
 msgid_plural "%d entries moved to the Trash."
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: %d: number of entries
 #: includes/admin/class-evf-admin-entries-table-list.php:564
+#. translators: %d: number of entries
 msgid "%d entry restored from the Trash."
 msgid_plural "%d entries restored from the Trash."
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: %d: number of entries
 #: includes/admin/class-evf-admin-entries-table-list.php:579
 #: includes/admin/class-evf-admin-entries.php:251
+#. translators: %d: number of entries
 msgid "%d entry permanently deleted."
 msgid_plural "%d entries permanently deleted."
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: %d: number of entries
 #: includes/admin/class-evf-admin-entries-table-list.php:594
+#. translators: %d: number of entries
 msgid "%d entry sent to spam."
 msgid_plural "%d entries sent to Spam."
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: %d: number of entries
 #: includes/admin/class-evf-admin-entries-table-list.php:609
+#. translators: %d: number of entries
 msgid "%d removed from spam."
 msgid_plural "%d entries removed from spam."
 msgstr[0] ""
@@ -3627,8 +3904,8 @@ msgstr ""
 msgid "Create your first form!"
 msgstr ""
 
-#. translators: %d - New form entries count.
 #: includes/admin/class-evf-admin-entries.php:418
+#. translators: %d - New form entries count.
 msgid "%d new entry since you last checked."
 msgid_plural "%d new entries since you last checked."
 msgstr[0] ""
@@ -3715,8 +3992,6 @@ msgstr ""
 
 #: includes/admin/class-evf-admin-forms-table-list.php:237
 #: includes/admin/views/html-admin-page-builder.php:106
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:279
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:454
 msgid "Copied!"
 msgstr ""
 
@@ -3724,8 +3999,8 @@ msgstr ""
 msgid "Y/m/d g:i:s A"
 msgstr ""
 
-#. translators: %s: Time
 #: includes/admin/class-evf-admin-forms-table-list.php:299
+#. translators: %s: Time
 msgid "%s ago"
 msgstr ""
 
@@ -3733,36 +4008,28 @@ msgstr ""
 msgid "Y/m/d"
 msgstr ""
 
-#. translators: %s: count
-#: includes/admin/class-evf-admin-forms-table-list.php:349
-msgctxt "posts"
-msgid "All <span class=\"count\">(%s)</span>"
-msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-
 #: includes/admin/class-evf-admin-forms-table-list.php:444
 #: includes/admin/views/html-admin-page-entries-view.php:274
 msgid "Move to trash"
 msgstr ""
 
-#. translators: %d: number of forms
 #: includes/admin/class-evf-admin-forms-table-list.php:477
+#. translators: %d: number of forms
 msgid "%d form moved to the Trash."
 msgid_plural "%d forms moved to the Trash."
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: %d: number of forms
 #: includes/admin/class-evf-admin-forms-table-list.php:492
+#. translators: %d: number of forms
 msgid "%d form restored from the Trash."
 msgid_plural "%d forms restored from the Trash."
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: %d: number of forms
 #: includes/admin/class-evf-admin-forms-table-list.php:507
 #: includes/admin/class-evf-admin-forms.php:131
+#. translators: %d: number of forms
 msgid "%d form permanently deleted."
 msgid_plural "%d forms permanently deleted."
 msgstr[0] ""
@@ -3835,7 +4102,6 @@ msgid "Everest Forms Dashboard"
 msgstr ""
 
 #: includes/admin/class-evf-admin-menus.php:163
-#: src/dashboard/Constants/index.js:9
 msgid "Dashboard"
 msgstr ""
 
@@ -3868,7 +4134,6 @@ msgid "Everest Forms Upgrade to Pro"
 msgstr ""
 
 #: includes/admin/class-evf-admin-menus.php:328
-#: src/dashboard/screens/Modules/components/ModuleBody.js:47
 msgid "Upgrade to Pro"
 msgstr ""
 
@@ -3932,12 +4197,13 @@ msgid "Welcome to Everest Forms"
 msgstr ""
 
 #: includes/admin/class-evf-admin-welcome.php:75
-#: src/dashboard/screens/Dashboard/Dashboard.js:145
 msgid "Getting Started"
 msgstr ""
 
 #: includes/admin/class-evf-admin-welcome.php:84
-msgid "Thank you for choosing Everest Forms, the most powerful and easy drag & drop WordPress form builder in the market."
+msgid ""
+"Thank you for choosing Everest Forms, the most powerful and easy drag & "
+"drop WordPress form builder in the market."
 msgstr ""
 
 #: includes/admin/class-evf-admin-welcome.php:87
@@ -3960,8 +4226,7 @@ msgstr ""
 msgid "Read our step by step guide on how to create your first form."
 msgstr ""
 
-#: includes/admin/class-evf-admin.php:75
-#: includes/admin/class-evf-admin.php:122
+#: includes/admin/class-evf-admin.php:75 includes/admin/class-evf-admin.php:122
 msgid "Could not verify nonce"
 msgstr ""
 
@@ -3973,8 +4238,8 @@ msgstr ""
 msgid "Sorry, you are not allowed to deactivate plugins for this site."
 msgstr ""
 
-#. translators: 1: EverestForms 2:: five stars
 #: includes/admin/class-evf-admin.php:206
+#. translators: 1: EverestForms 2:: five stars
 msgid "If you like %1$s please leave us a %2$s rating. A huge thanks in advance!"
 msgstr ""
 
@@ -3990,13 +4255,13 @@ msgstr ""
 msgid "Field #"
 msgstr ""
 
-#. translators: %2$s : Image Alt Text.
 #: includes/admin/evf-admin-functions.php:492
+#. translators: %2$s : Image Alt Text.
 msgid " %2$s"
 msgstr ""
 
-#. translators: %2$s : Upload Image button Text.
 #: includes/admin/evf-admin-functions.php:495
+#. translators: %2$s : Upload Image button Text.
 msgid "%2$s"
 msgstr ""
 
@@ -4019,8 +4284,7 @@ msgstr ""
 
 #: includes/admin/form-migrator/abstract-evf-form-migrator.php:206
 #: includes/admin/form-migrator/abstract-evf-form-migrator.php:212
-#: includes/class-evf-ajax.php:436
-#: includes/class-evf-ajax.php:442
+#: includes/class-evf-ajax.php:436 includes/class-evf-ajax.php:442
 msgid "An error occurred while saving the form."
 msgstr ""
 
@@ -4047,8 +4311,8 @@ msgstr ""
 msgid "For More"
 msgstr ""
 
-#. translators: %1$s - field type, %2$s - field name if available.
 #: includes/admin/form-migrator/class-evf-fm-contactform7.php:128
+#. translators: %1$s - field type, %2$s - field name if available.
 msgid "%1$s Field %2$s"
 msgstr ""
 
@@ -4071,6 +4335,10 @@ msgstr ""
 #: includes/admin/form-migrator/class-evf-fm-wpforms.php:492
 #: includes/admin/form-migrator/class-evf-fm-wpforms.php:576
 msgid "Please provide a valid value for this field."
+msgstr ""
+
+#: includes/admin/form-migrator/class-evf-fm-contactform7.php:714
+msgid "This field value needs to be unique."
 msgstr ""
 
 #: includes/admin/form-migrator/class-evf-fm-contactform7.php:770
@@ -4102,7 +4370,9 @@ msgid "Enable copies"
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-email.php:64
-msgid "Email addresses for Cc and Bcc can be applied from the form notification settings."
+msgid ""
+"Email addresses for Cc and Bcc can be applied from the form notification "
+"settings."
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-email.php:72
@@ -4152,7 +4422,10 @@ msgstr ""
 
 #: includes/admin/settings/class-evf-settings-misc.php:38
 #: includes/admin/views/html-notice-allow-usage.php:23
-msgid "Help us improve the plugin's features by sharing <a href=\"https://docs.everestforms.net/docs/misc-settings-4/#2-toc-title\" target=\"_blank\">non-sensitive plugin data</a> with us."
+msgid ""
+"Help us improve the plugin's features by sharing <a "
+"href=\"https://docs.everestforms.net/docs/misc-settings-4/#2-toc-title\" "
+"target=\"_blank\">non-sensitive plugin data</a> with us."
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-misc.php:57
@@ -4160,7 +4433,9 @@ msgid "Uninstall Everest Forms"
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-misc.php:58
-msgid "<strong>Heads Up!</strong> Check this if you would like to remove ALL Everest Forms data upon plugin deletion."
+msgid ""
+"<strong>Heads Up!</strong> Check this if you would like to remove ALL "
+"Everest Forms data upon plugin deletion."
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-misc.php:65
@@ -4195,9 +4470,9 @@ msgstr ""
 msgid "CAPTCHA"
 msgstr ""
 
-#. translators: %1$s - Langauge Name
 #: includes/admin/settings/class-evf-settings-recaptcha.php:44
 #: includes/admin/views/html-notice-email-failed-notice.php:20
+#. translators: %1$s - Langauge Name
 msgid "%s"
 msgstr ""
 
@@ -4205,9 +4480,14 @@ msgstr ""
 msgid "CAPTCHA Integration"
 msgstr ""
 
-#. translators: %1$s - reCAPTCHA Integration Doc URL, %2$s - hCaptcha Integration Doc URL
 #: includes/admin/settings/class-evf-settings-recaptcha.php:54
-msgid "Get detailed documentation on integrating <a href=\"%1$s\" target=\"_blank\">reCAPTCHA</a>, <a href=\"%2$s\" target=\"_blank\">hCaptcha</a> and <a href=\"%3$s\" target=\"_blank\">Cloudflare Turnstile</a> with Everest forms."
+#. translators: %1$s - reCAPTCHA Integration Doc URL, %2$s - hCaptcha
+#. Integration Doc URL
+msgid ""
+"Get detailed documentation on integrating <a href=\"%1$s\" "
+"target=\"_blank\">reCAPTCHA</a>, <a href=\"%2$s\" "
+"target=\"_blank\">hCaptcha</a> and <a href=\"%3$s\" "
+"target=\"_blank\">Cloudflare Turnstile</a> with Everest forms."
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-recaptcha.php:58
@@ -4238,10 +4518,12 @@ msgstr ""
 msgid "Site Key"
 msgstr ""
 
-#. translators: %1$s - Google reCAPTCHA docs url
 #: includes/admin/settings/class-evf-settings-recaptcha.php:88
 #: includes/admin/settings/class-evf-settings-recaptcha.php:108
-msgid "Please enter your site key for your reCAPTCHA v2. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - Google reCAPTCHA docs url
+msgid ""
+"Please enter your site key for your reCAPTCHA v2. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-recaptcha.php:95
@@ -4252,10 +4534,12 @@ msgstr ""
 msgid "Secret Key"
 msgstr ""
 
-#. translators: %1$s - Google reCAPTCHA docs url
 #: includes/admin/settings/class-evf-settings-recaptcha.php:98
 #: includes/admin/settings/class-evf-settings-recaptcha.php:118
-msgid "Please enter your secret key for your reCAPTCHA v2. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - Google reCAPTCHA docs url
+msgid ""
+"Please enter your secret key for your reCAPTCHA v2. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-recaptcha.php:125
@@ -4266,43 +4550,57 @@ msgstr ""
 msgid "Enable Invisible reCAPTCHA."
 msgstr ""
 
-#. translators: %1$s - Google reCAPTCHA docs url
 #: includes/admin/settings/class-evf-settings-recaptcha.php:137
-msgid "Please enter your site key for your reCAPTCHA v3. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - Google reCAPTCHA docs url
+msgid ""
+"Please enter your site key for your reCAPTCHA v3. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
-#. translators: %1$s - Google reCAPTCHA docs url
 #: includes/admin/settings/class-evf-settings-recaptcha.php:147
-msgid "Please enter your secret key for your reCAPTCHA v3. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - Google reCAPTCHA docs url
+msgid ""
+"Please enter your secret key for your reCAPTCHA v3. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
-#. translators: %1$s - Google reCAPTCHA docs url
 #: includes/admin/settings/class-evf-settings-recaptcha.php:157
-msgid "Please enter your site key for your hCaptcha. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - Google reCAPTCHA docs url
+msgid ""
+"Please enter your site key for your hCaptcha. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
-#. translators: %1$s - Google reCAPTCHA docs url
 #: includes/admin/settings/class-evf-settings-recaptcha.php:167
-msgid "Please enter your secret key for your hCaptcha. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - Google reCAPTCHA docs url
+msgid ""
+"Please enter your secret key for your hCaptcha. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-recaptcha.php:174
 msgid "Threshold Score"
 msgstr ""
 
-#. translators: %1$s - Google reCAPTCHA docs url
 #: includes/admin/settings/class-evf-settings-recaptcha.php:177
-msgid "reCAPTCHA v3 returns a score (1.0 is very likely a good interaction, 0.0 is very likely a bot). If the score less than or equal to this threshold"
+#. translators: %1$s - Google reCAPTCHA docs url
+msgid ""
+"reCAPTCHA v3 returns a score (1.0 is very likely a good interaction, 0.0 is "
+"very likely a bot). If the score less than or equal to this threshold"
 msgstr ""
 
-#. translators: %1$s - Cloudflare Turnstile docs url
 #: includes/admin/settings/class-evf-settings-recaptcha.php:192
-msgid "Please enter your site key for your Cloudflare Trunstile. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - Cloudflare Turnstile docs url
+msgid ""
+"Please enter your site key for your Cloudflare Trunstile. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
-#. translators: %1$s - Cloudflare Trunstile docs url
 #: includes/admin/settings/class-evf-settings-recaptcha.php:202
-msgid "Please enter your secret key for your Cloudflare Turnstile. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - Cloudflare Trunstile docs url
+msgid ""
+"Please enter your secret key for your Cloudflare Turnstile. <a "
+"href=\"%1$s\" target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-recaptcha.php:209
@@ -4310,9 +4608,11 @@ msgstr ""
 msgid "Theme"
 msgstr ""
 
-#. translators: %1$s - Cloudflare Trunstile docs url
 #: includes/admin/settings/class-evf-settings-recaptcha.php:212
-msgid "Please select theme mode for your Cloudflare Turnstile. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s - Cloudflare Trunstile docs url
+msgid ""
+"Please select theme mode for your Cloudflare Turnstile. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-recaptcha.php:216
@@ -4403,7 +4703,9 @@ msgid "Send Test Report"
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-reporting.php:104
-msgid "Enter the email address to receive the test email for the routine summary report."
+msgid ""
+"Enter the email address to receive the test email for the routine summary "
+"report."
 msgstr ""
 
 #: includes/admin/settings/class-evf-settings-reporting.php:122
@@ -4518,9 +4820,11 @@ msgstr ""
 msgid "Search Add-ons..."
 msgstr ""
 
-#. translators: %s: Refresh URI
 #: includes/admin/views/html-admin-page-addons.php:51
-msgid "Make your forms even more robust with our premium addons. Missing any addons? Click the %1$sRefresh Add-ons%2$s button above."
+#. translators: %s: Refresh URI
+msgid ""
+"Make your forms even more robust with our premium addons. Missing any "
+"addons? Click the %1$sRefresh Add-ons%2$s button above."
 msgstr ""
 
 #: includes/admin/views/html-admin-page-addons.php:58
@@ -4535,7 +4839,6 @@ msgstr ""
 
 #: includes/admin/views/html-admin-page-addons.php:86
 #: includes/admin/views/html-admin-page-addons.php:164
-#: src/dashboard/screens/Products/components/ProductCard.js:140
 msgid "Activated"
 msgstr ""
 
@@ -4551,16 +4854,11 @@ msgstr ""
 
 #: includes/admin/views/html-admin-page-addons.php:117
 #: includes/admin/views/html-admin-page-addons.php:189
-#: src/dashboard/screens/Modules/Modules.js:316
 msgid "Deactivate"
 msgstr ""
 
 #: includes/admin/views/html-admin-page-addons.php:133
 #: includes/admin/views/html-admin-page-addons.php:207
-#: src/dashboard/components/common/UsePluginInstallActivate.js:179
-#: src/dashboard/screens/Dashboard/components/UsefulPlugins.js:80
-#: src/dashboard/screens/Modules/Modules.js:313
-#: src/dashboard/screens/Products/components/ProductCard.js:142
 msgid "Activate"
 msgstr ""
 
@@ -4568,18 +4866,18 @@ msgstr ""
 msgid "Download Addon"
 msgstr ""
 
-#. translators: %s: Add-on title
 #: includes/admin/views/html-admin-page-addons.php:175
+#. translators: %s: Add-on title
 msgid "Deactivate %s now"
 msgstr ""
 
-#. translators: %s: Add-on title
 #: includes/admin/views/html-admin-page-addons.php:193
+#. translators: %s: Add-on title
 msgid "Activate %s now"
 msgstr ""
 
-#. translators: %s: Add-on title
 #: includes/admin/views/html-admin-page-addons.php:211
+#. translators: %s: Add-on title
 msgid "Install %s now"
 msgstr ""
 
@@ -4587,9 +4885,11 @@ msgstr ""
 msgid "Install Addon"
 msgstr ""
 
-#. translators: %s: Add-ons Link
 #: includes/admin/views/html-admin-page-addons.php:232
-msgid "Our catalog of Everest Forms Add-ons/Extensions can be found on WPEverest.com here: <a href=\"%s\">Everest Forms Extensions Catalog</a>"
+#. translators: %s: Add-ons Link
+msgid ""
+"Our catalog of Everest Forms Add-ons/Extensions can be found on "
+"WPEverest.com here: <a href=\"%s\">Everest Forms Extensions Catalog</a>"
 msgstr ""
 
 #: includes/admin/views/html-admin-page-builder.php:93
@@ -4621,8 +4921,8 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
-#. translators: %s: Entry ID
 #: includes/admin/views/html-admin-page-entries-view.php:78
+#. translators: %s: Entry ID
 msgid "%1$s: Entry #%2$s"
 msgstr ""
 
@@ -4712,9 +5012,11 @@ msgstr ""
 msgid "Export"
 msgstr ""
 
-#. translators: %s: Form migrator notice
 #: includes/admin/views/html-admin-page-form-migrator.php:21
-msgid "Migrate forms from other plugins into Everest Forms seamlessly with just one click."
+#. translators: %s: Form migrator notice
+msgid ""
+"Migrate forms from other plugins into Everest Forms seamlessly with just "
+"one click."
 msgstr ""
 
 #: includes/admin/views/html-admin-page-form-migrator.php:28
@@ -4745,13 +5047,6 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-#: includes/admin/views/html-admin-page-form-templates.php:33
-#: includes/admin/views/html-admin-page-setting.php:62
-#: includes/RestApi/controllers/version1/class-evf-modules.php:117
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:413
-msgid "Free"
-msgstr ""
-
 #: includes/admin/views/html-admin-page-form-templates.php:36
 msgid "Premium"
 msgstr ""
@@ -4764,29 +5059,23 @@ msgstr ""
 msgid "Something went wrong. Please refresh your templates."
 msgstr ""
 
-#. translators: %s: Template title
-#: includes/admin/views/html-admin-page-form-templates.php:85
-msgctxt "Template name"
-msgid "%s template"
-msgstr ""
-
-#. translators: %s: Number of plugins
 #: includes/admin/views/html-admin-page-form-templates.php:139
+#. translators: %s: Number of plugins
 msgid "%s plugin successfully installed."
 msgstr ""
 
-#. translators: %s: Number of plugins
 #: includes/admin/views/html-admin-page-form-templates.php:146
+#. translators: %s: Number of plugins
 msgid "%s plugins successfully installed."
 msgstr ""
 
-#. translators: %s: Number of failed installs
 #: includes/admin/views/html-admin-page-form-templates.php:156
+#. translators: %s: Number of failed installs
 msgid "%s install failed."
 msgstr ""
 
-#. translators: %s: Number of failed installs
 #: includes/admin/views/html-admin-page-form-templates.php:161
+#. translators: %s: Number of failed installs
 msgid "%s installs failed."
 msgstr ""
 
@@ -4827,9 +5116,9 @@ msgstr ""
 msgid "No file selected"
 msgstr ""
 
-#. translators: %s: File format
 #: includes/admin/views/html-admin-page-import.php:31
 #: includes/admin/views/html-admin-page-import.php:79
+#. translators: %s: File format
 msgid "Only %s file is allowed."
 msgstr ""
 
@@ -4933,7 +5222,6 @@ msgid "Site URL"
 msgstr ""
 
 #: includes/admin/views/html-admin-page-setting.php:189
-#: src/dashboard/screens/Products/Products.js:37
 msgid "Plugins"
 msgstr ""
 
@@ -5011,7 +5299,10 @@ msgid "Reliable Email Delivery with SmartSMTP"
 msgstr ""
 
 #: includes/admin/views/html-admin-page-smart-smtp-setup.php:49
-msgid "Are you struggling to send emails from your WordPress site? With SmartSMTP, you can guarantee reliable email delivery directly from your WordPress website."
+msgid ""
+"Are you struggling to send emails from your WordPress site? With SmartSMTP, "
+"you can guarantee reliable email delivery directly from your WordPress "
+"website."
 msgstr ""
 
 #: includes/admin/views/html-admin-page-smart-smtp-setup.php:57
@@ -5038,10 +5329,6 @@ msgstr ""
 msgid "Everest Forms Checked Icon"
 msgstr ""
 
-#: includes/admin/views/html-admin-page-smart-smtp-setup.php:93
-msgid "1"
-msgstr ""
-
 #: includes/admin/views/html-admin-page-smart-smtp-setup.php:99
 #: includes/admin/views/html-admin-page-smart-smtp-setup.php:110
 msgid "Activate SmartSMTP"
@@ -5052,7 +5339,9 @@ msgid "Install and Activate SmartSMTP"
 msgstr ""
 
 #: includes/admin/views/html-admin-page-smart-smtp-setup.php:107
-msgid "Download and activate the SmartSMTP plugin directly from the WordPress.org repository."
+msgid ""
+"Download and activate the SmartSMTP plugin directly from the WordPress.org "
+"repository."
 msgstr ""
 
 #: includes/admin/views/html-admin-page-smart-smtp-setup.php:110
@@ -5061,10 +5350,6 @@ msgstr ""
 
 #: includes/admin/views/html-admin-page-smart-smtp-setup.php:112
 msgid "Installed & Activated SmartSMTP"
-msgstr ""
-
-#: includes/admin/views/html-admin-page-smart-smtp-setup.php:118
-msgid "2"
 msgstr ""
 
 #: includes/admin/views/html-admin-page-smart-smtp-setup.php:121
@@ -5080,13 +5365,10 @@ msgid "View SmartSMTP Settings"
 msgstr ""
 
 #: includes/admin/views/html-admin-page-smart-smtp-setup.php:136
-#: src/dashboard/screens/Dashboard/Dashboard.js:174
-#: src/dashboard/screens/Help/Help.js:166
 msgid "Support"
 msgstr ""
 
 #: includes/admin/views/html-admin-page-smart-smtp-setup.php:138
-#: src/dashboard/screens/Modules/components/ModuleItem.js:410
 msgid "Documentation"
 msgstr ""
 
@@ -5095,8 +5377,6 @@ msgid "%1$s at %2$s"
 msgstr ""
 
 #: includes/admin/views/html-admin-page-tools-logs.php:34
-#: src/dashboard/screens/Modules/Modules.js:332
-#: src/rolesandpermission/components/UserRoleTable.jsx:326
 msgid "Apply"
 msgstr ""
 
@@ -5121,6 +5401,10 @@ msgstr ""
 msgid "System Info"
 msgstr ""
 
+#: includes/admin/views/html-admin-page-tools.php:18
+msgid "Roles and Permission"
+msgstr ""
+
 #: includes/admin/views/html-admin-page-tools.php:24
 msgid "Logs"
 msgstr ""
@@ -5139,7 +5423,9 @@ msgid "Quick Feedback"
 msgstr ""
 
 #: includes/admin/views/html-deactivation-popup.php:37
-msgid "Could you please share why you are deactivating %1$sEverest Forms%2$s plugin?"
+msgid ""
+"Could you please share why you are deactivating %1$sEverest Forms%2$s "
+"plugin?"
 msgstr ""
 
 #: includes/admin/views/html-deactivation-popup.php:55
@@ -5151,7 +5437,9 @@ msgid "Submit &amp; Deactivate"
 msgstr ""
 
 #: includes/admin/views/html-deactivation-popup.php:58
-msgid "By submitting this form, you will also be sending us your email address & website URL."
+msgid ""
+"By submitting this form, you will also be sending us your email address & "
+"website URL."
 msgstr ""
 
 #: includes/admin/views/html-notice-allow-usage.php:17
@@ -5176,13 +5464,14 @@ msgid "Everest Forms Email Send Error"
 msgstr ""
 
 #: includes/admin/views/html-notice-email-failed-notice.php:16
-msgid "The last email sent from the Everest Forms Plugin was not delivered to the user."
+msgid ""
+"The last email sent from the Everest Forms Plugin was not delivered to the "
+"user."
 msgstr ""
 
 #: includes/admin/views/html-notice-email-failed-notice.php:25
 #: includes/admin/views/html-notice-php-deprecation.php:27
 #: templates/emails/summary-email-body-default.php:161
-#: src/dashboard/screens/Products/components/ProductCard.js:94
 msgid "Learn More"
 msgstr ""
 
@@ -5194,11 +5483,14 @@ msgstr ""
 msgid "HAKUNA MATATA!"
 msgstr ""
 
-#. translators: %1$s: Plugin Name, %2$s: Rating link
 #: includes/admin/views/html-notice-review.php:20
+#. translators: %1$s: Plugin Name, %2$s: Rating link
 msgid ""
-"Hope you are having nice experience with %1$s plugin. Please provide this plugin a nice review. %3$s %2$s\n"
-"\t\t\t\tBasically, it would encourage us to release updates regularly with new features & bug fixes so that you can keep on using the plugin without any issues and also to provide free support like we have been doing. %4$s"
+"Hope you are having nice experience with %1$s plugin. Please provide this "
+"plugin a nice review. %3$s %2$s\n"
+"\t\t\t\tBasically, it would encourage us to release updates regularly with "
+"new features & bug fixes so that you can keep on using the plugin without "
+"any issues and also to provide free support like we have been doing. %4$s"
 msgstr ""
 
 #: includes/admin/views/html-notice-review.php:25
@@ -5227,7 +5519,9 @@ msgid "Hey there!"
 msgstr ""
 
 #: includes/admin/views/html-notice-survey.php:23
-msgid "We would be grateful if you could spare a moment and help us fill this survey"
+msgid ""
+"We would be grateful if you could spare a moment and help us fill this "
+"survey"
 msgstr ""
 
 #: includes/admin/views/html-notice-survey.php:24
@@ -5239,7 +5533,9 @@ msgid "What benefit would you have?"
 msgstr ""
 
 #: includes/admin/views/html-notice-survey.php:33
-msgid "We will take your feedback from the survey which will eventually help to improve the Everest Forms plugin. Thank you in advance for participating."
+msgid ""
+"We will take your feedback from the survey which will eventually help to "
+"improve the Everest Forms plugin. Thank you in advance for participating."
 msgstr ""
 
 #: includes/admin/views/html-notice-survey.php:39
@@ -5251,7 +5547,10 @@ msgid "Everest Forms database update required"
 msgstr ""
 
 #: includes/admin/views/html-notice-update.php:21
-msgid "Everest Forms has been updated! To keep things running smoothly, we have to update your database to the newest version. The database update process runs in the background and may take a little while, so please be patient."
+msgid ""
+"Everest Forms has been updated! To keep things running smoothly, we have to "
+"update your database to the newest version. The database update process "
+"runs in the background and may take a little while, so please be patient."
 msgstr ""
 
 #: includes/admin/views/html-notice-update.php:25
@@ -5259,11 +5558,15 @@ msgid "Update Everest Forms Database"
 msgstr ""
 
 #: includes/admin/views/html-notice-update.php:31
-msgid "It is strongly recommended that you backup your database before proceeding. Are you sure you wish to run the updater now?"
+msgid ""
+"It is strongly recommended that you backup your database before proceeding. "
+"Are you sure you wish to run the updater now?"
 msgstr ""
 
 #: includes/admin/views/html-notice-updated.php:14
-msgid "Everest Forms data update complete. Thank you for updating to the latest version!"
+msgid ""
+"Everest Forms data update complete. Thank you for updating to the latest "
+"version!"
 msgstr ""
 
 #: includes/admin/views/html-notice-updating.php:12
@@ -5282,13 +5585,12 @@ msgstr ""
 msgid "Block name is not set."
 msgstr ""
 
-#. Translators: 1: Block name
 #: includes/blocks/block-types/class-evf-blocks-abstract.php:79
+#. Translators: 1: Block name
 msgid "Metadata file for %s block does not exist."
 msgstr ""
 
-#: includes/class-everest-forms.php:135
-#: includes/class-everest-forms.php:144
+#: includes/class-everest-forms.php:135 includes/class-everest-forms.php:144
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
@@ -5312,8 +5614,7 @@ msgstr ""
 msgid "Checking permissions."
 msgstr ""
 
-#: includes/class-evf-ajax.php:254
-#: includes/class-evf-ajax.php:257
+#: includes/class-evf-ajax.php:254 includes/class-evf-ajax.php:257
 msgid "You do not have permission."
 msgstr ""
 
@@ -5341,8 +5642,8 @@ msgstr ""
 msgid "Meta Key missing"
 msgstr ""
 
-#. translators: %s: empty meta data
 #: includes/class-evf-ajax.php:382
+#. translators: %s: empty meta data
 msgid "Please add Meta key for fields: %s"
 msgstr ""
 
@@ -5350,23 +5651,26 @@ msgstr ""
 msgid "Formula update error."
 msgstr ""
 
-#: includes/class-evf-ajax.php:394
-#: includes/class-evf-ajax.php:408
+#: includes/class-evf-ajax.php:394 includes/class-evf-ajax.php:408
 msgid "Heads Up!"
 msgstr ""
 
-#. translators: %s: empty meta data
 #: includes/class-evf-ajax.php:396
-msgid "Seems like your formula is not up to date. We suggest you update your formula."
+#. translators: %s: empty meta data
+msgid ""
+"Seems like your formula is not up to date. We suggest you update your "
+"formula."
 msgstr ""
 
 #: includes/class-evf-ajax.php:403
 msgid "Not supported operator."
 msgstr ""
 
-#. translators: %s: empty meta data
 #: includes/class-evf-ajax.php:410
-msgid "The ^ sign is now replaced with pow(). Please update accordingly. Tip: pow(a,b) = a^b"
+#. translators: %s: empty meta data
+msgid ""
+"The ^ sign is now replaced with pow(). Please update accordingly. Tip: "
+"pow(a,b) = a^b"
 msgstr ""
 
 #: includes/class-evf-ajax.php:418
@@ -5401,14 +5705,7 @@ msgstr ""
 msgid "Sorry, you are not allowed to install plugins on this site."
 msgstr ""
 
-#: includes/class-evf-ajax.php:667
-#: includes/RestApi/controllers/version1/class-evf-modules.php:372
-#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:378
-msgid "Unable to connect to the filesystem. Please confirm your credentials."
-msgstr ""
-
-#: includes/class-evf-ajax.php:714
-#: includes/class-evf-ajax.php:795
+#: includes/class-evf-ajax.php:714 includes/class-evf-ajax.php:795
 msgid "Missing data"
 msgstr ""
 
@@ -5416,8 +5713,8 @@ msgstr ""
 msgid "Connection missing"
 msgstr ""
 
-#. translators: %s: from address
 #: includes/class-evf-ajax.php:955
+#. translators: %s: from address
 msgid "Test email from %s"
 msgstr ""
 
@@ -5430,7 +5727,9 @@ msgid "Your test email has been received successfully."
 msgstr ""
 
 #: includes/class-evf-ajax.php:962
-msgid "We thank you for trying out Everest Forms and joining our mission to make sure you get your emails delivered."
+msgid ""
+"We thank you for trying out Everest Forms and joining our mission to make "
+"sure you get your emails delivered."
 msgstr ""
 
 #: includes/class-evf-ajax.php:963
@@ -5441,13 +5740,13 @@ msgstr ""
 msgid "Everest Forms Team"
 msgstr ""
 
-#: includes/class-evf-ajax.php:968
-#: includes/class-evf-ajax.php:1042
-msgid "Test email was sent successfully! Please check your inbox to make sure it is delivered."
+#: includes/class-evf-ajax.php:968 includes/class-evf-ajax.php:1042
+msgid ""
+"Test email was sent successfully! Please check your inbox to make sure it "
+"is delivered."
 msgstr ""
 
-#: includes/class-evf-ajax.php:970
-#: includes/class-evf-ajax.php:1044
+#: includes/class-evf-ajax.php:970 includes/class-evf-ajax.php:1044
 msgid "Test email was unsuccessful! Something went wrong."
 msgstr ""
 
@@ -5464,11 +5763,12 @@ msgid "in the past month"
 msgstr ""
 
 #: includes/class-evf-ajax.php:1018
+#. translators: %s: from address
 msgid "Hi there!"
 msgstr ""
 
-#. translators: %s: Routine email summary duration
 #: includes/class-evf-ajax.php:1020
+#. translators: %s: Routine email summary duration
 msgid "Let's see how your forms performed %s."
 msgstr ""
 
@@ -5501,8 +5801,7 @@ msgstr ""
 msgid "Missing form slug !"
 msgstr ""
 
-#: includes/class-evf-ajax.php:1220
-#: includes/class-evf-ajax.php:1316
+#: includes/class-evf-ajax.php:1220 includes/class-evf-ajax.php:1316
 #: includes/class-evf-ajax.php:1413
 msgid "does not exist."
 msgstr ""
@@ -5583,8 +5882,8 @@ msgstr ""
 msgid "No csv fields"
 msgstr ""
 
-#. translators: %s: Error message explaining the activation failure
 #: includes/class-evf-ajax.php:1779
+#. translators: %s: Error message explaining the activation failure
 msgid "Sorry, we are unable to activate SmartSMTP because of %s"
 msgstr ""
 
@@ -5592,14 +5891,17 @@ msgstr ""
 msgid "Sorry, your internet connection was interrupted"
 msgstr ""
 
-#. translators: %s: Error message explaining the installation failure
 #: includes/class-evf-ajax.php:1801
+#. translators: %s: Error message explaining the installation failure
 msgid "Plugin installation failed due to %s"
 msgstr ""
 
-#. translators: 1: key 2: URL
 #: includes/class-evf-cache-helper.php:81
-msgid "In order for <strong>database caching</strong> to work with Everest Forms you must add %1$s to the \"Ignored Query Strings\" option in <a href=\"%2$s\">W3 Total Cache settings</a>."
+#. translators: 1: key 2: URL
+msgid ""
+"In order for <strong>database caching</strong> to work with Everest Forms "
+"you must add %1$s to the \"Ignored Query Strings\" option in <a "
+"href=\"%2$s\">W3 Total Cache settings</a>."
 msgstr ""
 
 #: includes/class-evf-cron.php:38
@@ -5619,12 +5921,13 @@ msgid "Email entries summary once a month"
 msgstr ""
 
 #: includes/class-evf-emails.php:333
-msgid "You cannot send emails with EVF_Emails until init/admin_init has been reached"
+msgid ""
+"You cannot send emails with EVF_Emails until init/admin_init has been "
+"reached"
 msgstr ""
 
+#: includes/class-evf-emails.php:574 includes/class-evf-emails.php:628
 #. translators: %d - field ID.
-#: includes/class-evf-emails.php:574
-#: includes/class-evf-emails.php:628
 msgid "Field ID #%d"
 msgstr ""
 
@@ -5640,8 +5943,7 @@ msgstr ""
 msgid "Unserializing instances of this class is forbidden."
 msgstr ""
 
-#: includes/class-evf-form-task.php:97
-#: includes/class-evf-form-task.php:578
+#: includes/class-evf-form-task.php:97 includes/class-evf-form-task.php:578
 #: includes/shortcodes/class-evf-shortcode-form.php:983
 #: includes/templates/contact.php:61
 msgid "Thanks for contacting us! We will be in touch with you shortly."
@@ -5663,8 +5965,7 @@ msgstr ""
 msgid "Everest Forms Process Before Form ID."
 msgstr ""
 
-#: includes/class-evf-form-task.php:263
-#: includes/class-evf-form-task.php:423
+#: includes/class-evf-form-task.php:263 includes/class-evf-form-task.php:423
 #: includes/class-evf-form-task.php:516
 msgid "Form has not been submitted, please see the errors below."
 msgstr ""
@@ -5705,13 +6006,12 @@ msgstr ""
 msgid "Everest Forms Process Completed."
 msgstr ""
 
-#: includes/class-evf-form-task.php:627
-#: templates/notices/success.php:70
+#: includes/class-evf-form-task.php:627 templates/notices/success.php:70
 msgid "Download your form submission in PDF format"
 msgstr ""
 
-#. translators: %s - form name.
 #: includes/class-evf-form-task.php:946
+#. translators: %s - form name.
 msgid "New %s Entry"
 msgstr ""
 
@@ -5763,8 +6063,7 @@ msgstr ""
 msgid "Click here to download your pdf submission"
 msgstr ""
 
-#: includes/class-evf-install.php:602
-#: includes/templates/contact.php:12
+#: includes/class-evf-install.php:602 includes/templates/contact.php:12
 msgid "Contact Form"
 msgstr ""
 
@@ -5784,19 +6083,14 @@ msgstr ""
 msgid "Free support"
 msgstr ""
 
-#. translators: 1: class name 2: EVF_Log_Handler_Interface
 #: includes/class-evf-logger.php:54
+#. translators: 1: class name 2: EVF_Log_Handler_Interface
 msgid "The provided handler %1$s does not implement %2$s."
 msgstr ""
 
-#. translators: 1: EVF_Logger::log 2: level
 #: includes/class-evf-logger.php:138
+#. translators: 1: EVF_Logger::log 2: level
 msgid "%1$s was called with an invalid level \"%2$s\"."
-msgstr ""
-
-#: includes/class-evf-post-types.php:47
-msgctxt "Admin menu name"
-msgid "Forms"
 msgstr ""
 
 #: includes/class-evf-post-types.php:49
@@ -5872,11 +6166,19 @@ msgid "This is where you can add new forms."
 msgstr ""
 
 #: includes/class-evf-privacy.php:45
-msgid "This sample policy includes the basics around what personal data you may be collecting, storing and sharing, as well as who may have access to that data. Depending on what settings are enabled and which additional plugins are used, the specific information shared by your form will vary. We recommend consulting with a lawyer when deciding what information to disclose on your privacy policy."
+msgid ""
+"This sample policy includes the basics around what personal data you may be "
+"collecting, storing and sharing, as well as who may have access to that "
+"data. Depending on what settings are enabled and which additional plugins "
+"are used, the specific information shared by your form will vary. We "
+"recommend consulting with a lawyer when deciding what information to "
+"disclose on your privacy policy."
 msgstr ""
 
 #: includes/class-evf-privacy.php:47
-msgid "We collect information about you during the form submission process on our site."
+msgid ""
+"We collect information about you during the form submission process on our "
+"site."
 msgstr ""
 
 #: includes/class-evf-privacy.php:48
@@ -5888,27 +6190,44 @@ msgid "While you visit our site, we’ll track:"
 msgstr ""
 
 #: includes/class-evf-privacy.php:51
-msgid "Form Fields Data: Forms Fields data includes the available field types when creating a form. We’ll use this to, for example, collect informations like Name, Email and other available fields."
+msgid ""
+"Form Fields Data: Forms Fields data includes the available field types when "
+"creating a form. We’ll use this to, for example, collect informations like "
+"Name, Email and other available fields."
 msgstr ""
 
 #: includes/class-evf-privacy.php:52
-msgid "Location, IP address and browser type: we’ll use this for purposes like geolocating users and reducing fraudulent activities."
+msgid ""
+"Location, IP address and browser type: we’ll use this for purposes like "
+"geolocating users and reducing fraudulent activities."
 msgstr ""
 
 #: includes/class-evf-privacy.php:53
-msgid "Transaction Details: we’ll ask you to enter this so we can, for instance, provide subscription packs, and keep track of your payment details for subscription packs!"
+msgid ""
+"Transaction Details: we’ll ask you to enter this so we can, for instance, "
+"provide subscription packs, and keep track of your payment details for "
+"subscription packs!"
 msgstr ""
 
 #: includes/class-evf-privacy.php:55
-msgid "We’ll also use cookies to keep track of form elements while you’re browsing our site."
+msgid ""
+"We’ll also use cookies to keep track of form elements while you’re browsing "
+"our site."
 msgstr ""
 
 #: includes/class-evf-privacy.php:56
-msgid "Note: you may want to further detail your cookie policy, and link to that section from here."
+msgid ""
+"Note: you may want to further detail your cookie policy, and link to that "
+"section from here."
 msgstr ""
 
 #: includes/class-evf-privacy.php:57
-msgid "When you fill up a form, we’ll ask you to provide information including your name, address, email, phone number, credit card/payment details and optional account information like username and password and any other form fields available in the form builder. We’ll use this information for purposes, such as, to:"
+msgid ""
+"When you fill up a form, we’ll ask you to provide information including "
+"your name, address, email, phone number, credit card/payment details and "
+"optional account information like username and password and any other form "
+"fields available in the form builder. We’ll use this information for "
+"purposes, such as, to:"
 msgstr ""
 
 #: includes/class-evf-privacy.php:59
@@ -5940,15 +6259,25 @@ msgid "Send you marketing messages, if you choose to receive them"
 msgstr ""
 
 #: includes/class-evf-privacy.php:66
-msgid "Or any other service the built form was created to comply with and it’s necessary information"
+msgid ""
+"Or any other service the built form was created to comply with and it’s "
+"necessary information"
 msgstr ""
 
 #: includes/class-evf-privacy.php:68
-msgid "If you create an account, we will store your name, address, email and phone number, which will be used to populate the form fields for future submissions."
+msgid ""
+"If you create an account, we will store your name, address, email and phone "
+"number, which will be used to populate the form fields for future "
+"submissions."
 msgstr ""
 
 #: includes/class-evf-privacy.php:69
-msgid "We generally store information about you for as long as we need the information for the purposes for which we collect and use it, and we are not legally required to continue to keep it. For example, we will store form submission information for XXX years for geolocating and marketting purposes. This includes your name, address, email, phone number."
+msgid ""
+"We generally store information about you for as long as we need the "
+"information for the purposes for which we collect and use it, and we are "
+"not legally required to continue to keep it. For example, we will store "
+"form submission information for XXX years for geolocating and marketting "
+"purposes. This includes your name, address, email, phone number."
 msgstr ""
 
 #: includes/class-evf-privacy.php:70
@@ -5956,7 +6285,9 @@ msgid "Who on our team has access"
 msgstr ""
 
 #: includes/class-evf-privacy.php:71
-msgid "Members of our team have access to the information you provide us. For example, both Administrators and Editors can access:"
+msgid ""
+"Members of our team have access to the information you provide us. For "
+"example, both Administrators and Editors can access:"
 msgstr ""
 
 #: includes/class-evf-privacy.php:73
@@ -5968,7 +6299,9 @@ msgid "Customer information like your name, email and address information."
 msgstr ""
 
 #: includes/class-evf-privacy.php:76
-msgid "Our team members have access to this information to help fulfill entries and support you."
+msgid ""
+"Our team members have access to this information to help fulfill entries "
+"and support you."
 msgstr ""
 
 #: includes/class-evf-privacy.php:77
@@ -5976,11 +6309,16 @@ msgid "What we share with others"
 msgstr ""
 
 #: includes/class-evf-privacy.php:78
-msgid "In this section you should list who you’re sharing data with, and for what purpose. This could include, but may not be limited to, analytics, marketing, payment gateways, shipping providers, and third party embeds."
+msgid ""
+"In this section you should list who you’re sharing data with, and for what "
+"purpose. This could include, but may not be limited to, analytics, "
+"marketing, payment gateways, shipping providers, and third party embeds."
 msgstr ""
 
 #: includes/class-evf-privacy.php:79
-msgid "We share information with third parties who help us provide our orders and store services to you; for example --"
+msgid ""
+"We share information with third parties who help us provide our orders and "
+"store services to you; for example --"
 msgstr ""
 
 #: includes/class-evf-privacy.php:80
@@ -5988,15 +6326,25 @@ msgid "Payments"
 msgstr ""
 
 #: includes/class-evf-privacy.php:81
-msgid "In this subsection you should list which third party payment processors you’re using to take payments on your site since these may handle customer data. We’ve included PayPal as an example, but you should remove this if you’re not using PayPal."
+msgid ""
+"In this subsection you should list which third party payment processors "
+"you’re using to take payments on your site since these may handle customer "
+"data. We’ve included PayPal as an example, but you should remove this if "
+"you’re not using PayPal."
 msgstr ""
 
 #: includes/class-evf-privacy.php:82
-msgid "We accept payments through PayPal. When processing payments, some of your data will be passed to PayPal, including information required to process or support the payment, such as the purchase total and billing information."
+msgid ""
+"We accept payments through PayPal. When processing payments, some of your "
+"data will be passed to PayPal, including information required to process or "
+"support the payment, such as the purchase total and billing information."
 msgstr ""
 
 #: includes/class-evf-privacy.php:83
-msgid "Please see the <a href=\"https://www.paypal.com/us/webapps/mpp/ua/privacy-full\">PayPal Privacy Policy</a> for more details."
+msgid ""
+"Please see the <a "
+"href=\"https://www.paypal.com/us/webapps/mpp/ua/privacy-full\">PayPal "
+"Privacy Policy</a> for more details."
 msgstr ""
 
 #: includes/class-evf-privacy.php:84
@@ -6004,15 +6352,26 @@ msgid "Available Modules"
 msgstr ""
 
 #: includes/class-evf-privacy.php:85
-msgid "In this subsection you should list which third party modules you’re using to increase functionality on your site since these may handle customer data. We’ve included MailChimp as an example, but you should remove this if you’re not using MailChimp."
+msgid ""
+"In this subsection you should list which third party modules you’re using "
+"to increase functionality on your site since these may handle customer "
+"data. We’ve included MailChimp as an example, but you should remove this if "
+"you’re not using MailChimp."
 msgstr ""
 
 #: includes/class-evf-privacy.php:86
-msgid "We send beautiful email through MailChimp. When processing emails, some of your data will be passed to MailChimp, including information required to process or support the email marketing services, such as the name, email address and any other information that you intend to pass or collect including all collected information through subscription."
+msgid ""
+"We send beautiful email through MailChimp. When processing emails, some of "
+"your data will be passed to MailChimp, including information required to "
+"process or support the email marketing services, such as the name, email "
+"address and any other information that you intend to pass or collect "
+"including all collected information through subscription."
 msgstr ""
 
 #: includes/class-evf-privacy.php:87
-msgid "Please see the <a href=\"https://mailchimp.com/legal/privacy/\">MailChimp Privacy Policy</a> for more details."
+msgid ""
+"Please see the <a href=\"https://mailchimp.com/legal/privacy/\">MailChimp "
+"Privacy Policy</a> for more details."
 msgstr ""
 
 #: includes/class-evf-smart-tags.php:31
@@ -6073,7 +6432,6 @@ msgid "User Meta"
 msgstr ""
 
 #: includes/class-evf-smart-tags.php:47
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:110
 msgid "User Name"
 msgstr ""
 
@@ -6235,8 +6593,8 @@ msgstr ""
 msgid "Edit Form"
 msgstr ""
 
-#. translators: %s - Form name.
 #: includes/class-evf-template-loader.php:218
+#. translators: %s - Form name.
 msgid "%s &ndash; Preview"
 msgstr ""
 
@@ -6248,8 +6606,8 @@ msgstr ""
 msgid "You have not created a form, Please Create a form first"
 msgstr ""
 
-#. translators: %s template
 #: includes/evf-core-functions.php:103
+#. translators: %s template
 msgid "%s does not exist."
 msgstr ""
 
@@ -6263,8 +6621,9 @@ msgstr ""
 msgid "This method should not be called before plugins_loaded."
 msgstr ""
 
-#. translators: 1: class name 2: everest_forms_logging_class 3: EVF_Logger_Interface
 #: includes/evf-core-functions.php:555
+#. translators: 1: class name 2: everest_forms_logging_class 3:
+#. EVF_Logger_Interface
 msgid "The class %1$s provided by %2$s filter must implement %3$s."
 msgstr ""
 
@@ -6628,8 +6987,7 @@ msgstr ""
 msgid "Guam"
 msgstr ""
 
-#: includes/evf-core-functions.php:1733
-#: includes/evf-core-functions.php:2540
+#: includes/evf-core-functions.php:1733 includes/evf-core-functions.php:2540
 msgid "Guatemala"
 msgstr ""
 
@@ -6905,8 +7263,7 @@ msgstr ""
 msgid "Nicaragua"
 msgstr ""
 
-#: includes/evf-core-functions.php:1802
-#: includes/evf-core-functions.php:3155
+#: includes/evf-core-functions.php:1802 includes/evf-core-functions.php:3155
 msgid "Niger"
 msgstr ""
 
@@ -7410,8 +7767,7 @@ msgstr ""
 msgid "Chubut"
 msgstr ""
 
-#: includes/evf-core-functions.php:1947
-#: includes/evf-core-functions.php:2240
+#: includes/evf-core-functions.php:1947 includes/evf-core-functions.php:2240
 #: includes/evf-core-functions.php:2459
 msgid "Córdoba"
 msgstr ""
@@ -7436,8 +7792,7 @@ msgstr ""
 msgid "La Pampa"
 msgstr ""
 
-#: includes/evf-core-functions.php:1953
-#: includes/evf-core-functions.php:2468
+#: includes/evf-core-functions.php:1953 includes/evf-core-functions.php:2468
 msgid "La Rioja"
 msgstr ""
 
@@ -7445,8 +7800,7 @@ msgstr ""
 msgid "Mendoza"
 msgstr ""
 
-#: includes/evf-core-functions.php:1955
-#: includes/evf-core-functions.php:3371
+#: includes/evf-core-functions.php:1955 includes/evf-core-functions.php:3371
 msgid "Misiones"
 msgstr ""
 
@@ -7454,8 +7808,7 @@ msgstr ""
 msgid "Neuquén"
 msgstr ""
 
-#: includes/evf-core-functions.php:1957
-#: includes/evf-core-functions.php:3911
+#: includes/evf-core-functions.php:1957 includes/evf-core-functions.php:3911
 msgid "Río Negro"
 msgstr ""
 
@@ -7463,8 +7816,7 @@ msgstr ""
 msgid "Salta"
 msgstr ""
 
-#: includes/evf-core-functions.php:1959
-#: includes/evf-core-functions.php:2325
+#: includes/evf-core-functions.php:1959 includes/evf-core-functions.php:2325
 msgid "San Juan"
 msgstr ""
 
@@ -7472,8 +7824,7 @@ msgstr ""
 msgid "San Luis"
 msgstr ""
 
-#: includes/evf-core-functions.php:1961
-#: includes/evf-core-functions.php:2100
+#: includes/evf-core-functions.php:1961 includes/evf-core-functions.php:2100
 msgid "Santa Cruz"
 msgstr ""
 
@@ -7813,8 +8164,7 @@ msgstr ""
 msgid "Lovech"
 msgstr ""
 
-#: includes/evf-core-functions.php:2055
-#: includes/evf-core-functions.php:3870
+#: includes/evf-core-functions.php:2055 includes/evf-core-functions.php:3870
 msgid "Montana"
 msgstr ""
 
@@ -7934,8 +8284,7 @@ msgstr ""
 msgid "Ouémé"
 msgstr ""
 
-#: includes/evf-core-functions.php:2089
-#: includes/evf-core-functions.php:3160
+#: includes/evf-core-functions.php:2089 includes/evf-core-functions.php:3160
 msgid "Plateau"
 msgstr ""
 
@@ -7955,8 +8304,7 @@ msgstr ""
 msgid "Cochabamba"
 msgstr ""
 
-#: includes/evf-core-functions.php:2096
-#: includes/evf-core-functions.php:2575
+#: includes/evf-core-functions.php:2096 includes/evf-core-functions.php:2575
 #: includes/evf-core-functions.php:3437
 msgid "La Paz"
 msgstr ""
@@ -7989,10 +8337,8 @@ msgstr ""
 msgid "Amapá"
 msgstr ""
 
-#: includes/evf-core-functions.php:2107
-#: includes/evf-core-functions.php:2228
-#: includes/evf-core-functions.php:3240
-#: includes/evf-core-functions.php:3945
+#: includes/evf-core-functions.php:2107 includes/evf-core-functions.php:2228
+#: includes/evf-core-functions.php:3240 includes/evf-core-functions.php:3945
 msgid "Amazonas"
 msgstr ""
 
@@ -8280,8 +8626,7 @@ msgstr ""
 msgid "Los Lagos"
 msgstr ""
 
-#: includes/evf-core-functions.php:2185
-#: includes/evf-core-functions.php:2399
+#: includes/evf-core-functions.php:2185 includes/evf-core-functions.php:2399
 msgid "Los Ríos"
 msgstr ""
 
@@ -8449,8 +8794,7 @@ msgstr ""
 msgid "Atlántico"
 msgstr ""
 
-#: includes/evf-core-functions.php:2232
-#: includes/evf-core-functions.php:2388
+#: includes/evf-core-functions.php:2232 includes/evf-core-functions.php:2388
 #: includes/evf-core-functions.php:3926
 msgid "Bolívar"
 msgstr ""
@@ -8543,8 +8887,7 @@ msgstr ""
 msgid "San Andrés & Providencia"
 msgstr ""
 
-#: includes/evf-core-functions.php:2256
-#: includes/evf-core-functions.php:3937
+#: includes/evf-core-functions.php:2256 includes/evf-core-functions.php:3937
 msgid "Sucre"
 msgstr ""
 
@@ -8588,8 +8931,7 @@ msgstr ""
 msgid "Puntarenas"
 msgstr ""
 
-#: includes/evf-core-functions.php:2269
-#: includes/evf-core-functions.php:3915
+#: includes/evf-core-functions.php:2269 includes/evf-core-functions.php:3915
 msgid "San José"
 msgstr ""
 
@@ -9285,8 +9627,7 @@ msgstr ""
 msgid "Girona"
 msgstr ""
 
-#: includes/evf-core-functions.php:2462
-#: includes/evf-core-functions.php:3193
+#: includes/evf-core-functions.php:2462 includes/evf-core-functions.php:3193
 msgid "Granada"
 msgstr ""
 
@@ -9314,8 +9655,7 @@ msgstr ""
 msgid "Las Palmas"
 msgstr ""
 
-#: includes/evf-core-functions.php:2470
-#: includes/evf-core-functions.php:3195
+#: includes/evf-core-functions.php:2470 includes/evf-core-functions.php:3195
 msgid "León"
 msgstr ""
 
@@ -9431,14 +9771,12 @@ msgstr ""
 msgid "Bono East"
 msgstr ""
 
-#: includes/evf-core-functions.php:2504
-#: includes/evf-core-functions.php:3374
+#: includes/evf-core-functions.php:2504 includes/evf-core-functions.php:3374
 #: includes/evf-core-functions.php:3962
 msgid "Central"
 msgstr ""
 
-#: includes/evf-core-functions.php:2505
-#: includes/evf-core-functions.php:3963
+#: includes/evf-core-functions.php:2505 includes/evf-core-functions.php:3963
 msgid "Eastern"
 msgstr ""
 
@@ -9450,8 +9788,7 @@ msgstr ""
 msgid "North East"
 msgstr ""
 
-#: includes/evf-core-functions.php:2508
-#: includes/evf-core-functions.php:3965
+#: includes/evf-core-functions.php:2508 includes/evf-core-functions.php:3965
 msgid "Northern"
 msgstr ""
 
@@ -9475,8 +9812,7 @@ msgstr ""
 msgid "Volta"
 msgstr ""
 
-#: includes/evf-core-functions.php:2514
-#: includes/evf-core-functions.php:3961
+#: includes/evf-core-functions.php:2514 includes/evf-core-functions.php:3961
 msgid "Western"
 msgstr ""
 
@@ -9644,8 +9980,7 @@ msgstr ""
 msgid "Choluteca"
 msgstr ""
 
-#: includes/evf-core-functions.php:2566
-#: includes/evf-core-functions.php:3225
+#: includes/evf-core-functions.php:2566 includes/evf-core-functions.php:3225
 msgid "Colón"
 msgstr ""
 
@@ -10105,8 +10440,7 @@ msgstr ""
 msgid "Odisha"
 msgstr ""
 
-#: includes/evf-core-functions.php:2690
-#: includes/evf-core-functions.php:3356
+#: includes/evf-core-functions.php:2690 includes/evf-core-functions.php:3356
 msgid "Punjab"
 msgstr ""
 
@@ -10978,8 +11312,7 @@ msgstr ""
 msgid "Bungoma"
 msgstr ""
 
-#: includes/evf-core-functions.php:2922
-#: includes/evf-core-functions.php:3727
+#: includes/evf-core-functions.php:2922 includes/evf-core-functions.php:3727
 msgid "Busia"
 msgstr ""
 
@@ -11263,8 +11596,7 @@ msgstr ""
 msgid "Margibi"
 msgstr ""
 
-#: includes/evf-core-functions.php:3000
-#: includes/evf-core-functions.php:3864
+#: includes/evf-core-functions.php:3000 includes/evf-core-functions.php:3864
 msgid "Maryland"
 msgstr ""
 
@@ -11316,8 +11648,7 @@ msgstr ""
 msgid "Cantemir"
 msgstr ""
 
-#: includes/evf-core-functions.php:3016
-#: includes/evf-core-functions.php:3395
+#: includes/evf-core-functions.php:3016 includes/evf-core-functions.php:3395
 msgid "Călărași"
 msgstr ""
 
@@ -12137,8 +12468,7 @@ msgstr ""
 msgid "Junín"
 msgstr ""
 
-#: includes/evf-core-functions.php:3251
-#: includes/evf-core-functions.php:3435
+#: includes/evf-core-functions.php:3251 includes/evf-core-functions.php:3435
 msgid "La Libertad"
 msgstr ""
 
@@ -13574,166 +13904,6 @@ msgstr ""
 msgid "Simiyu"
 msgstr ""
 
-#: includes/evf-core-functions.php:3642
-msgctxt "district"
-msgid "Belgrade"
-msgstr ""
-
-#: includes/evf-core-functions.php:3643
-msgctxt "district"
-msgid "Bor"
-msgstr ""
-
-#: includes/evf-core-functions.php:3644
-msgctxt "district"
-msgid "Braničevo"
-msgstr ""
-
-#: includes/evf-core-functions.php:3645
-msgctxt "district"
-msgid "Central Banat"
-msgstr ""
-
-#: includes/evf-core-functions.php:3646
-msgctxt "district"
-msgid "Danube"
-msgstr ""
-
-#: includes/evf-core-functions.php:3647
-msgctxt "district"
-msgid "Jablanica"
-msgstr ""
-
-#: includes/evf-core-functions.php:3648
-msgctxt "district"
-msgid "Kolubara"
-msgstr ""
-
-#: includes/evf-core-functions.php:3649
-msgctxt "district"
-msgid "Mačva"
-msgstr ""
-
-#: includes/evf-core-functions.php:3650
-msgctxt "district"
-msgid "Morava"
-msgstr ""
-
-#: includes/evf-core-functions.php:3651
-msgctxt "district"
-msgid "Nišava"
-msgstr ""
-
-#: includes/evf-core-functions.php:3652
-msgctxt "district"
-msgid "North Bačka"
-msgstr ""
-
-#: includes/evf-core-functions.php:3653
-msgctxt "district"
-msgid "North Banat"
-msgstr ""
-
-#: includes/evf-core-functions.php:3654
-msgctxt "district"
-msgid "Pčinja"
-msgstr ""
-
-#: includes/evf-core-functions.php:3655
-msgctxt "district"
-msgid "Pirot"
-msgstr ""
-
-#: includes/evf-core-functions.php:3656
-msgctxt "district"
-msgid "Pomoravlje"
-msgstr ""
-
-#: includes/evf-core-functions.php:3657
-msgctxt "district"
-msgid "Rasina"
-msgstr ""
-
-#: includes/evf-core-functions.php:3658
-msgctxt "district"
-msgid "Raška"
-msgstr ""
-
-#: includes/evf-core-functions.php:3659
-msgctxt "district"
-msgid "South Bačka"
-msgstr ""
-
-#: includes/evf-core-functions.php:3660
-msgctxt "district"
-msgid "South Banat"
-msgstr ""
-
-#: includes/evf-core-functions.php:3661
-msgctxt "district"
-msgid "Srem"
-msgstr ""
-
-#: includes/evf-core-functions.php:3662
-msgctxt "district"
-msgid "Šumadija"
-msgstr ""
-
-#: includes/evf-core-functions.php:3663
-msgctxt "district"
-msgid "Toplica"
-msgstr ""
-
-#: includes/evf-core-functions.php:3664
-msgctxt "district"
-msgid "West Bačka"
-msgstr ""
-
-#: includes/evf-core-functions.php:3665
-msgctxt "district"
-msgid "Zaječar"
-msgstr ""
-
-#: includes/evf-core-functions.php:3666
-msgctxt "district"
-msgid "Zlatibor"
-msgstr ""
-
-#: includes/evf-core-functions.php:3667
-msgctxt "district"
-msgid "Kosovo"
-msgstr ""
-
-#: includes/evf-core-functions.php:3668
-msgctxt "district"
-msgid "Peć"
-msgstr ""
-
-#: includes/evf-core-functions.php:3669
-msgctxt "district"
-msgid "Prizren"
-msgstr ""
-
-#: includes/evf-core-functions.php:3670
-msgctxt "district"
-msgid "Kosovska Mitrovica"
-msgstr ""
-
-#: includes/evf-core-functions.php:3671
-msgctxt "district"
-msgid "Kosovo-Pomoravlje"
-msgstr ""
-
-#: includes/evf-core-functions.php:3672
-msgctxt "district"
-msgid "Kosovo-Metohija"
-msgstr ""
-
-#: includes/evf-core-functions.php:3673
-msgctxt "district"
-msgid "Vojvodina"
-msgstr ""
-
 #: includes/evf-core-functions.php:3677
 msgid "Vinnytsia Oblast"
 msgstr ""
@@ -14410,14 +14580,8 @@ msgstr ""
 msgid "District Of Columbia"
 msgstr ""
 
-#: includes/evf-core-functions.php:3853
-#: includes/evf-core-functions.php:3906
+#: includes/evf-core-functions.php:3853 includes/evf-core-functions.php:3906
 msgid "Florida"
-msgstr ""
-
-#: includes/evf-core-functions.php:3854
-msgctxt "US state of Georgia"
-msgid "Georgia"
 msgstr ""
 
 #: includes/evf-core-functions.php:3855
@@ -14835,30 +14999,31 @@ msgid "Third Choice"
 msgstr ""
 
 #: includes/evf-core-functions.php:4067
-msgid "Enter CSS class for this field container. Class names should be separated with spaces."
+msgid ""
+"Enter CSS class for this field container. Class names should be separated "
+"with spaces."
 msgstr ""
 
-#: includes/evf-core-functions.php:5034
-#: includes/evf-core-functions.php:5076
+#: includes/evf-core-functions.php:5034 includes/evf-core-functions.php:5076
 #: includes/evf-core-functions.php:5118
 msgid "Everest Forms Daily Entries Statistics Report"
 msgstr ""
 
-#: includes/evf-core-functions.php:5039
-#: includes/evf-core-functions.php:5081
+#: includes/evf-core-functions.php:5039 includes/evf-core-functions.php:5081
 #: includes/evf-core-functions.php:5124
 msgid "Everest Forms Weekly Entries Statistics Report"
 msgstr ""
 
-#: includes/evf-core-functions.php:5044
-#: includes/evf-core-functions.php:5086
+#: includes/evf-core-functions.php:5044 includes/evf-core-functions.php:5086
 #: includes/evf-core-functions.php:5130
 msgid "Everest Forms Monthly Entries Statistics Report"
 msgstr ""
 
-#. translators: %s: Status Log URL
 #: includes/evf-core-functions.php:5328
-msgid "Please check the `evf_mail_errors` log under <a target=\"_blank\" href=\"%s\"> Logs </a> section."
+#. translators: %s: Status Log URL
+msgid ""
+"Please check the `evf_mail_errors` log under <a target=\"_blank\" "
+"href=\"%s\"> Logs </a> section."
 msgstr ""
 
 #: includes/evf-entry-functions.php:119
@@ -14869,12 +15034,9 @@ msgstr ""
 msgid "Spam"
 msgstr ""
 
-#: includes/evf-notice-functions.php:23
-#: includes/evf-notice-functions.php:54
-#: includes/evf-notice-functions.php:73
-#: includes/evf-notice-functions.php:100
-#: includes/evf-notice-functions.php:113
-#: includes/evf-notice-functions.php:128
+#: includes/evf-notice-functions.php:23 includes/evf-notice-functions.php:54
+#: includes/evf-notice-functions.php:73 includes/evf-notice-functions.php:100
+#: includes/evf-notice-functions.php:113 includes/evf-notice-functions.php:128
 #: includes/evf-notice-functions.php:188
 msgid "This function should not be called before everest_forms_init."
 msgstr ""
@@ -14895,9 +15057,9 @@ msgstr ""
 msgid "User Device"
 msgstr ""
 
-#. translators: 1: entry date 2: entry time
 #: includes/export/class-evf-entry-csv-exporter.php:500
 #: includes/export/class-evf-entry-csv-exporter.php:517
+#. translators: 1: entry date 2: entry time
 msgid "%1$s %2$s"
 msgstr ""
 
@@ -14936,35 +15098,41 @@ msgstr ""
 msgid "Enable Chatbot"
 msgstr ""
 
-#. translators: %1$s -  ai settings docs url
 #: includes/fields/class-evf-field-ai.php:74
-msgid "Check this option to enable chatbot. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s -  ai settings docs url
+msgid ""
+"Check this option to enable chatbot. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/fields/class-evf-field-ai.php:109
 msgid "Prompt"
 msgstr ""
 
-#. translators: %1$s -  ai settings docs url
 #: includes/fields/class-evf-field-ai.php:111
-msgid "Enter a question or choose a field in the prompt to generate a response. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s -  ai settings docs url
+msgid ""
+"Enter a question or choose a field in the prompt to generate a response. <a "
+"href=\"%1$s\" target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/fields/class-evf-field-ai.php:140
 msgid "Field Mapping"
 msgstr ""
 
-#. translators: %1$s -  ai settings docs url
 #: includes/fields/class-evf-field-ai.php:142
-msgid "Click on <> and map the field for your question. <a href=\"%1$s\" target=\"_blank\">Learn More</a>"
+#. translators: %1$s -  ai settings docs url
+msgid ""
+"Click on <> and map the field for your question. <a href=\"%1$s\" "
+"target=\"_blank\">Learn More</a>"
 msgstr ""
 
 #: includes/fields/class-evf-field-ai.php:179
 msgid "Field Type"
 msgstr ""
 
-#. translators: %1$s -  ai settings docs url
 #: includes/fields/class-evf-field-ai.php:181
+#. translators: %1$s -  ai settings docs url
 msgid "Please select the field type."
 msgstr ""
 
@@ -14989,8 +15157,8 @@ msgstr ""
 msgid "Checked"
 msgstr ""
 
-#. translators: %s - Choice Number.
 #: includes/fields/class-evf-field-checkbox.php:175
+#. translators: %s - Choice Number.
 msgid "Choice %s"
 msgstr ""
 
@@ -15194,7 +15362,9 @@ msgstr ""
 
 #: includes/fields/class-evf-field-date-time.php:444
 #: includes/fields/class-evf-field-date-time.php:467
-msgid "Number of days after today or before for negative numbers. Example: today or +14 days or -5 days."
+msgid ""
+"Number of days after today or before for negative numbers. Example: today "
+"or +14 days or -5 days."
 msgstr ""
 
 #: includes/fields/class-evf-field-date-time.php:500
@@ -15448,13 +15618,13 @@ msgstr ""
 msgid "Maximum value user is allowed to enter."
 msgstr ""
 
-#. translators: %s - minimum value.
 #: includes/fields/class-evf-field-number.php:322
+#. translators: %s - minimum value.
 msgid "Please enter a value greater than or equal to %s"
 msgstr ""
 
-#. translators: %s - maximum value.
 #: includes/fields/class-evf-field-number.php:326
+#. translators: %s - maximum value.
 msgid "Please enter a value less than or equal to %s"
 msgstr ""
 
@@ -15463,12 +15633,10 @@ msgid "Password"
 msgstr ""
 
 #: includes/fields/class-evf-field-payment-authorize-net.php:20
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:237
 msgid "Authorize.Net"
 msgstr ""
 
 #: includes/fields/class-evf-field-payment-coupon.php:20
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:272
 msgid "Coupons"
 msgstr ""
 
@@ -15573,7 +15741,9 @@ msgid "Add a local Privacy Policy page"
 msgstr ""
 
 #: includes/fields/class-evf-field-privacy-policy.php:271
-msgid "Add a local page residing in your site, containing policy details, in the consent message."
+msgid ""
+"Add a local page residing in your site, containing policy details, in the "
+"consent message."
 msgstr ""
 
 #: includes/fields/class-evf-field-privacy-policy.php:288
@@ -15613,7 +15783,6 @@ msgid "Select the primary color for the rating icon"
 msgstr ""
 
 #: includes/fields/class-evf-field-repeater.php:20
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:252
 msgid "Repeater Fields"
 msgstr ""
 
@@ -15677,7 +15846,9 @@ msgid "Option 3"
 msgstr ""
 
 #: includes/fields/class-evf-field-select.php:207
-msgid "Check this option to enable enhanced select. It enables you to search items in the dropdown field."
+msgid ""
+"Check this option to enable enhanced select. It enables you to search items "
+"in the dropdown field."
 msgstr ""
 
 #: includes/fields/class-evf-field-select.php:217
@@ -15703,7 +15874,9 @@ msgstr ""
 
 #: includes/fields/class-evf-field-text.php:79
 #: includes/fields/class-evf-field-textarea.php:81
-msgid "Check this option to specify maximum text length by characters or word count."
+msgid ""
+"Check this option to specify maximum text length by characters or word "
+"count."
 msgstr ""
 
 #: includes/fields/class-evf-field-text.php:112
@@ -15727,7 +15900,9 @@ msgstr ""
 
 #: includes/fields/class-evf-field-text.php:142
 #: includes/fields/class-evf-field-textarea.php:145
-msgid "Check this option to specify minimum text length by characters or word count."
+msgid ""
+"Check this option to specify minimum text length by characters or word "
+"count."
 msgstr ""
 
 #: includes/fields/class-evf-field-textarea.php:23
@@ -15814,238 +15989,26 @@ msgstr ""
 msgid "Enter the label text for No."
 msgstr ""
 
-#: includes/RestApi/controllers/version1/class-evf-changelog.php:78
-msgid "Failed to read changelog."
+#: includes/libraries/wp-background-process.php:423
+msgid "Every %d Minutes"
 msgstr ""
 
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:64
-msgid "No entry data found!"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:76
-msgid "Form id is missing!"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:88
-msgid "Form is not found!"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:100
-msgid "Form is disalbed!"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:110
-msgid "Form is empty!"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:120
-msgid "Save entris is enable! Please disable to save the entry."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:211
-msgid "Error found!!"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:251
-msgid "Contact your administrator to enable REST API access"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:261
-msgid "Contact your administrator to generate the api key."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:271
-msgid "Missing api key!"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:279
-msgid "Empty api key!"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-entry-submission.php:290
-msgid "Unauthorized api key."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:175
-msgid "Module slug is a required field"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:202
-msgid "Module couldn't be activated at the moment. Please try again later."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:210
-msgid "Module activated successfully"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:299
-#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:306
-msgid "Addons activated successfully"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:385
-#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:391
-msgid "Addon installed Successfully"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:403
-msgid "Addon slug is a required field"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:425
-msgid "Module couldn't be deactivated. Please try again later."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:433
-msgid "Module deactivated successfully"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:490
-msgid "Please select addons to activate"
-msgstr ""
-
-#. translators: 1: Failed Addon Names
-#: includes/RestApi/controllers/version1/class-evf-modules.php:522
-msgid "%1$s activation failed. Please try again sometime later."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:530
-#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:197
-msgid "All of the selected modules have been activated successfully."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:552
-msgid "Please select a module to deactivate"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:583
-msgid "All of the selected modules have been deactivated."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:591
-msgid "Some of the selected modules may not have been deactivated. Please try again later"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:733
-msgid "Everest Forms Pro activated successfully."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-modules.php:742
-msgid "Please enter the valid license key."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:157
-msgid "Invalid module data format."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:189
-msgid "%1$s activation failed. Please try again later."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:265
-msgid "Failed to update enabled features."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:457
-#: includes/RestApi/controllers/version1/class-evf-templates.php:296
-msgid "You do not have permissions to perform this action."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-plugin-status.php:466
-#: includes/RestApi/controllers/version1/class-evf-templates.php:305
-msgid "You are not allowed to access this resource."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:108
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:219
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:533
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:589
-msgid "Request data not found."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:131
-msgid "Sorry, you can not give access to the Subscriber role."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:156
-msgid "Successfully role saved."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:235
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:260
-msgid "User email is required."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:236
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:248
-msgid "User permission is required"
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:286
-msgid "User not found with "
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:312
-msgid "Manager added successfully."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:548
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:616
-msgid "Associate user could not be found."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:570
-msgid "Manager deleted successfully."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:603
-msgid "Please select user."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-role-and-permission.php:631
-msgid "Managers deleted successfully."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-templates.php:153
-msgid "Failed to fetch templates."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-templates.php:160
-msgid "No templates found."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-templates.php:165
-msgid "An error occurred while fetching templates."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-templates.php:232
-msgid "The template name is required and cannot be empty."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-templates.php:241
-msgid "The template slug is required and cannot be empty."
-msgstr ""
-
-#: includes/RestApi/controllers/version1/class-evf-templates.php:273
-msgid "Something went wrong, please try again later."
-msgstr ""
-
-#. translators: %s - URL to a non-amp version of a page with the form.
 #: includes/shortcodes/class-evf-shortcode-form.php:956
+#. translators: %s - URL to a non-amp version of a page with the form.
 msgid "<a href=\"%s\">Go to the full page</a> to view and submit the form."
 msgstr ""
 
-#. translators: %s - link to a site.
+#: templates/emails/body-default.php:43
+msgid "Please note that these data are only for reference purpose."
+msgstr ""
+
 #: templates/emails/footer-default.php:45
+#. translators: %s - link to a site.
 msgid "Sent from %s"
 msgstr ""
 
 #: templates/emails/summary-email-body-default.php:72
 msgid "Hi there! "
-msgstr ""
-
-#: templates/emails/summary-email-body-default.php:73
-msgid "Let's see how your forms performed "
 msgstr ""
 
 #: templates/emails/summary-email-body-default.php:78
@@ -16083,10 +16046,14 @@ msgstr ""
 #: templates/emails/summary-email-body-default.php:149
 msgid ""
 "Business growth with Everest Forms.\n"
-"\t\t With the Advanced Form Analytics addon, you can efficiently track user engagement on your forms\n"
-"\t\t by monitoring conversions, impressions, bounce rates, and abandonments on a simplified graph.\n"
-"\t\t Then, observe user behavior and fine-tune your forms for high lead conversion. Don't miss out on valuable\n"
-"\t\t opportunities to enhance your conversion rates and push your business forward. "
+"\t\t With the Advanced Form Analytics addon, you can efficiently track user "
+"engagement on your forms\n"
+"\t\t by monitoring conversions, impressions, bounce rates, and abandonments "
+"on a simplified graph.\n"
+"\t\t Then, observe user behavior and fine-tune your forms for high lead "
+"conversion. Don't miss out on valuable\n"
+"\t\t opportunities to enhance your conversion rates and push your business "
+"forward. "
 msgstr ""
 
 #: templates/emails/summary-email-footer-default.php:52
@@ -16097,866 +16064,314 @@ msgstr ""
 msgid "This email was auto-generated and sent from"
 msgstr ""
 
-#: src/blocks/blocks/form-selector/Edit.js:66
-msgid "Show Title"
+#: templates/emails/summary-email-footer-default.php:61
+msgid "Learn "
 msgstr ""
 
-#: src/blocks/blocks/form-selector/Edit.js:71
-msgid "Show Description"
+#: templates/emails/summary-email-footer-default.php:62
+msgid "how to disable."
 msgstr ""
 
-#: src/blocks/blocks/form-selector/Edit.js:95
-msgid "Select a form"
+#. Plugin URI of the plugin/theme
+msgid "https://everestforms.net/"
 msgstr ""
 
-#: src/blocks/blocks/frontend-listing/Edit.js:73
-#: src/blocks/blocks/frontend-listing/Edit.js:77
-#: src/blocks/blocks/frontend-listing/Edit.js:100
-msgid "Select list"
+#. Description of the plugin/theme
+msgid ""
+"Drag and Drop contact form builder to easily create simple to complex forms "
+"for any purpose. Lightweight, Beautiful design, responsive and more."
 msgstr ""
 
-#: src/blocks/blocks/frontend-listing/Edit.js:92
-msgid "Everest Form Frontend Listing"
+#. Author of the plugin/theme
+msgid "WPEverest"
 msgstr ""
 
-#: src/blocks/blocks/user-login/Edit.js:40
-msgid "Everest Forms User Login"
+#. Author URI of the plugin/theme
+msgid "https://wpeverest.com"
 msgstr ""
 
-#: src/dashboard/components/common/UsePluginInstallActivate.js:64
-msgid "%s plugin activated successfully"
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:122
+msgctxt "enhanced select"
+msgid "Select Font Family&hellip;"
 msgstr ""
 
-#: src/dashboard/components/common/UsePluginInstallActivate.js:77
-msgid "An error occurred"
+#: includes/admin/class-evf-admin-assets.php:132
+#: includes/class-evf-frontend-scripts.php:323
+msgctxt "enhanced select"
+msgid "No matches found"
 msgstr ""
 
-#: src/dashboard/components/common/UsePluginInstallActivate.js:114
-msgid "%s plugin installed and activated successfully"
+#: includes/admin/class-evf-admin-assets.php:133
+msgctxt "enhanced select"
+msgid "Loading failed"
 msgstr ""
 
-#: src/dashboard/components/common/UsePluginInstallActivate.js:180
-#: src/dashboard/screens/Dashboard/components/UsefulPlugins.js:81
-#: src/dashboard/screens/Products/components/ProductCard.js:143
-msgid "Install"
+#: includes/admin/class-evf-admin-assets.php:134
+msgctxt "enhanced select"
+msgid "Please enter 1 or more characters"
 msgstr ""
 
-#: src/dashboard/components/Header/Header.js:122
-msgid "You are currently using Everest Forms %s"
+#: includes/admin/class-evf-admin-assets.php:135
+msgctxt "enhanced select"
+msgid "Please enter %qty% or more characters"
 msgstr ""
 
-#: src/dashboard/components/Header/Header.js:154
-msgid "Upgrade To Pro"
+#: includes/admin/class-evf-admin-assets.php:136
+msgctxt "enhanced select"
+msgid "Please delete 1 character"
 msgstr ""
 
-#: src/dashboard/components/Header/Header.js:168
-#: src/dashboard/components/Header/Header.js:206
-msgid "Latest Updates"
+#: includes/admin/class-evf-admin-assets.php:137
+msgctxt "enhanced select"
+msgid "Please delete %qty% characters"
 msgstr ""
 
-#: src/dashboard/Constants/index.js:13
-msgid "All Features"
+#: includes/admin/class-evf-admin-assets.php:138
+msgctxt "enhanced select"
+msgid "You can only select 1 item"
 msgstr ""
 
-#: src/dashboard/Constants/index.js:26
-msgid "Other Products"
+#: includes/admin/class-evf-admin-assets.php:139
+msgctxt "enhanced select"
+msgid "You can only select %qty% items"
 msgstr ""
 
-#: src/dashboard/Constants/index.js:35
-msgid "Free vs Pro"
+#: includes/admin/class-evf-admin-assets.php:140
+msgctxt "enhanced select"
+msgid "Loading more results&hellip;"
 msgstr ""
 
-#: src/dashboard/Constants/Products.js:21
-msgid "Revolutionize e-learning effortlessly with Masteriyo, a WordPress LMS plugin. Sell courses with quizzes, assignments, etc., for a dynamic learning experience."
+#: includes/admin/class-evf-admin-assets.php:141
+msgctxt "enhanced select"
+msgid "Searching&hellip;"
 msgstr ""
 
-#: src/dashboard/Constants/Products.js:28
-msgid "WordPress LMS plugin with Quiz Builder"
+#: includes/admin/class-evf-admin-assets.php:142
+msgctxt "enhanced select"
+msgid "Select All"
 msgstr ""
 
-#: src/dashboard/Constants/Products.js:38
-msgid "Fuel your digital creativity with BlockArt Blocks, a dynamic collection of custom Gutenberg blocks for designing captivating WordPress sites."
+#: includes/admin/class-evf-admin-assets.php:143
+msgctxt "enhanced select"
+msgid "Unselect All"
 msgstr ""
 
-#: src/dashboard/Constants/Products.js:45
-msgid "Custom Gutenberg Blocks Plugin"
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:261
+msgctxt "Default Preset"
+msgid "Default"
 msgstr ""
 
-#: src/dashboard/Constants/Products.js:55
-msgid "The best Drag and drop user registration form and login form builder with a user profile page, email notification, user roles assignment, and more."
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:264
+msgctxt "Repeat Image"
+msgid "Repeat"
 msgstr ""
 
-#: src/dashboard/Constants/Products.js:62
-msgid "User Forms, Profiles, Roles, Notifications."
+#: addons/StyleCustomizer/includes/configs/evf-style-customizer-form-wrapper-configs.php:265
+msgctxt "Custom Preset"
+msgid "Custom"
 msgstr ""
 
-#: src/dashboard/Constants/Products.js:72
-msgid "Experience advanced Gutenberg blocks with Magazine Blocks, designed for crafting stunning magazine and news websites."
+#: addons/StyleCustomizer/includes/customize/class-evf-customize-templates-section.php:43
+msgctxt "template"
+msgid "Change"
 msgstr ""
 
-#: src/dashboard/Constants/Products.js:79
-msgid "Gutenberg Blocks for Magazine-style Websites"
-msgstr ""
-
-#: src/dashboard/Constants/Products.js:92
-msgid "Unlock boundless website possibilities with Zakra, a versatile multipurpose theme offering over 40 free starter sites for a tailored web experience."
-msgstr ""
-
-#: src/dashboard/Constants/Products.js:104
-msgid "Elevate your website's style with Colormag, the go-to choice for news, blogs, and magazines. Embark on a digital spectacle of website-building excellence! "
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/components/UsefulPlugins.js:78
-msgid "Active"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/components/UsefulPlugins.js:93
-#: src/dashboard/screens/Products/components/ProductCard.js:161
-msgid "Activate Plugin"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/components/UsefulPlugins.js:94
-#: src/dashboard/screens/Products/components/ProductCard.js:162
-msgid "Install Plugin"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/components/UsefulPlugins.js:99
-#: src/dashboard/screens/Products/components/ProductCard.js:167
-msgid "Are you sure? You want to activate %s plugin."
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/components/UsefulPlugins.js:106
-#: src/dashboard/screens/Products/components/ProductCard.js:174
-msgid "Are you sure? You want to install and activate %s plugin."
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:58
-msgid "Welcome to Everest Forms!"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:86
-msgid "Create a Contact Form"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:99
-msgid "View all forms"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:116
-msgid "Everest Forms Community"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:120
-#: src/dashboard/screens/Help/Help.js:252
-msgid "Join our exclusive group and connect with fellow Everest Forms members. Ask questions, contribute to discussions, and share feedback!"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:131
-msgid "Join our Facebook Group"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:149
-#: src/dashboard/screens/Help/Help.js:205
-msgid "Check our documentation for detailed information on Everest Forms features and how to use them."
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:160
-msgid "View Documentation"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:178
-msgid "Submit a ticket for encountered issues and get help from our support team instantly."
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:189
-msgid "Create a Ticket"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:203
-#: src/dashboard/screens/Help/Help.js:400
-msgid "Feature Request"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:207
-#: src/dashboard/screens/Help/Help.js:404
-msgid "Don’t find a feature you’re looking for? Suggest any features you think would enhance our product."
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:218
-#: src/dashboard/screens/Help/Help.js:415
-msgid "Request a Feature"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:232
-#: src/dashboard/screens/Dashboard/Dashboard.js:247
-#: src/dashboard/screens/Help/Help.js:429
-#: src/dashboard/screens/Help/Help.js:444
-msgid "Submit a Review"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:236
-#: src/dashboard/screens/Help/Help.js:433
-msgid "Please take a moment to give us a review. We appreciate honest feedback that’ll help us improve our plugin."
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:261
-#: src/dashboard/screens/Help/Help.js:371
-msgid "Video Tutorials"
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:265
-#: src/dashboard/screens/Help/Help.js:375
-msgid "Watch our step-by-step video tutorials that’ll help you get the best out of Everest Forms’s features."
-msgstr ""
-
-#: src/dashboard/screens/Dashboard/Dashboard.js:276
-#: src/dashboard/screens/Help/Help.js:386
-msgid "Watch Videos"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:38
-#: src/dashboard/screens/Modules/Modules.js:286
-msgid "Features"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:41
-msgid "Unlimited Forms"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:46
-msgid "Unlimited Form Entries"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:51
-msgid "Email Notifications "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:56
-msgid "Google Analytics "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:61
-msgid "Multiple File Uploads"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:66
-msgid "User Redirection  "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:71
-msgid "Import/Export Forms "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:76
-msgid "Export Entries in CSV "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:81
-msgid "E-signature "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:86
-msgid "Webhook Support  "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:91
-msgid "Honeypot Security "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:96
-msgid "Google reCAPTCHA "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:101
-msgid "HCaptcha"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:106
-msgid "Whitelist/Blacklist Domains "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:111
-msgid "Google Drive"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:116
-msgid "Dropbox"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:121
-msgid "Smart Tags Support"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:126
-msgid "GDPR Compliance"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:131
-msgid "Test Emails"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:136
-msgid "AJAX Form Submission"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:141
-msgid "Auto-populate Forms "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:149
-#: src/dashboard/screens/Modules/Modules.js:291
-msgid "Addons"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:152
-msgid "Style Customizer "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:157
-msgid "Muilti-step Forms "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:162
-msgid "MailChimp "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:167
-msgid "ConvertKit "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:172
-msgid "PDF Form Submission "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:177
-msgid "Custom CAPTCHA"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:182
-msgid "Geolocation "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:187
-msgid "MailerLite"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:192
-msgid "ActiveCampaign "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:197
-msgid "Campaign Monitor"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:202
-msgid "Google Sheets "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:207
-msgid "Surveys, Polls, and Quiz "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:212
-msgid "User Registration "
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:222
-msgid "Email Templates"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:227
-msgid "PayPal Standard"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:232
-msgid "Stripe"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:242
-msgid "Zapier"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:257
-msgid "Calculations"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:262
-msgid "Razorpay"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:277
-msgid "Frontend Listing"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:282
-msgid "Drip"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:287
-msgid "HubSpot"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:292
-msgid "Pipedrive"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:297
-msgid "Zoho CRM"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:302
-msgid "Salesforce"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:307
-msgid "Constant Contact"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:312
-msgid "Cloud Storage"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:317
-msgid "GetResponse"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:322
-msgid "Sendinblue"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:327
-msgid "Conversational Forms"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:332
-msgid "AI Contact Form - Free"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:337
-msgid "Advanced Form Analytics"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:476
-msgid "Upgrade Now"
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:485
-msgid "Access all premium addons, features and upcoming updates right away by upgrading to the Pro version."
-msgstr ""
-
-#: src/dashboard/screens/FreeVsPro/FreeVsPro.js:503
-msgid "Get Everest Form Pro Now"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:94
-msgid "Shortcodes"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:97
-msgid "Find the complete list of shortcodes with their usage information and parameter details."
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:114
-msgid "View all Shortcodes"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:130
-msgid "Smart Tags"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:133
-msgid "Find the complete list of smart tags with their usage information and parameter details."
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:150
-msgid "View Tags"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:169
-msgid "If you have any issues or questions, our team is on standby to help you instantly."
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:186
-msgid "Contact Support"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:202
-msgid "Need Some Help?"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:222
-msgid "View Now"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:229
-msgid "Join Our Community"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:249
-msgid "Facebook Community"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:270
-msgid "Join Group"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:291
-msgid "X ( Twitter )"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:294
-msgid "Follow us on X to get the latest news and updates about Everest Forms and the team behind it."
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:312
-msgid "Follow"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:333
-msgid "YouTube"
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:336
-msgid "Subscribe to our YouTube channel, where we guide you on using Everest Forms’s features and add-ons."
-msgstr ""
-
-#: src/dashboard/screens/Help/Help.js:354
-msgid "Subscribe"
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:38
-msgid "Displays everest forms in the front end."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:45
-msgid "ID of the form to display."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:55
-msgid "Displays Everest Forms with id 5"
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:64
-msgid "Display the login form for user who are created by using user registration addons."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:71
-msgid "Redirect URL after login."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:79
-msgid "Enable the recaptcha."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:89
-msgid "Display the login form with recaptcha and redirect to sample page after login."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:95
-msgid "Requires Everest Forms Pro and User registration Addon to be activated."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:102
-msgid "Displays member directories in the front end."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:109
-msgid "Frontend Listing ID to render."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:119
-msgid "Displays user listing with ID 1 in the front end."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:125
-msgid "Requires Everest Forms Pro and Frontend Listing Addon to be activated."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:239
-msgid "All Shortcodes"
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:319
-msgid "Parameters:"
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:364
-msgid "REQUIRED."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/ShortcodesLists/ShortcodesLists.js:399
-msgid "Examples:"
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:31
-msgid "The Smart Tags listed below can be used to parse user data that doesn’t require user to be registered in the email content."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:38
-msgid "Current Date."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:42
-msgid "Current Time."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:46
-msgid "Site admin email."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:50
-msgid "Name of the website."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:54
-msgid "URL of the website."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:58
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:70
-msgid "Current Page Title."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:62
-msgid "Current Page Url."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:66
-msgid "Current Page ID."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:74
-msgid "Current page or post's author email."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:81
-msgid "Current page or post's author name."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:88
-msgid "Current form name"
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:92
-msgid "Current user's ip address."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:99
-msgid "User ID."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:103
-msgid "User Meta of particular key."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:114
-msgid "Display Name."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:118
-msgid "First Name."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:122
-msgid "Last Name."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:126
-msgid "Current User Email."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:130
-msgid "Current User Role."
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:134
-msgid "URL of the referrer page from where users landed on the form."
-msgstr ""
+#: includes/admin/class-evf-admin-entries-table-list.php:428
+#. translators: %s: count
+msgctxt "entries"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
 
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:141
-msgid "Current Form ID"
-msgstr ""
-
-#: src/dashboard/screens/Help/Lists/SmartTagsLists/SmartTagsLists.js:191
-msgid "All Smart Tags"
-msgstr ""
-
-#: src/dashboard/screens/Modules/components/ModuleBody.js:51
-msgid "License key"
-msgstr ""
+#: includes/admin/class-evf-admin-entries-table-list.php:430
+#. translators: %s: count
+msgctxt "entries"
+msgid "Spam <span class=\"count\">(%s)</span>"
+msgid_plural "Spam <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
 
-#: src/dashboard/screens/Modules/components/ModuleBody.js:90
-msgid "Everest Froms Pro Required"
-msgstr ""
-
-#: src/dashboard/screens/Modules/components/ModuleBody.js:95
-msgid "%s requires Everest Froms Pro to be activated. Please upgrade to a premium plan and unlock this %s."
-msgstr ""
-
-#: src/dashboard/screens/Modules/components/ModuleBody.js:104
-msgid "License Activation Required"
-msgstr ""
+#: includes/admin/class-evf-admin-forms-table-list.php:349
+#. translators: %s: count
+msgctxt "posts"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
 
-#: src/dashboard/screens/Modules/components/ModuleBody.js:109
-msgid "Please activate license of Everest Froms Pro plugin in order to use %s"
+#: includes/admin/views/html-admin-page-form-templates.php:85
+#. translators: %s: Template title
+msgctxt "Template name"
+msgid "%s template"
 msgstr ""
 
-#: src/dashboard/screens/Modules/components/ModuleBody.js:116
-msgid "Activate License"
+#: includes/class-evf-post-types.php:47
+msgctxt "Admin menu name"
+msgid "Forms"
 msgstr ""
 
-#: src/dashboard/screens/Modules/components/ModuleBody.js:120
-msgid "Enter your license key"
+#: includes/evf-core-functions.php:3642
+msgctxt "district"
+msgid "Belgrade"
 msgstr ""
 
-#: src/dashboard/screens/Modules/components/ModuleBody.js:149
-msgid "Please enter your plugin activation license key"
+#: includes/evf-core-functions.php:3643
+msgctxt "district"
+msgid "Bor"
 msgstr ""
 
-#: src/dashboard/screens/Modules/components/ModuleBody.js:152
-msgid "Please enter the valid license key"
+#: includes/evf-core-functions.php:3644
+msgctxt "district"
+msgid "Braničevo"
 msgstr ""
 
-#: src/dashboard/screens/Modules/components/ModuleItem.js:323
-msgid "Play Video"
+#: includes/evf-core-functions.php:3645
+msgctxt "district"
+msgid "Central Banat"
 msgstr ""
 
-#: src/dashboard/screens/Modules/components/ModuleItem.js:422
-#: src/dashboard/screens/Products/components/ProductCard.js:106
-msgid "Live Demo"
+#: includes/evf-core-functions.php:3646
+msgctxt "district"
+msgid "Danube"
 msgstr ""
 
-#: src/dashboard/screens/Modules/Modules.js:255
-msgid "Popular"
+#: includes/evf-core-functions.php:3647
+msgctxt "district"
+msgid "Jablanica"
 msgstr ""
 
-#: src/dashboard/screens/Modules/Modules.js:258
-msgid "Newest"
+#: includes/evf-core-functions.php:3648
+msgctxt "district"
+msgid "Kolubara"
 msgstr ""
 
-#: src/dashboard/screens/Modules/Modules.js:261
-msgid "Oldest"
+#: includes/evf-core-functions.php:3649
+msgctxt "district"
+msgid "Mačva"
 msgstr ""
 
-#: src/dashboard/screens/Modules/Modules.js:264
-msgid "Ascending"
+#: includes/evf-core-functions.php:3650
+msgctxt "district"
+msgid "Morava"
 msgstr ""
 
-#: src/dashboard/screens/Modules/Modules.js:267
-msgid "Descending"
+#: includes/evf-core-functions.php:3651
+msgctxt "district"
+msgid "Nišava"
 msgstr ""
 
-#: src/dashboard/screens/Modules/Modules.js:281
-msgid "All Modules"
+#: includes/evf-core-functions.php:3652
+msgctxt "district"
+msgid "North Bačka"
 msgstr ""
 
-#: src/dashboard/screens/Modules/Modules.js:302
-#: src/rolesandpermission/components/UserRoleTable.jsx:297
-msgid "Bulk Actions"
+#: includes/evf-core-functions.php:3653
+msgctxt "district"
+msgid "North Banat"
 msgstr ""
 
-#: src/dashboard/screens/Modules/Modules.js:347
-msgid "Search..."
+#: includes/evf-core-functions.php:3654
+msgctxt "district"
+msgid "Pčinja"
 msgstr ""
 
-#: src/dashboard/screens/Modules/Modules.js:379
-msgid "Sorry, No features found"
+#: includes/evf-core-functions.php:3655
+msgctxt "district"
+msgid "Pirot"
 msgstr ""
 
-#: src/dashboard/screens/Modules/Modules.js:381
-msgid "Sorry, No addons found"
+#: includes/evf-core-functions.php:3656
+msgctxt "district"
+msgid "Pomoravlje"
 msgstr ""
 
-#: src/dashboard/screens/Modules/Modules.js:383
-msgid "Sorry, No modules found"
+#: includes/evf-core-functions.php:3657
+msgctxt "district"
+msgid "Rasina"
 msgstr ""
 
-#: src/dashboard/screens/Products/Products.js:55
-msgid "Themes"
+#: includes/evf-core-functions.php:3658
+msgctxt "district"
+msgid "Raška"
 msgstr ""
 
-#: src/rolesandpermission/components/UserDisplayModal.jsx:201
-msgid "Select user permission"
+#: includes/evf-core-functions.php:3659
+msgctxt "district"
+msgid "South Bačka"
 msgstr ""
 
-#: src/rolesandpermission/components/UserRoleTable.jsx:300
-msgid "Delete"
+#: includes/evf-core-functions.php:3660
+msgctxt "district"
+msgid "South Banat"
 msgstr ""
 
-#: src/rolesandpermission/components/UserRoleTable.jsx:359
-msgid "You don’t have any Manager yet"
+#: includes/evf-core-functions.php:3661
+msgctxt "district"
+msgid "Srem"
 msgstr ""
 
-#: src/rolesandpermission/components/UserRoleTable.jsx:362
-msgid "Please create a manager and you are good to go."
+#: includes/evf-core-functions.php:3662
+msgctxt "district"
+msgid "Šumadija"
 msgstr ""
 
-#: src/rolesandpermission/components/UserRoleTable.jsx:429
-msgid "Show per page"
+#: includes/evf-core-functions.php:3663
+msgctxt "district"
+msgid "Toplica"
 msgstr ""
 
-#: dist/form-selector/block.json
-#: src/blocks/blocks/form-selector/block.json
-msgctxt "block title"
-msgid "Everest Form"
+#: includes/evf-core-functions.php:3664
+msgctxt "district"
+msgid "West Bačka"
 msgstr ""
 
-#: dist/form-selector/block.json
-#: src/blocks/blocks/form-selector/block.json
-msgctxt "block description"
-msgid "Select and display one of your forms."
+#: includes/evf-core-functions.php:3665
+msgctxt "district"
+msgid "Zaječar"
 msgstr ""
 
-#: dist/form-selector/block.json
-#: src/blocks/blocks/form-selector/block.json
-msgctxt "block keyword"
-msgid "everest forms"
+#: includes/evf-core-functions.php:3666
+msgctxt "district"
+msgid "Zlatibor"
 msgstr ""
 
-#: dist/frontend-listing/block.json
-#: src/blocks/blocks/frontend-listing/block.json
-msgctxt "block title"
-msgid "Frontend Listing"
+#: includes/evf-core-functions.php:3667
+msgctxt "district"
+msgid "Kosovo"
 msgstr ""
 
-#: dist/frontend-listing/block.json
-#: src/blocks/blocks/frontend-listing/block.json
-msgctxt "block description"
-msgid "Select and display one of your frontend listing."
+#: includes/evf-core-functions.php:3668
+msgctxt "district"
+msgid "Peć"
 msgstr ""
 
-#: dist/frontend-listing/block.json
-#: src/blocks/blocks/frontend-listing/block.json
-msgctxt "block keyword"
-msgid "everest forms frontend listing"
+#: includes/evf-core-functions.php:3669
+msgctxt "district"
+msgid "Prizren"
 msgstr ""
 
-#: dist/frontend-listing/block.json
-#: src/blocks/blocks/frontend-listing/block.json
-msgctxt "block keyword"
-msgid "frontend listing"
+#: includes/evf-core-functions.php:3670
+msgctxt "district"
+msgid "Kosovska Mitrovica"
 msgstr ""
 
-#: dist/user-login/block.json
-#: src/blocks/blocks/user-login/block.json
-msgctxt "block title"
-msgid "User Login"
+#: includes/evf-core-functions.php:3671
+msgctxt "district"
+msgid "Kosovo-Pomoravlje"
 msgstr ""
 
-#: dist/user-login/block.json
-#: src/blocks/blocks/user-login/block.json
-msgctxt "block description"
-msgid "Display login form."
+#: includes/evf-core-functions.php:3672
+msgctxt "district"
+msgid "Kosovo-Metohija"
 msgstr ""
 
-#: dist/user-login/block.json
-#: src/blocks/blocks/user-login/block.json
-msgctxt "block keyword"
-msgid "everest forms login form"
+#: includes/evf-core-functions.php:3673
+msgctxt "district"
+msgid "Vojvodina"
 msgstr ""
 
-#: dist/user-login/block.json
-#: src/blocks/blocks/user-login/block.json
-msgctxt "block keyword"
-msgid "loging form"
+#: includes/evf-core-functions.php:3854
+msgctxt "US state of Georgia"
+msgid "Georgia"
 msgstr ""
