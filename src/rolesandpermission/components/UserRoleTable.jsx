@@ -408,6 +408,7 @@ const UserRoleTable = () => {
 												email: value.email,
 												permission_details: permissions,
 											}}
+											setUserAdded={setUserAdded}
 										/>
 										{" | "}
 										<TrashUserRoleModel deleteManager={() => deleteManager(value.id)} />
