@@ -270,6 +270,21 @@ class EVF_Roles_And_Permission {
 		foreach ( $user_emails as $user_email ) {
 			$per_user_data = get_user_by( 'email', trim( $user_email ) );
 
+			$current_user = wp_get_current_user();
+
+			if ( $current_user->user_email === $user_email ) {
+				return new \WP_REST_Response(
+					array(
+						'success' => false,
+						'message' => array(
+							'user_email' => esc_html__( 'Assigning permissions to yourself is not allowed.', 'everest-forms' ),
+						),
+
+					),
+					200
+				);
+			}
+
 			if ( empty( $per_user_data ) ) {
 				$user_not_found[] = trim( $user_email );
 			}
@@ -337,11 +352,7 @@ class EVF_Roles_And_Permission {
 		// $capability    = self::find_user_capability( $user );
 
 		if ( $is_admin ) {
-			if ( $is_admin ) {
-				$permission_set[] = 'administrator';
-			}
-
-			return $permission_set;
+			return array_keys( $permission_set['permissions'] );
 		}
 
 		$user_permissions = array_values( array_intersect( array_keys( $user->allcaps ), array_keys( $permission_set['permissions'] ) ) );
