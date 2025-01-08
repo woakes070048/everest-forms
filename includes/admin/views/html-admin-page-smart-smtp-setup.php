@@ -113,7 +113,7 @@ if ( isset($all_installed_plugins['smart-smtp/smart-smtp.php']) ) {
 						<?php } ?>
 				</div>
 
-				<div class="everest-forms-smart-smtp-page__setup-smart-smtp <? echo (0===$is_smtp_active) ? "everest-forms-smart-smtp-page__setup-disabled" : ''?>">
+				<div class="everest-forms-smart-smtp-page__setup-smart-smtp <?php echo (0 === $is_smtp_active) ? 'everest-forms-smart-smtp-page__setup-disabled' : ''; ?>">
 					<p class="everest-forms-smart-smtp-page__setup-step-two">
 						<?php echo esc_html__( '2', 'everest-forms' ); ?>
 					</p>
