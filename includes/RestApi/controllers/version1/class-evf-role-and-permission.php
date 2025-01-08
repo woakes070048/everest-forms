@@ -490,7 +490,7 @@ class EVF_Roles_And_Permission {
 				'last_name'   => $user->last_name,
 				'email'       => $user->user_email,
 				'permissions' => self::get_user_permissions( $user ),
-				'roles'       => self::get_user_roles( $user->roles ),
+				'roles'       => self::get_user_roles( $user->ID ),
 			);
 		}
 
@@ -515,17 +515,10 @@ class EVF_Roles_And_Permission {
 	 * @param array $roles Array of user roles.
 	 * @return string User roles as a comma-separated string.
 	 */
-	private static function get_user_roles( $roles ) {
-		$role_str = '';
-		if ( count( $roles ) > 1 ) {
-			foreach ( $roles as $role ) {
-				$role_str .= $role . ', ';
-			}
-		} else {
-			$role_str = $roles[0];
-		}
-
-		return ucfirst( $role_str );
+	private static function get_user_roles( $user_id ) {
+		$user_meta  = get_userdata( $user_id );
+		$user_roles = $user_meta->roles;
+		return ucfirst( reset( $user_roles ) );
 	}
 
 	/**
