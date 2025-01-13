@@ -401,7 +401,10 @@ class EVF_Admin_Assets {
 			wp_enqueue_script( 'everest-forms-survey-polls-quiz-builder' );
 			wp_enqueue_script( 'random-color' );
 			// wp_enqueue_script( 'chart' ); //for future use.
-			wp_enqueue_script( 'evf-tool-roles-and-permission' );
+			if ( isset( $_GET['page'], $_GET['tab'] ) && $_GET['page'] === 'evf-tools' && $_GET['tab'] === 'roles_and_permission' ) {
+				wp_enqueue_script( 'evf-tool-roles-and-permission' );
+			}
+
 			wp_enqueue_script( 'progress_bar' );
 			wp_enqueue_script( 'evf-import-entries-form-csv' );
 			wp_enqueue_script( 'print_this' );
