@@ -38,7 +38,7 @@ class EVF_Smart_Tags {
 				'page_id'                                 => esc_html__( 'Page ID', 'everest-forms' ),
 				'post_title'                              => esc_html__( 'Post Title', 'everest-forms' ),
 				'post_meta key=whatever'                  => esc_html__( 'Post Meta', 'everest-forms' ),
-				'posts_meta_current_page_id key=whatever' => esc_html__( 'Post Meta', 'everest-forms' ),
+				'posts_meta_current_page_id key=whatever' => esc_html__( 'Post Meta By Current Page', 'everest-forms' ),
 				'author_email'                            => esc_html__( 'Author Email', 'everest-forms' ),
 				'author_name'                             => esc_html__( 'Author Name', 'everest-forms' ),
 				'form_name'                               => esc_html__( 'Form Name', 'everest-forms' ),
@@ -448,7 +448,6 @@ class EVF_Smart_Tags {
 						$content    = str_replace( '{' . $other_tag . '}', sanitize_text_field( $post_title ), $content );
 						break;
 					case 'post_meta':
-						posts_by_meta_key_id
 						preg_match_all( '/key\=(.*?)$/', $tag, $meta );
 
 						if ( is_array( $meta ) && ! empty( $meta[1][0] ) ) {
@@ -481,7 +480,6 @@ class EVF_Smart_Tags {
 						}
 						break;
 					case 'posts_meta_current_page_id':
-						posts_by_meta_key_id
 						preg_match_all( '/key\=(.*?)$/', $tag, $meta );
 
 						if ( is_array( $meta ) && ! empty( $meta[1][0] ) ) {
@@ -507,7 +505,7 @@ class EVF_Smart_Tags {
 							 *
 							 * @since 3.0.4
 							 */
-							$value = get_post_meta( get_queried_object_id(), $key, true );
+							$value   = get_post_meta( get_queried_object_id(), $key, true );
 							$content = str_replace( '{' . $tag . '}', wp_kses_post( $value ), $content );
 						} else {
 							$content = str_replace( '{' . $tag . '}', '', $content );
