@@ -312,6 +312,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 * Enhancement   - Forms table design.
 * Enhancement   - Approve deny entry mail.
 * Dev		    - Subscription plan field with trail period.
+* Fix         	- Vulnerability stored xss via malicious pdf.
 
 = 3.0.8.1         - 08-01-2025
 * Fix		      - Email Preview not working issue .
