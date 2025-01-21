@@ -1,7 +1,8 @@
 == Changelog ==
 
 = 3.0.9         - xx-xx-2025
-* Dev		    - Subscription plan field with trail period
+* Dev		    - Subscription plan field with trail period.
+* Enhancement   - Forms table design.
 
 = 3.0.8.1         - 08-01-2025
 * Fix		      - Email Preview not working issue .
