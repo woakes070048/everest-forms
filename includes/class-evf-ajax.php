@@ -1752,7 +1752,7 @@ class EVF_AJAX {
 	/**
 	 * Installs and activates the Smart SMTP plugin.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.9
 	 *
 	 * @return void Outputs a JSON response.
 	 */

@@ -54,6 +54,16 @@ class EVF_Form_Task {
 	public $is_valid_hash = false;
 
 	/**
+	 * Ajax error array.
+	 */
+	public $ajax_err = array();
+
+	/**
+	 * Is notice print?
+	 */
+	public $evf_notice_print = false;
+
+	/**
 	 * Primary class constructor.
 	 *
 	 * @since 1.0.0
@@ -1390,7 +1400,7 @@ class EVF_Form_Task {
 					$last_name                   = '';
 					$email                       = '';
 					$entry_date                  = $entry->date_created;
-					$name = '';
+					$name                        = '';
 
 					foreach ( $entry_meta as $key => $value ) {
 						if ( preg_match( '/^name/', $key ) ) {
@@ -1588,7 +1598,7 @@ class EVF_Form_Task {
 	/**
 	 * Marks the entry as spam.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.9
 	 */
 	public function evf_mark_entry_spam() {
 		if ( ! isset( $_GET['spam-entry'] ) ) {
@@ -1610,7 +1620,7 @@ class EVF_Form_Task {
 	/**
 	 * Marks the entry as spam.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.9
 	 */
 	public function evf_remove_entry_from_spam() {
 		if ( ! isset( $_GET['unspam-entry'] ) ) {

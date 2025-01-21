@@ -695,7 +695,7 @@
 		/**
 		 * For the subscription plan field.
 		 *
-		 * @since xx.xx.xx
+		 * @since 3.0.9
 		 */
 		init_payment_subscription_plan_field:function(){
 			// Initialize option's date pickers on the expiry date input.
