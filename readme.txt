@@ -309,8 +309,9 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 == Changelog ==
 
 = 3.0.9         - xx-xx-2025
-* Dev		    - Subscription plan field with trail period.
 * Enhancement   - Forms table design.
+* Enhancement   - Approve deny entry mail.
+* Dev		    - Subscription plan field with trail period.
 
 = 3.0.8.1         - 08-01-2025
 * Fix		      - Email Preview not working issue .
