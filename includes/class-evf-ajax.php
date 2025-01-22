@@ -317,6 +317,28 @@ class EVF_AJAX {
 		$new_calculation_format = 0;
 		$not_supported_operator = 0;
 
+		$check_recurring_period = isset( $data['payments'] ) && isset( $data['payments']['stripe'] ) && isset( $data['payments']['stripe']['interval_count'] )
+										? ( 0 === $data['payments']['stripe']['interval_count'] || empty(
+											$data['payments']['stripe']['interval_count']
+											? true
+											: false
+										) )
+											: false;
+
+		if ( $check_recurring_period ) {
+			$logger->error(
+				__( 'Recurring period required.', 'everest-forms' ),
+				array( 'source' => 'form-save' )
+			);
+			wp_send_json_error(
+				array(
+					'errorTitle'   => esc_html__( 'Recurring period required.', 'everest-forms' ),
+					/* translators: %s: empty meta data */
+					'errorMessage' => esc_html__( 'Recurring Period is required. Please enter a valid value before saving the form.', 'everest-forms' ),
+				)
+			);
+		}
+
 		if ( ! empty( $data['form_fields'] ) ) {
 			foreach ( $data['form_fields'] as $field_key => $field ) {
 				if ( ! empty( $field['label'] ) ) {
