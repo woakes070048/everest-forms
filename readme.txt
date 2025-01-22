@@ -1,4 +1,4 @@
-=== Everest Forms – WP Form Builder for Contact, Payment, Quiz, Newsletter, Survey & Poll! ===
+=== Everest Forms – Contact Forms, Quiz, Survey, Newsletter & Payment Form Builder for WordPress ===
 Contributors:everestforms,WPEverest
 Tags: contact form, custom form, form builder, forms, survey
 Requires at least: 5.5
@@ -8,7 +8,7 @@ Stable tag: 3.0.9
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Fast, Lightweight & Secure Contact Form plugin. Beautiful & Responsive Pre-Built Templates. Create Contact, Booking, Payment, Quiz, Survey, Multi-Step, Registration and any type of forms.
+Best WordPress Form Plugin to Create Contact Forms, Surveys, Quizzes, Payment Forms, & Custom Forms Using Drag & Drop Form Builder.
 
 == Description ==
 
