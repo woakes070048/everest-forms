@@ -643,7 +643,7 @@ class EVF_Admin_Entries_Table_List extends WP_List_Table {
 								/* translators:%s: User name of form entry */
 								$message = sprintf( __( 'Hey, %s', 'everest-forms' ), $name ) . '<br/>';
 								/* translators:%s: Form Entry Date */
-								$message .= '<br/>' . sprintf( __( 'We’re pleased to inform you that your form entry submitted on %s has been successfully approved.', 'everest-forms' ), $entry_date ) . '<br/>';
+								$message .= '<br/>' . sprintf( __( 'We regret to inform you that your form entry submitted on %s has been denied.', 'everest-forms' ), $entry_date ) . '<br/>';
 								$message .= '<br/>' . __( 'Thank you for giving us your precious time', 'everest-forms' ) . '<br/>';
 								/* translators:%s: Site Name */
 								$message .= '<br/>' . sprintf( __( 'From %s', 'everest-forms' ), $site_name );
