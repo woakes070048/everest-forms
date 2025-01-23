@@ -325,7 +325,11 @@ class EVF_AJAX {
 										) )
 											: false;
 
-		if ( $check_recurring_period ) {
+		$is_recurring_subscription_enabled = isset( $data['payments'] ) && isset( $data['payments']['stripe'] ) && isset( $data['payments']['stripe']['recurring'] ) && 1 == $data['payments']['stripe']['recurring']
+											? true
+											: false;
+
+		if ( $is_recurring_subscription_enabled && $check_recurring_period ) {
 			$logger->error(
 				__( 'Recurring period required.', 'everest-forms' ),
 				array( 'source' => 'form-save' )
