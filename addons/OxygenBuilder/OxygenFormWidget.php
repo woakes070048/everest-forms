@@ -264,7 +264,7 @@ class OxygenFormWidget extends OxygenElement {
 
 		if ( ! isset( $options['evf_form'] ) || empty( $options['evf_form'] ) ) {
 
-			echo  wp_kses_post( $content );
+			echo wp_kses( $content, evf_get_allowed_html_tags( 'builder' ) );
 
 			return;
 		}
@@ -273,7 +273,7 @@ class OxygenFormWidget extends OxygenElement {
 
 		if ( empty( $form_id ) ) {
 
-			echo  wp_kses_post( $content );
+			echo wp_kses( $content, evf_get_allowed_html_tags( 'builder' ) );
 
 			return;
 		}
@@ -287,6 +287,6 @@ class OxygenFormWidget extends OxygenElement {
 			array( 'class' => 'everest-forms' )
 		);
 
-		echo  wp_kses_post( $content );
+		echo wp_kses( $content, evf_get_allowed_html_tags( 'builder' ) );
 	}
 }

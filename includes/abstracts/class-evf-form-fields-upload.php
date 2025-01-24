@@ -1552,13 +1552,13 @@ abstract class EVF_Form_Fields_Upload extends EVF_Form_Fields {
 		$errors = apply_filters(
 			'evf_upload_validation_errors',
 			array(
-				UPLOAD_ERR_INI_SIZE   => esc_html__( 'The uploaded file exceeds the upload_max_filesize directive in php.ini.', 'everest-form' ),
-				UPLOAD_ERR_FORM_SIZE  => esc_html__( 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form.', 'everest-form' ),
-				UPLOAD_ERR_PARTIAL    => esc_html__( 'The uploaded file was only partially uploaded.', 'everest-form' ),
-				UPLOAD_ERR_NO_FILE    => esc_html__( 'No file was uploaded.', 'everest-form' ),
-				UPLOAD_ERR_NO_TMP_DIR => esc_html__( 'Missing a temporary folder.', 'everest-form' ),
-				UPLOAD_ERR_CANT_WRITE => esc_html__( 'Failed to write file to disk.', 'everest-form' ),
-				UPLOAD_ERR_EXTENSION  => esc_html__( 'File upload stopped by extension.', 'everest-form' ),
+				UPLOAD_ERR_INI_SIZE   => esc_html__( 'The uploaded file exceeds the upload_max_filesize directive in php.ini.', 'everest-forms' ),
+				UPLOAD_ERR_FORM_SIZE  => esc_html__( 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form.', 'everest-forms' ),
+				UPLOAD_ERR_PARTIAL    => esc_html__( 'The uploaded file was only partially uploaded.', 'everest-forms' ),
+				UPLOAD_ERR_NO_FILE    => esc_html__( 'No file was uploaded.', 'everest-forms' ),
+				UPLOAD_ERR_NO_TMP_DIR => esc_html__( 'Missing a temporary folder.', 'everest-forms' ),
+				UPLOAD_ERR_CANT_WRITE => esc_html__( 'Failed to write file to disk.', 'everest-forms' ),
+				UPLOAD_ERR_EXTENSION  => esc_html__( 'File upload stopped by extension.', 'everest-forms' ),
 			)
 		);
 
