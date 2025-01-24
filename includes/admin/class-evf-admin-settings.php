@@ -260,7 +260,7 @@ if ( ! class_exists( 'EVF_Admin_Settings', false ) ) :
 
 							$class_for_title = isset( $value['id'] ) && ! empty( $value['id'] ) ? 'everest-forms-settings-title_' . $value['id'] : '';
 
-							echo '<div class="everest-forms-options-header ' . $class_for_title . '">
+							echo '<div class="everest-forms-options-header ' . esc_attr( $class_for_title ) . '">
 							<div class="everest-forms-options-header--top">';
 
 							// For now icon is ignored.
@@ -913,7 +913,7 @@ if ( ! class_exists( 'EVF_Admin_Settings', false ) ) :
 	<div
 		class="everest-forms-global-settings--field forminp-<?php echo isset( $value['type'] ) ? esc_attr( sanitize_title( $value['type'] ) ) : ''; ?>">
 						<?php
-							echo ! empty( $value['value'] ) ? $value['value'] : '';
+						echo ! empty( $value['value'] ) ? esc_html( $value['value'] ) : '';
 						?>
 	</div>
 </div>
