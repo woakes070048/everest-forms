@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Everest Forms 3.0.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/everest-forms\n"
-"POT-Creation-Date: 2025-01-23 10:39:50+00:00\n"
+"POT-Creation-Date: 2025-01-24 10:40:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2891,8 +2891,8 @@ msgstr ""
 
 #: includes/admin/builder/class-evf-builder-settings.php:190
 #: includes/class-evf-ajax.php:1052 includes/class-evf-smart-tags.php:44
-#: templates/emails/summary-email-body-default.php:90
-#: templates/emails/summary-email-body-default.php:128
+#: templates/emails/summary-email-body-default.php:97
+#: templates/emails/summary-email-body-default.php:135
 msgid "Form Name"
 msgstr ""
 
@@ -3904,14 +3904,17 @@ msgstr ""
 #: includes/admin/class-evf-admin-entries-table-list.php:644
 #: includes/admin/class-evf-admin-entries.php:380
 #: includes/admin/class-evf-admin-entries.php:438
-#: includes/class-evf-form-task.php:1433 includes/class-evf-form-task.php:1510
+#: includes/class-evf-form-task.php:1434 includes/class-evf-form-task.php:1515
 #. translators:%s: User name of form entry
+#. translators: %s is the name of the user
 msgid "Hey, %s"
 msgstr ""
 
 #: includes/admin/class-evf-admin-entries-table-list.php:582
 #: includes/admin/class-evf-admin-entries.php:382
+#: includes/class-evf-form-task.php:1436
 #. translators:%s: Form Entry Date
+#. translators: %s is the entry_date.
 msgid ""
 "We’re pleased to inform you that your form entry submitted on %s has been "
 "successfully approved."
@@ -3926,8 +3929,9 @@ msgstr ""
 #: includes/admin/class-evf-admin-entries-table-list.php:649
 #: includes/admin/class-evf-admin-entries.php:385
 #: includes/admin/class-evf-admin-entries.php:443
-#: includes/class-evf-form-task.php:1436 includes/class-evf-form-task.php:1513
+#: includes/class-evf-form-task.php:1439 includes/class-evf-form-task.php:1520
 #. translators:%s: Site Name
+#. translators: %s is the site_name.
 msgid "From %s"
 msgstr ""
 
@@ -4003,7 +4007,7 @@ msgstr ""
 #: includes/admin/class-evf-admin-menus.php:110
 #: includes/admin/class-evf-admin-menus.php:238
 #: includes/class-evf-ajax.php:1053
-#: templates/emails/summary-email-body-default.php:129
+#: templates/emails/summary-email-body-default.php:136
 msgid "Entries"
 msgstr ""
 
@@ -4021,12 +4025,13 @@ msgstr ""
 
 #: includes/admin/class-evf-admin-entries.php:383
 #: includes/admin/class-evf-admin-entries.php:441
-#: includes/class-evf-form-task.php:1435 includes/class-evf-form-task.php:1512
+#: includes/class-evf-form-task.php:1437 includes/class-evf-form-task.php:1518
 msgid "Thank you for giving us your precious time."
 msgstr ""
 
 #: includes/admin/class-evf-admin-entries.php:436
-#: includes/class-evf-form-task.php:1509
+#: includes/class-evf-form-task.php:1513
+#. translators: %s is the message.
 msgid "Entry Submission Denied"
 msgstr ""
 
@@ -5582,7 +5587,7 @@ msgstr ""
 
 #: includes/admin/views/html-notice-email-failed-notice.php:25
 #: includes/admin/views/html-notice-php-deprecation.php:27
-#: templates/emails/summary-email-body-default.php:161
+#: templates/emails/summary-email-body-default.php:168
 msgid "Learn More"
 msgstr ""
 
@@ -5895,7 +5900,7 @@ msgid "Let's see how your forms performed %s."
 msgstr ""
 
 #: includes/class-evf-ajax.php:1048
-#: templates/emails/summary-email-body-default.php:81
+#: templates/emails/summary-email-body-default.php:88
 msgid "Forms Stats"
 msgstr ""
 
@@ -6145,11 +6150,19 @@ msgstr ""
 msgid "Could not create an entry"
 msgstr ""
 
-#: includes/class-evf-form-task.php:1584
+#: includes/class-evf-form-task.php:1517
+#. translators: %s is the entry_date.
+msgid ""
+"We’re sorry to inform you that your form entry submitted on %s has been "
+"denied."
+msgstr ""
+
+#: includes/class-evf-form-task.php:1592
+#. translators: %s is the message.
 msgid "Please wait"
 msgstr ""
 
-#: includes/class-evf-form-task.php:1587
+#: includes/class-evf-form-task.php:1595
 msgid "seconds, security checkup is being executed."
 msgstr ""
 
@@ -16137,43 +16150,47 @@ msgstr ""
 msgid "Sent from %s"
 msgstr ""
 
-#: templates/emails/summary-email-body-default.php:72
+#: templates/emails/summary-email-body-default.php:73
 msgid "Hi there! "
 msgstr ""
 
-#: templates/emails/summary-email-body-default.php:78
+#: templates/emails/summary-email-body-default.php:77
+msgid "Let's see how your forms performed"
+msgstr ""
+
+#: templates/emails/summary-email-body-default.php:85
 msgid "Sorry, there are no forms to display the statistics."
 msgstr ""
 
-#: templates/emails/summary-email-body-default.php:91
+#: templates/emails/summary-email-body-default.php:98
 msgid "Impressions"
 msgstr ""
 
-#: templates/emails/summary-email-body-default.php:92
+#: templates/emails/summary-email-body-default.php:99
 msgid "Conversions"
 msgstr ""
 
-#: templates/emails/summary-email-body-default.php:93
+#: templates/emails/summary-email-body-default.php:100
 msgid "Conversion Rate"
 msgstr ""
 
-#: templates/emails/summary-email-body-default.php:94
+#: templates/emails/summary-email-body-default.php:101
 msgid "Abandonments"
 msgstr ""
 
-#: templates/emails/summary-email-body-default.php:95
+#: templates/emails/summary-email-body-default.php:102
 msgid "Abandonment Rate"
 msgstr ""
 
-#: templates/emails/summary-email-body-default.php:96
+#: templates/emails/summary-email-body-default.php:103
 msgid "Bounce Rate"
 msgstr ""
 
-#: templates/emails/summary-email-body-default.php:142
+#: templates/emails/summary-email-body-default.php:149
 msgid "More Details on Conversion rates"
 msgstr ""
 
-#: templates/emails/summary-email-body-default.php:149
+#: templates/emails/summary-email-body-default.php:156
 msgid ""
 "Business growth with Everest Forms.\r\n"
 "\t\t With the Advanced Form Analytics addon, you can efficiently track user "
