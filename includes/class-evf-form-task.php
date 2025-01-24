@@ -1510,7 +1510,7 @@ class EVF_Form_Task {
 							}
 						}
 
-						$subject = apply_filters( 'everest_forms_entry_submission_approval_subject', esc_html__( 'Entry Submission Denied' ) );
+						$subject = apply_filters( 'everest_forms_entry_submission_approval_subject', esc_html__( 'Entry Submission Denied' ), 'everest-forms' );
 						// translators: %s is the name of the user
 						$message = sprintf( __( 'Hey, %s', 'everest-forms' ), $name ) . '<br/>';
 						// translators: %s is the entry_date.
