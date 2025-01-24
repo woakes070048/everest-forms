@@ -264,7 +264,7 @@ class OxygenFormWidget extends OxygenElement {
 
 		if ( ! isset( $options['evf_form'] ) || empty( $options['evf_form'] ) ) {
 
-			echo $content;
+			echo  wp_kses_post( $content );
 
 			return;
 		}
@@ -273,7 +273,7 @@ class OxygenFormWidget extends OxygenElement {
 
 		if ( empty( $form_id ) ) {
 
-			echo $content;
+			echo  wp_kses_post( $content );
 
 			return;
 		}
@@ -287,6 +287,6 @@ class OxygenFormWidget extends OxygenElement {
 			array( 'class' => 'everest-forms' )
 		);
 
-		echo $content;
+		echo  wp_kses_post( $content );
 	}
 }
