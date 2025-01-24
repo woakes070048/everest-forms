@@ -308,7 +308,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 
 == Changelog ==
 
-= 3.0.9         - xx-xx-2025
+= 3.0.9         - 24-01-2025
 * Enhance       - Forms table design.
 * Enhance       - Approve deny entry mail.
 * Dev		    - Subscription plan field with trail period.
