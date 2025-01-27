@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 3.0.9.1       - 27-01-2025
+* Enhancement	    - Added regex pattern to check the file upload.
+
 = 3.0.9         - 24-01-2025
 * Enhance       - Forms table design.
 * Enhance       - Approve deny entry mail.

@@ -249,7 +249,6 @@ abstract class EVF_Form_Fields_Upload extends EVF_Form_Fields {
 				'/app\.alert/i',
 				'/console\.log\b/i',
 				'/document\.write\b/i',
-				'/window\.open\b/i',
 				'/\/SubmitForm\b/i',
 				'/\/Launch\b/i',
 				'/\/RichMedia\b/i',
