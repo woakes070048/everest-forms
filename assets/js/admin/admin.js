@@ -17,7 +17,7 @@
 	/**
 	 * Handle to open he upgrade to pro link in a new tab.
 	 *
-	 * @since xx.xx.xx
+	 * @since 3.0.9.4
 	 */
 	$('#toplevel_page_everest-forms .wp-submenu li').each(function() {
 		var link = $(this).find('a');
