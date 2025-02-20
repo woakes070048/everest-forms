@@ -308,7 +308,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 
 == Changelog ==
 
-= 3.0.9.5     	- 20-02-2025
+= 3.0.9.5     	- 20-02-2025 
 * Fix           - File upload execution halted during arbitrary attack.
 * Fix           - Slot booking while the custom format is set in the WordPress timezone.
 
