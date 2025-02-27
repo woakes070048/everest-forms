@@ -250,13 +250,14 @@ const ModuleItem = (props) => {
 				position="relative"
 				overflow="visible"
 				opacity={moduleEnabled ? 1 : 0.7}
-			>
+				>
 
 			<Box
 				position="relative"
 				borderTopRightRadius="sm"
 				borderTopLeftRadius="sm"
 				overflow="hidden"
+				height={"178px"}
 				onMouseLeave={() => demo_video_url && setShowPlayVideoButton(false)}
 			>
 
@@ -266,6 +267,7 @@ const ModuleItem = (props) => {
 					borderTopRightRadius="sm"
 					borderTopLeftRadius="sm"
 					w="full"
+					height={"178px"}
 					onMouseOver={() =>
 							{if (demo_video_url) {
 								setShowPlayVideoButton(true);
