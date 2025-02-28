@@ -310,6 +310,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 
 = 3.1.0     	- xx-xx-2025
 * Enhance  	 	- New settings id on header for each options.
+* Enhance 		- Filter to show allowed country only on Smart Phone.
 
 = 3.0.9.5     	- 20-02-2025
 * Fix           - File upload execution halted during arbitrary attack.
