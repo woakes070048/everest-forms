@@ -309,6 +309,8 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 == Changelog ==
 
 = 3.1.0     	- xx-xx-2025
+* Enhance 		- Activation in module flow.
+* Enhance 		- 4 column design in addon page.
 * Enhance  	 	- New settings id on header for each options.
 * Enhance 		- Filter to show allowed country only on Smart Phone.
 
