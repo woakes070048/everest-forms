@@ -313,6 +313,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/eve
 * Enhance 		- 4 column design in addon page.
 * Enhance  	 	- New settings id on header for each options.
 * Enhance 		- Filter to show allowed country only on Smart Phone.
+* Fix 			- Documentation link is broken in addon page.
 
 = 3.0.9.5     	- 20-02-2025
 * Fix           - File upload execution halted during arbitrary attack.
