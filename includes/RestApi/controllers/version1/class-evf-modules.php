@@ -132,11 +132,27 @@ class EVF_Modules {
 						}
 					} else {
 						$required_plugin_file = $required_plugins[ $feature->slug ]['file'];
-						if ( is_plugin_active( $required_plugin_file ) ) {
-							$feature->dependent_status = 'active';
+						$required_plugin_name = $required_plugins[ $feature->slug ]['name'];
+
+						if ( is_array( $required_plugin_file ) ) {
+							$activated_count = 0;
+							foreach ( $required_plugin_file as $file ) {
+								if ( is_plugin_active( $file ) ) {
+									++$activated_count;
+								}
+							}
+
+							$feature->dependent_status = $activated_count > 0 ? 'active' : 'inactive';
+							if ( $activated_count === 0 ) {
+								$feature->dependent_plugin_name = $required_plugin_name;
+							}
 						} else {
-							$feature->dependent_status      = 'inactive';
-							$feature->dependent_plugin_name = $required_plugins[ $feature->slug ]['name'];
+							if ( is_plugin_active( $required_plugin_file ) ) {
+								$feature->dependent_status = 'active';
+							} else {
+								$feature->dependent_status      = 'inactive';
+								$feature->dependent_plugin_name = $required_plugin_name;
+							}
 						}
 					}
 				}
@@ -820,6 +836,28 @@ class EVF_Modules {
 					return $status;
 				} else {
 					return true;
+				}
+			}
+
+			$required_plugin_file = $required_plugin['file'];
+
+			if ( is_array( $required_plugin_file ) ) {
+				$activated_count = 0;
+				foreach ( $required_plugin_file as $file ) {
+					if ( is_plugin_active( $file ) ) {
+						++$activated_count;
+					}
+				}
+
+				if ( $activated_count > 0 ) {
+					return true;
+				} else {
+					$status['success']      = false;
+					$status['errorMessage'] = sprintf(
+						__( 'Please install and activate the %s plugin first to enable this addon.', 'everest-forms' ),
+						$required_plugin['name']
+					);
+					return $status;
 				}
 			}
 

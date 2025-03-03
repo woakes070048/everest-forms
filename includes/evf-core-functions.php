@@ -5433,7 +5433,10 @@ function evf_get_addons_list_depend_on_another_plugins() {
 				'name' => 'Oxygen Builder',
 			),
 			'everest-forms-beaver-builder'   => array(
-				'file' => 'bb-plugin/fl-builder.php',
+				'file' => array(
+					'beaver-builder-lite-version/fl-builder.php',
+					'bb-plugin/fl-builder.php',
+				),
 				'name' => 'Beaver Builder',
 			),
 			'everest-forms-wpbakery-builder' => array(
