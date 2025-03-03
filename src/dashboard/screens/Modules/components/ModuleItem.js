@@ -430,7 +430,7 @@ const ModuleItem = (props) => {
 				alignItems="center"
 				display="flex"
 			>
-				<HStack gap="1" align="center">
+				<HStack align="center" flexDirection={"column"} alignItems={"unset"} gap={"0"}>
 					<Link
 						href={link}
 						fontSize="xs"
@@ -440,9 +440,6 @@ const ModuleItem = (props) => {
 					>
 						{__("Documentation", "everest-forms")}
 					</Link>
-					<Text as="span" lineHeight="1" color="gray.500">
-						|
-					</Text>
 					<Link
 						href={liveDemoURL}
 						fontSize="xs"
