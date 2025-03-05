@@ -24,8 +24,9 @@ import {
 	ModalHeader,
 	Spinner,
 	useDisclosure,
+	Icon,
 } from "@chakra-ui/react";
-import { SettingsIcon } from "@chakra-ui/icons";
+import { SettingsIcon, WarningIcon } from "@chakra-ui/icons";
 import { __ } from "@wordpress/i18n";
 import React, { useState, useEffect, useContext } from "react";
 import YouTubePlayer from 'react-player/youtube';
@@ -37,6 +38,7 @@ import { FaInfoCircle, FaPlayCircle } from 'react-icons/fa';
 import { activateModule, deactivateModule } from "./modules-api";
 import DashboardContext from "./../../../context/DashboardContext";
 import { actionTypes } from "./../../../reducers/DashboardReducer";
+import { FreeModules } from "../../../Constants/Products";
 
 const ModuleItem = (props) => {
 	/* global _EVF_DASHBOARD_ */
@@ -181,14 +183,14 @@ const ModuleItem = (props) => {
 			} else {
 				setLicenseActivated(false);
 				setModuleEnabled(false);
-				if(data.slug=='ai-contact-form'){
+				if(FreeModules.includes(data.slug)){
 					setModuleEnabled(true);
 				}else{
 					setModuleEnabled(false);
 				}
 			}
 		} else {
-			if(data.slug=='ai-contact-form'){
+			if(FreeModules.includes(data.slug)){
 				setModuleEnabled(true);
 			}else{
 				setModuleEnabled(false);
@@ -248,13 +250,14 @@ const ModuleItem = (props) => {
 				position="relative"
 				overflow="visible"
 				opacity={moduleEnabled ? 1 : 0.7}
-			>
+				>
 
 			<Box
 				position="relative"
 				borderTopRightRadius="sm"
 				borderTopLeftRadius="sm"
 				overflow="hidden"
+				height={"178px"}
 				onMouseLeave={() => demo_video_url && setShowPlayVideoButton(false)}
 			>
 
@@ -264,6 +267,7 @@ const ModuleItem = (props) => {
 					borderTopRightRadius="sm"
 					borderTopLeftRadius="sm"
 					w="full"
+					height={"178px"}
 					onMouseOver={() =>
 							{if (demo_video_url) {
 								setShowPlayVideoButton(true);
@@ -334,6 +338,35 @@ const ModuleItem = (props) => {
 				</Box>
 			)}
 
+			{
+				data.dependent_status === 'inactive' && (
+					<Box
+					pos="absolute"
+					left={0}
+					bottom={0}
+					bg="rgba(0, 0, 0, 0.7)"
+					padding={"8px 20px"}
+					display="flex"
+					justifyContent="center"
+					backdropFilter="blur(5px)"
+					width={'100%'}
+			>
+				<Image src={_EVF_DASHBOARD_.alert_icon} w={'5'} h={'5'}/>
+				<Text
+					color="white"
+					fontWeight={600}
+					fontSize={'14px'}
+					lineHeight={'21px'}
+					marginLeft="10px"
+
+				>
+				Activate { data.required_plugin } plugin to use this addon.
+				</Text>
+			</Box>
+			)
+
+			}
+
 			</Box>
 				<Badge
 					backgroundColor="black"
@@ -347,7 +380,7 @@ const ModuleItem = (props) => {
 					p="5px"
 					m="5px"
 				>
-					{data.required_plan ? data.slug === 'ai-contact-form' ? 'Free' : data.required_plan  : "Pro"}
+					{data.required_plan ? FreeModules.includes(data.slug) ? 'Free' : data.required_plan  : "Pro"}
 				</Badge>
 				<Box p="6">
 					<Stack direction="column" spacing="4">
@@ -397,7 +430,7 @@ const ModuleItem = (props) => {
 				alignItems="center"
 				display="flex"
 			>
-				<HStack gap="1" align="center">
+				<HStack align="center" flexDirection={"column"} alignItems={"unset"} gap={"0"}>
 					<Link
 						href={link}
 						fontSize="xs"
@@ -407,9 +440,6 @@ const ModuleItem = (props) => {
 					>
 						{__("Documentation", "everest-forms")}
 					</Link>
-					<Text as="span" lineHeight="1" color="gray.500">
-						|
-					</Text>
 					<Link
 						href={liveDemoURL}
 						fontSize="xs"

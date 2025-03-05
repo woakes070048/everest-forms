@@ -189,6 +189,7 @@ class EVF_Field_Date_Time extends EVF_Form_Fields {
 						'Y.m.d'  => date_i18n( 'Y.m.d' ) . ' (Y.m.d)',
 						'F,Y'    => date_i18n( 'F,Y' ) . ' (F,Y)',
 						'm.d.y'  => date_i18n( 'm.d.y' ) . ' (m.d.y)',
+						'd.m.y'  => date_i18n( 'd.m.y' ) . ' (d.m.y)',
 						'm-d-y'  => date_i18n( 'm-d-y' ) . ' (m-d-y)',
 					),
 				),
@@ -754,7 +755,7 @@ class EVF_Field_Date_Time extends EVF_Form_Fields {
 				case 'date':
 					$properties['inputs']['primary']['attr']['value']                  = isset( $field['date_default'] ) ? esc_attr( date_i18n( $field['date_format'] ) ) : '';
 					$properties['inputs']['primary']['attr']['data-date-format']       = ! empty( $field['date_format'] ) ? str_replace( 'g:i A', 'h:i K', esc_attr( $field['date_format'] ) ) : '';
-					$properties['inputs']['primary']['attr']['data-past-disable-date'] = isset( $field['past_date_disable'] ) ? esc_attr( date_i18n( 'Y-m-d' ) ) : '';
+					$properties['inputs']['primary']['attr']['data-past-disable-date'] = isset( $field['past_date_disable'] ) ? esc_attr( date_i18n( $field['date_format'] ) ) : '';
 					break;
 				case 'time':
 					$properties['inputs']['primary']['attr']['value']            = '';
@@ -765,12 +766,12 @@ class EVF_Field_Date_Time extends EVF_Form_Fields {
 						$date_format                                      = esc_attr( $field['date_format'] ) . ' ' . esc_attr( $field['time_format'] );
 						$properties['inputs']['primary']['attr']['value'] = isset( $field['date_default'] ) ? esc_attr( date_i18n( $date_format ) ) : '';
 						$properties['inputs']['primary']['attr']['data-date-format']       = ! empty( $field['date_format'] ) ? str_replace( 'g:i A', 'h:i K', esc_attr( $date_format ) ) : '';
-						$properties['inputs']['primary']['attr']['data-past-disable-date'] = isset( $field['past_date_disable'] ) ? esc_attr( date_i18n( 'Y-m-d' ) ) : '';
+						$properties['inputs']['primary']['attr']['data-past-disable-date'] = isset( $field['past_date_disable'] ) ? esc_attr( date_i18n( $field['date_format'] ) ) : '';
 					} else {
 						$date_format                                      = esc_attr( $field['date_format'] ) . ' g:i A';
 						$properties['inputs']['primary']['attr']['value'] = isset( $field['date_default'] ) ? esc_attr( date_i18n( $date_format ) ) : '';
 						$properties['inputs']['primary']['attr']['data-date-format']       = ! empty( $field['date_format'] ) ? str_replace( 'g:i A', 'h:i K', esc_attr( $date_format ) ) : '';
-						$properties['inputs']['primary']['attr']['data-past-disable-date'] = isset( $field['past_date_disable'] ) ? esc_attr( date_i18n( 'Y-m-d' ) ) : '';
+						$properties['inputs']['primary']['attr']['data-past-disable-date'] = isset( $field['past_date_disable'] ) ? esc_attr( date_i18n( $field['date_format'] ) ) : '';
 					}
 					break;
 			}
@@ -1090,10 +1091,11 @@ class EVF_Field_Date_Time extends EVF_Form_Fields {
 	 */
 	public function entry_html( $value, $entry_meta, $entry, $type, $meta_key = '' ) {
 
-		$field_metas  = isset( $entry->meta ) ? $entry->meta : array();
-		$timezone_key = $meta_key . '_timezone';
+		$field_metas = isset( $entry->meta ) ? $entry->meta : array();
 
-		if ( ! empty( $meta_key ) && isset( $field_metas[ $timezone_key ] ) ) {
+		$timezone_key = isset( $meta_key['meta_key'] ) ? $meta_key['meta_key'] . '_timezone' : $meta_key . '_timezone';
+
+		if ( isset( $meta_key['meta_key'], $field_metas[ $timezone_key ] ) && ! empty( $meta_key['meta_key'] ) ) {
 			$timezone_value = $field_metas[ $timezone_key ];
 			$all_timezones  = $this->get_timezones();
 
